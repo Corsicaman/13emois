@@ -1,0 +1,65 @@
+.bouton {
+    border-radius: 100px;
+    padding: 7px 12px !important;
+    // padding: 14px 25px !important;
+    margin: 0 auto;
+    transition: color 0.2s, background-color 0.2s, border 0.2s;
+    text-align: center;
+    cursor: pointer;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.bouton i {
+    font-size: 17px;
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.boutonBlanc {
+    background-color: white;
+    color: $color_bleu1;
+}
+
+.boutonTurquoise {
+    background-color: $color_turquoise;
+    color: white;
+    border: 2px solid $color_turquoise;
+}
+
+.boutonBleuOutline {
+    border: 2px solid $color_bleu1;
+    color: $color_bleu1;
+}
+
+.boutonTurquoiseOutline {
+    border: 2px solid $color_turquoise;
+    color: $color_turquoise;
+}
+
+@media screen and (min-width: $breakpoint_bureau) {
+
+    .boutonBlanc:hover {
+        color: white;
+        background-color: $color_bleu1;
+    }
+
+    .boutonTurquoise:hover {
+        color: $color_turquoise;
+        background-color: white;
+    }
+
+    .boutonBleuOutline:hover {
+        color: white;
+        background-color: $color_bleu1;
+    }
+
+    .boutonTurquoiseOutline:hover {
+        color: white;
+        background-color: $color_turquoise;
+    }
+
+}

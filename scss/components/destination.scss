@@ -1,0 +1,165 @@
+// // ANIMATIONS
+// .fade-enter-active, .fade-leave-active {
+//   transition: opacity .5s, transform 0.5s;
+// }
+// .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+//   opacity: 0;
+//   transform: translateY(-30px);
+// }
+// -----------------------------------
+
+
+.destination {
+    position: relative;
+    width: 100%;
+    margin: 2vw 0;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 0px;
+    transition: transform 0.25s, opacity 0.25s, box-shadow 0.25s, top 0.15s;
+    // transform: translateY(-20px);
+    transition-timing-function: ease-in-out;
+
+}
+
+
+.destiInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* flex-wrap: wrap;*/
+}
+
+.destiImage {
+    width: 100%;
+    height: 25vh;
+    /* background-image: url("../images/destinations/corse.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    border-radius: 4px 4px 0 0;
+}
+
+.destiInfoGauche,
+.destiInfoDroite {
+    width: 100%;
+    padding: 6% 10%;
+    box-sizing: border-box;
+    /* text-align: center;*/
+    /* float: left;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.destiInfoGauche {
+    padding-right: 0;
+}
+
+
+.destiInfoGauche div:nth-child(1) {
+    font-weight: 700;
+    color: #444;
+    font-size: 20px;
+}
+
+.destiInfoGauche div:nth-child(2) {
+    color: $color_turquoise;
+    font-size: 12px;
+    margin: 6px 0 10px 0;
+}
+
+.destiInfoGauche div:nth-child(3) {
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+.destiInfoGauche p {
+    font-size: 14px;
+    padding-left: 5px;
+    display: inline-block;
+
+}
+
+.destiInfoGauche i {
+    color: orange;
+    font-size: 16px;
+    display: inline-block;
+}
+
+
+.destination .bouton {
+    width: 100%;
+    /* height: 50px;*/
+    padding: 8px 10px;
+    // margin: 3px 0 5px 0;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+.destination .bouton:first-child {
+    margin-bottom: 8px;
+}
+
+.destiBorderBot {
+    align-self: flex-end;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, $color_turquoise, $color_bleu2);
+    border-radius: 0 0 4px 4px;
+}
+
+
+@media screen and (min-width: $breakpoint_mini) {
+    .destiInfo {
+        flex-direction: row;
+    }
+.destiInfoDroite {
+    padding: 20px 20px;
+    width: 35%;
+    align-items: flex-end;
+}
+.destiInfoGauche {
+    padding: 20px 20px;
+    width: 55%;
+}
+.destination .bouton {
+    width: 80px;
+    /* height: 50px;*/
+    padding: 4px 10px;
+    margin: 5px 0;
+    font-size: 13px;
+    box-sizing: content-box;
+}
+
+}
+
+@media screen and (min-width: $breakpoint_mobile) {
+    .destination {
+        width: 40vw;
+    }
+.destiInfoGauche div:nth-child(1) {
+    font-weight: 700;
+    color: #444;
+    font-size: 15px;
+}
+
+.destiInfoGauche div:nth-child(2) {
+    color: $color_turquoise;
+    font-size: 10px;
+    margin: 4px 0 10px 0;
+}
+}
+
+@media screen and (min-width: $breakpoint_bureau) {
+    .destination {
+        width: 27vw;
+
+        &:hover {
+            top: -7px;
+        }
+    }
+}
