@@ -13,7 +13,7 @@
     <!-- MATERIAL ICONS -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- POLICES -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
 </head>
 
@@ -22,7 +22,9 @@
         <h1 id="logo13">Le 13e mois</h1>
     </a>
     <div id="app">
-        <router-view></router-view>
+        <transition name="fade" mode="out-in">
+            <router-view />
+        </transition>
     </div>
     <template id="lesDestinations-template">
         <!--         <main id="main_lesDestinations"> -->
@@ -107,15 +109,24 @@
                     <transition name="entreeSubInfo" mode="out-in" appear>
                         <div id="suivant">
                             <p>SOUS TOTAL: 8500 $</p>
-                            <div class="bouton boutonTurquoiseOutline">SUIVANT <i class="material-icons">send</i></div>
+                            <router-link :to="{ name: 'paiement'}">
+                                <div class="bouton boutonTurquoiseOutline">SUIVANT <i class="material-icons">send</i></div>
+                            </router-link>
                         </div>
                     </transition>
                 </div>
             </transition>
             </div>
+        </main>
     </template>
-    <!-- </main> -->
-    <!-- VUE.JS - Version de developpement  -->
+    <template id="paiement-template">
+        <main id="main_paiement">
+            <router-link :to="{ name: 'homepage'}" id="link">
+                < RETOUR À LA LISTE</router-link> 
+                <p>VOTRE 13e CIEL</p>
+                    <h1>{{destinations[destination].region}}, {{destinations[destination].pays}}</h1>
+        </main>
+    </template> <!-- VUE.JS - Version de developpement -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>

@@ -69,6 +69,14 @@ a {
   font-weight: 700;
   color: white; }
 
+.fade-leave-active {
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  transition-timing-function: ease; }
+
+.fade-leave-active {
+  opacity: 0; }
+
 .entreePhoto-enter-active,
 .entreePhoto-leave-active {
   animation: entreePhoto 4s;
@@ -377,6 +385,10 @@ a {
     width: 27vw; }
     .destination:hover {
       top: -7px; } }
+
+#main_paiement {
+  width: 100vw;
+  height: 100vw; }
 
 #main_uneDestination {
   position: absolute;

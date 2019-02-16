@@ -70,7 +70,7 @@ const uneDestination = {
                 for (var desti in this.destinations) {
                     if (this.destinations[desti].region == region) {
                         this.destination = desti;
-                        console.log(image);
+                        // console.log(image);
                         break;
                     }
                 }
@@ -81,6 +81,44 @@ const uneDestination = {
         }
     }
 };
+
+
+
+
+
+
+// Page paiement component
+const paiement = {
+    template: '#paiement-template',
+    data: () => ({
+        destinations: [],
+        destination: null
+    }),
+    mounted() {
+        this.getLaDestination();
+    },
+    methods: {
+        getLaDestination() {
+            var region = this.$route.params.region;
+            axios.get(urlJsonDestinations).then(response => {
+                this.destinations = response.data;
+                for (var desti in this.destinations) {
+                    if (this.destinations[desti].region == region) {
+                        this.destination = desti;
+                        // console.log(image);
+                        break;
+                    }
+                }
+                // console.log(this.post);
+            }).catch(error => {
+                console.log(error);
+            })
+        }
+    }
+};
+
+
+
 
 // Create vue router
 var router = new VueRouter({
@@ -96,6 +134,12 @@ var router = new VueRouter({
             name: 'destination',
             path: '/13e-mois_Web/destinations.htm/:region',
             component: uneDestination
+        },
+
+        {
+            name: 'paiement',
+            path: '/13e-mois_Web/destinations.htm/paiement/:region',
+            component: paiement
         }
     ]
 });
