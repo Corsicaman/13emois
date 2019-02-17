@@ -732,9 +732,43 @@ a {
 #contenant_liste {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-top: 20px; }
 
 #titre_liste {
   font-size: 20px;
+  font-weight: 600; }
+
+#header_liste {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0 20px 0;
+  border-bottom: 1px solid #dedede; }
+
+#header_tri h2 {
   font-weight: 600;
-  padding: 0 0 25px 0; }
+  padding-right: 10px;
+  font-size: 14px; }
+
+#header_tri {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  #header_tri i {
+    font-size: 16px;
+    padding-right: 4px; }
+  #header_tri p {
+    cursor: pointer;
+    color: #444;
+    padding: 3px 10px;
+    transition: color 0.2s;
+    vertical-align: middle;
+    display: flex;
+    align-items: center; }
+    #header_tri p:hover {
+      color: #34A2FF; }
+  #header_tri span {
+    vertical-align: middle;
+    font-size: 15px; }

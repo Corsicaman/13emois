@@ -78,34 +78,42 @@
     </template>
     <template id="lesDestinations-template">
         <div id="bodyDestinations">
-            <router-link :to="{ name: 'accueil'}">
-                <div id="logo">
+            <div id="logo">
+                <router-link :to="{ name: 'accueil'}">
                     <img src="images/logos/13EM_Logo_White_Blue.png" alt="13e LOGO">
-                </div>
-            </router-link>
+                </router-link>
+            </div>
             <main id="main_lesDestinations">
-            <h1 id="titre_liste">Liste des destinations</h1>
-            <transition-group v-bind:css="false" v-on:before-enter="beforeEnter" v-on:enter="enter" v-on:leave="leave" name="list" tag="div" id="contenant_liste">
-                <div class="destination boxShadowHover" v-for="(desti, index) in destinations" v-bind:key="desti.region" v-bind:data-index="index" mode="out-in">
-                    <router-link :to="{ name: 'destination', params: { region: desti.region }}">
-                        <div class="destiImage" v-bind:style="desti.backgroundImage"></div>
-                        <div class="destiInfo">
-                            <div class="destiInfoGauche">
-                                <div>{{desti.region}}, {{desti.pays}}</div>
-                                <div>DESTINATION #{{desti.rang}} EN 2018</div>
-                                <div><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
-                                    <p>({{desti.notes}})</p>
+                <div id="header_liste">
+                    <h1 id="titre_liste">LISTE DES DESTINATIONS</h1>
+                    <div id="header_tri">
+                        <h2>TRIER PAR : </h2>
+                        <p><i class="material-icons">accessibility_new</i><span>Popularité</span></p>
+                        <p><i class="material-icons">star</i><span>Note</span></p>
+                        <p><i class="material-icons">attach_money</i><span>Prix</span></p>
+                    </div>
+                </div>
+                <transition-group v-bind:css="false" v-on:before-enter="beforeEnter" v-on:enter="enter" v-on:leave="leave" name="list" tag="div" id="contenant_liste">
+                    <div class="destination boxShadowHover" v-for="(desti, index) in destinations" v-bind:key="desti.region" v-bind:data-index="index" mode="out-in">
+                        <router-link :to="{ name: 'destination', params: { region: desti.region }}">
+                            <div class="destiImage" v-bind:style="desti.backgroundImage"></div>
+                            <div class="destiInfo">
+                                <div class="destiInfoGauche">
+                                    <div>{{desti.region}}, {{desti.pays}}</div>
+                                    <div>DESTINATION #{{desti.rang}} EN 2018</div>
+                                    <div><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
+                                        <p>({{desti.notes}})</p>
+                                    </div>
+                                </div>
+                                <div class="destiInfoDroite">
+                                    <div class="bouton boutonTurquoiseOutline">{{desti.prix}} $</div>
+                                    <div class="bouton boutonTurquoise">CONSULTER</div>
                                 </div>
                             </div>
-                            <div class="destiInfoDroite">
-                                <div class="bouton boutonTurquoiseOutline">{{desti.prix}} $</div>
-                                <div class="bouton boutonTurquoise">CONSULTER</div>
-                            </div>
-                        </div>
-                        <div class="destiBorderBot"></div>
-                    </router-link>
-                </div>
-            </transition-group>
+                            <div class="destiBorderBot"></div>
+                        </router-link>
+                    </div>
+                </transition-group>
             </main>
         </div>
     </template>
