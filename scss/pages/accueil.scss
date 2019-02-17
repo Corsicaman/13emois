@@ -2,33 +2,64 @@
     position: absolute;
     width: 100vw;
     height: 100vh;
-    font-size: 12vw;
+    font-size: 11vw;
     font-weight: 700;
-    font-family: Montserrat;
+    font-family: Axis;
     text-align: center;
     background-color: white;
-    transition: background-color 1s, opacity 0.5s;
+    transition: background-color 0.5s, opacity 0.5s;
     z-index: 10;
 }
 
 #accueil h1 {
+    position: absolute;
+    top: 40%;
     display: inline-block;
     color: $color_bleu2;
-    margin-top: 35vh;
-    transition: opacity 1s, margin 1s, color 1s, transform 0.5s;
+    // margin-top: 35vh;
+    transition: opacity 0.5s, margin 0.5s, color 0.5s, transform 0.5s;
+    margin: 0;
+    padding: 0;
+    width: 30vw;
+}
+ 
+
+#accueil h1 div, #accueil h1 p {
+    transition: opacity 0.5s, margin 0.5s, color 0.5s, transform 0.5s;
+    // display: inline-block;
+    // text-align: left;
+    // text-align: left;
 }
 
-#accueil h1:first-child,
+#accueil h1:first-child {
+    color: #222;
+    left: 2%;
+    text-align: right;
+}
+#accueil h1:nth-child(2) {
+    text-align: center;
+    left: 36%;
+    display: flex;
+    // position: relative; 
+}
 #accueil h1:last-child {
     color: #222;
+    right: 14%;
+    text-align: left;
+    display: flex;
 }
 
-#accueil h1:nth-child(2) {
-    width: 19vw;
+#logo p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1vw;
+    color: white;
+    padding: 15px 0 0 0;
+    margin-top: 18px;
+    border-top: 1px solid white;
 }
-
-main {
-    // background-color: #FCFCFC;
+#bodyAccueil #logo {
+    width: 120px;
 }
 
 #infos {
@@ -114,8 +145,10 @@ main {
 
 
 #btnListe {
-    width: 220px;
-    margin-top: 140px;
+    width: 290px;
+    margin-top: 120px;
+    font-size: 15px;
+    padding: 30px;
 }
 
 @media only screen and (min-width: 900px) {

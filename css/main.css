@@ -1,3 +1,11 @@
+@charset "UTF-8";
+/* Liste des polices utilisées sur toutes les pages */
+@font-face {
+  font-family: "Axis";
+  src: url(../fonts/axis.otf) format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
 .boxShadow {
   box-shadow: 0 0 3px #555;
   border-radius: 3px; }
@@ -63,17 +71,33 @@ a {
   color: white; }
 
 #logo13 {
+  font-family: Axis;
   text-align: center;
   padding: 50px 0 30px 0;
   font-size: 3.2vw;
   font-weight: 700;
   color: white; }
 
+#logo {
+  margin: 0 auto;
+  width: 11vw;
+  padding-top: 40px;
+  text-align: center; }
+
+#logo img {
+  margin: 0 auto;
+  width: 100%;
+  transition: filter 0.2s; }
+  #logo img:hover {
+    filter: grayscale(100%); }
+
+.fade-enter-active,
 .fade-leave-active {
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
   transition-property: opacity;
   transition-timing-function: ease; }
 
+.fade-enter,
 .fade-leave-active {
   opacity: 0; }
 
@@ -219,7 +243,7 @@ a {
 
 .bouton {
   border-radius: 100px;
-  padding: 7px 12px !important;
+  padding: 12px 12px !important;
   margin: 0 auto;
   transition: color 0.2s, background-color 0.2s, border 0.2s;
   text-align: center;
@@ -265,6 +289,10 @@ a {
   .boutonTurquoiseOutline:hover {
     color: white;
     background-color: #32D096; } }
+
+#bodyDestinations #logo {
+  width: 180px;
+  padding: 100px 0 80px 0; }
 
 .destination {
   position: relative;
@@ -336,7 +364,7 @@ a {
 .destination .bouton {
   width: 100%;
   /* height: 50px;*/
-  padding: 8px 10px;
+  padding: 6px 10px !important;
   font-size: 13px;
   box-sizing: border-box; }
 
@@ -550,26 +578,54 @@ a {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  font-size: 12vw;
+  font-size: 11vw;
   font-weight: 700;
-  font-family: Montserrat;
+  font-family: Axis;
   text-align: center;
   background-color: white;
-  transition: background-color 1s, opacity 0.5s;
+  transition: background-color 0.5s, opacity 0.5s;
   z-index: 10; }
 
 #accueil h1 {
+  position: absolute;
+  top: 40%;
   display: inline-block;
   color: #34A2FF;
-  margin-top: 35vh;
-  transition: opacity 1s, margin 1s, color 1s, transform 0.5s; }
+  transition: opacity 0.5s, margin 0.5s, color 0.5s, transform 0.5s;
+  margin: 0;
+  padding: 0;
+  width: 30vw; }
 
-#accueil h1:first-child,
-#accueil h1:last-child {
-  color: #222; }
+#accueil h1 div, #accueil h1 p {
+  transition: opacity 0.5s, margin 0.5s, color 0.5s, transform 0.5s; }
+
+#accueil h1:first-child {
+  color: #222;
+  left: 2%;
+  text-align: right; }
 
 #accueil h1:nth-child(2) {
-  width: 19vw; }
+  text-align: center;
+  left: 36%;
+  display: flex; }
+
+#accueil h1:last-child {
+  color: #222;
+  right: 14%;
+  text-align: left;
+  display: flex; }
+
+#logo p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1vw;
+  color: white;
+  padding: 15px 0 0 0;
+  margin-top: 18px;
+  border-top: 1px solid white; }
+
+#bodyAccueil #logo {
+  width: 120px; }
 
 #infos {
   margin: 0 auto;
@@ -641,8 +697,10 @@ a {
     z-index: -10; }
 
 #btnListe {
-  width: 220px;
-  margin-top: 140px; }
+  width: 290px;
+  margin-top: 120px;
+  font-size: 15px;
+  padding: 30px; }
 
 @media only screen and (min-width: 900px) {
   #infos {
