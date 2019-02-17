@@ -209,15 +209,17 @@ const paiement = {
 // =======================
 var router = new VueRouter({
     mode: 'history',
-    routes: [{
-            name: 'accueil',
-            path: '/13e-mois_Web/index.htm',
-            component: accueil
-        },
+    routes: [
+    // {
+    //         name: 'accueil',
+    //         path: '/13e-mois_Web/index.htm',
+    //         component: accueil
+    //     },
 
         {
             name: 'listeDestinations',
-            path: '/13e-mois_Web/index.htm/liste',
+            // path: '/13e-mois_Web/index.htm/liste',
+            path: '/13e-mois_Web/index.htm',
             component: lesDestinations
         },
 
