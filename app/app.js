@@ -3,7 +3,12 @@ const urlJsonDestinations = "/13e-mois_Web/app/BDD.json";
 var s = 0;
 var i = 1;
 
-// Destinations component
+
+// =======================
+// =======================
+// PAGE D'ACCUEIL
+// =======================
+// =======================
 const accueil = {
     template: '#accueil-template',
     mounted() {
@@ -65,21 +70,16 @@ const accueil = {
                 }
             }
         },
-
-
-
-
-
-
-
-
-
     }
 };
 
 
 
-// Destinations component
+// =======================
+// =======================
+// PAGE LISTE DES DESTINATIONS
+// =======================
+// =======================
 const lesDestinations = {
     template: '#lesDestinations-template',
     data: () => ({
@@ -126,7 +126,11 @@ const lesDestinations = {
 
 
 
-// Une Destination component
+// =======================
+// =======================
+// PAGE DE LA DESTINATION SELECTIONEE
+// =======================
+// =======================
 const uneDestination = {
     template: '#uneDestination-template',
     data: () => ({
@@ -158,7 +162,12 @@ const uneDestination = {
 
 
 
-// Page paiement component
+
+// =======================
+// =======================
+// PAGE DE CONFIRMATION ET PAIEMENT
+// =======================
+// =======================
 const paiement = {
     template: '#paiement-template',
     data: () => ({
@@ -191,7 +200,13 @@ const paiement = {
 
 
 
-// Create vue router
+
+
+// =======================
+// =======================
+// VUE ROUTER : GESTIONS DES PAGES
+// =======================
+// =======================
 var router = new VueRouter({
     mode: 'history',
     routes: [{
@@ -220,7 +235,30 @@ var router = new VueRouter({
     ]
 });
 
-// Create vue instance with our router, and mount onto #app
+
+
+// =======================
+// Creation d'une instance vue à partir du router et "mount" sur #app
+// =======================
 var vue = new Vue({ router });
-var app = vue.$mount('#app')
-// console.log(List);
+var app = vue.$mount('#app');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
