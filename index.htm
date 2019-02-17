@@ -83,7 +83,9 @@
                     <img src="../images/logos/13EM_Logo_White_Blue.png" alt="13e LOGO">
                 </div>
             </router-link>
-            <transition-group v-bind:css="false" v-on:before-enter="beforeEnter" v-on:enter="enter" v-on:leave="leave" name="list" tag="main" id="main_lesDestinations">
+            <main id="main_lesDestinations">
+            <h1 id="titre_liste">Liste des destinations</h1>
+            <transition-group v-bind:css="false" v-on:before-enter="beforeEnter" v-on:enter="enter" v-on:leave="leave" name="list" tag="div" id="contenant_liste">
                 <div class="destination boxShadowHover" v-for="(desti, index) in destinations" v-bind:key="desti.region" v-bind:data-index="index" mode="out-in">
                     <router-link :to="{ name: 'destination', params: { region: desti.region }}">
                         <div class="destiImage" v-bind:style="desti.backgroundImage"></div>
@@ -104,6 +106,7 @@
                     </router-link>
                 </div>
             </transition-group>
+            </main>
         </div>
     </template>
     <template id="uneDestination-template">
