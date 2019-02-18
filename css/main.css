@@ -416,7 +416,7 @@ a {
   background-position: center center;
   height: 100vh;
   width: 100vw;
-  padding: 50px 70px;
+  padding: 5vw 6vw;
   box-sizing: border-box;
   background-color: #444;
   color: white;
@@ -461,22 +461,18 @@ a {
   align-items: center;
   box-sizing: border-box;
   border-radius: 2px;
-  font-size: 14px; }
-
-#resumeInfos > div {
-  width: 30%;
-  text-align: center; }
+  font-size: 11px; }
 
 #resumeInfos > div:first-child > div:first-child {
   padding-bottom: 4px;
   color: #32D096;
-  font-size: 16px;
+  font-size: 14px;
   display: flex;
   justify-content: center;
   align-items: center; }
 
 #resumeInfos > div:first-child > div:first-child i {
-  font-size: 16px; }
+  font-size: 14px; }
 
 #resumeInfos > div:nth-child(2) > div:first-child {
   padding-bottom: 4px;
@@ -485,20 +481,20 @@ a {
 
 #resumeInfos > div:nth-child(2) > div:first-child i {
   color: orange;
-  font-size: 18px; }
+  font-size: 14px; }
 
 #resumeInfos > div:nth-child(3) > div:first-child {
   padding-bottom: 4px;
   color: #32D096;
   font-weight: 800;
-  font-size: 16px;
+  font-size: 14px;
   display: flex;
   justify-content: center; }
 
 #uneDestinationInfos {
   background-color: #fefefe;
   width: 100vw;
-  padding: 50px 70px;
+  padding: 5vw 6vw;
   box-sizing: border-box; }
 
 #uneDestinationInfos h1 {
@@ -537,7 +533,8 @@ a {
   justify-content: space-between; }
 
 #activites {
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  flex-direction: column; }
 
 #activites h3,
 #description h3 {
@@ -552,18 +549,19 @@ a {
   margin: 0; }
 
 #suivant {
-  margin-top: 40px;
+  margin-top: 30px;
   color: #32D096;
   font-weight: 500;
   font-size: 15px;
   display: flex;
   text-align: right;
-  justify-content: flex-end;
-  align-items: center; }
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-end; }
 
 #suivant p {
-  vertical-align: middle;
-  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-right: 3px;
   font-weight: 600; }
 
 #activites > div > div {
@@ -576,8 +574,75 @@ a {
 
 #activites > div {
   display: flex;
-  margin-right: 5px;
-  align-items: center; }
+  margin-top: 10px;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px; }
+
+#activites > div:last-child {
+  border-bottom: none; }
+
+@media screen and (min-width: 800px) {
+  #uneDestinationInfos {
+    background-color: #fefefe;
+    width: 100vw;
+    padding: 50px 70px;
+    box-sizing: border-box; }
+  #activites {
+    flex-direction: row; }
+  #activites > div {
+    border-bottom: none;
+    padding-bottom: 0px; }
+  #suivant {
+    margin-top: 40px;
+    color: #32D096;
+    font-weight: 500;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    justify-content: flex-end;
+    align-items: center; }
+  #suivant p {
+    vertical-align: middle;
+    margin-right: 20px;
+    font-weight: 600; }
+  #resumeInfos {
+    width: 100%;
+    padding: 25px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-size: 14px; }
+  #resumeInfos > div {
+    width: 30%;
+    text-align: center; }
+  #resumeInfos > div:first-child > div:first-child {
+    padding-bottom: 4px;
+    color: #32D096;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  #resumeInfos > div:first-child > div:first-child i {
+    font-size: 16px; }
+  #resumeInfos > div:nth-child(2) > div:first-child {
+    padding-bottom: 4px;
+    display: flex;
+    justify-content: center; }
+  #resumeInfos > div:nth-child(2) > div:first-child i {
+    color: orange;
+    font-size: 18px; }
+  #resumeInfos > div:nth-child(3) > div:first-child {
+    padding-bottom: 4px;
+    color: #32D096;
+    font-weight: 800;
+    font-size: 16px;
+    display: flex;
+    justify-content: center; } }
 
 @media screen and (min-width: 1080px) {
   #uneDestination {
