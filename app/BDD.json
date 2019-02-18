@@ -14,7 +14,12 @@
         "vol_duree": "12 heures",
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
-        "activites": "Donec ullamcorper nulla non metus auctor fringilla."
+        "activite_01_nom": "Baignade",
+        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_02_nom": "Ski",
+        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_03_nom": "Éco-tourisme",
+        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
     },
     {
         "region": "Ko Adang",
@@ -31,7 +36,12 @@
         "vol_duree": "12 heures",
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
-        "activites": "Donec ullamcorper nulla non metus auctor fringilla."
+        "activite_01_nom": "Baignade",
+        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_02_nom": "Ski",
+        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_03_nom": "Éco-tourisme",
+        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
     },
 
     {
@@ -49,7 +59,12 @@
         "vol_duree": "12 heures",
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
-        "activites": "Donec ullamcorper nulla non metus auctor fringilla."
+        "activite_01_nom": "Baignade",
+        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_02_nom": "Ski",
+        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_03_nom": "Éco-tourisme",
+        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
     },
     
     {
@@ -67,7 +82,12 @@
         "vol_duree": "12 heures",
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
-        "activites": "Donec ullamcorper nulla non metus auctor fringilla."
+        "activite_01_nom": "Baignade",
+        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_02_nom": "Ski",
+        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_03_nom": "Éco-tourisme",
+        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
     },
 
     {
@@ -85,7 +105,12 @@
         "vol_duree": "12 heures",
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
-        "activites": "Donec ullamcorper nulla non metus auctor fringilla."
+        "activite_01_nom": "Baignade",
+        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_02_nom": "Ski",
+        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_03_nom": "Éco-tourisme",
+        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
     },
 
     {
@@ -103,7 +128,12 @@
         "vol_duree": "12 heures",
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
-        "activites": "Donec ullamcorper nulla non metus auctor fringilla."
+        "activite_01_nom": "Baignade",
+        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_02_nom": "Ski",
+        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_03_nom": "Éco-tourisme",
+        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
     },
 
 
@@ -122,7 +152,12 @@
         "vol_duree": "12 heures",
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
-        "activites": "Donec ullamcorper nulla non metus auctor fringilla."
+        "activite_01_nom": "Baignade",
+        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_02_nom": "Ski",
+        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_03_nom": "Éco-tourisme",
+        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
     },
 
     {
@@ -140,7 +175,12 @@
         "vol_duree": "12 heures",
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
-        "activites": "Donec ullamcorper nulla non metus auctor fringilla."
+        "activite_01_nom": "Baignade",
+        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_02_nom": "Ski",
+        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_03_nom": "Éco-tourisme",
+        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
     },
     {
         "region": "Alpes",
@@ -157,7 +197,12 @@
         "vol_duree": "12 heures",
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
-        "activites": "Donec ullamcorper nulla non metus auctor fringilla."
+        "activite_01_nom": "Baignade",
+        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_02_nom": "Ski",
+        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_03_nom": "Éco-tourisme",
+        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
     },
 
     {
@@ -175,7 +220,12 @@
         "vol_duree": "12 heures",
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
-        "activites": "Donec ullamcorper nulla non metus auctor fringilla."
+        "activite_01_nom": "Baignade",
+        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_02_nom": "Ski",
+        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_03_nom": "Éco-tourisme",
+        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
     },
 
     {
@@ -193,7 +243,12 @@
         "vol_duree": "12 heures",
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
-        "activites": "Donec ullamcorper nulla non metus auctor fringilla."
+        "activite_01_nom": "Baignade",
+        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_02_nom": "Ski",
+        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_03_nom": "Éco-tourisme",
+        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
     },
 
     {
@@ -211,7 +266,12 @@
         "vol_duree": "12 heures",
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
-        "activites": "Donec ullamcorper nulla non metus auctor fringilla."
+        "activite_01_nom": "Baignade",
+        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_02_nom": "Ski",
+        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_03_nom": "Éco-tourisme",
+        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
     },
 
     {
@@ -229,7 +289,12 @@
         "vol_duree": "12 heures",
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
-        "activites": "Donec ullamcorper nulla non metus auctor fringilla."
+        "activite_01_nom": "Baignade",
+        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_02_nom": "Ski",
+        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_03_nom": "Éco-tourisme",
+        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
     },
 
     {
@@ -247,7 +312,12 @@
         "vol_duree": "12 heures",
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
-        "activites": "Donec ullamcorper nulla non metus auctor fringilla."
+        "activite_01_nom": "Baignade",
+        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_02_nom": "Ski",
+        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_03_nom": "Éco-tourisme",
+        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
     },
 
     {
@@ -265,7 +335,12 @@
         "vol_duree": "12 heures",
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
-        "activites": "Donec ullamcorper nulla non metus auctor fringilla."
+        "activite_01_nom": "Baignade",
+        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_02_nom": "Ski",
+        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_03_nom": "Éco-tourisme",
+        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
     },
 
     {
@@ -283,7 +358,12 @@
         "vol_duree": "12 heures",
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
-        "activites": "Donec ullamcorper nulla non metus auctor fringilla."
+        "activite_01_nom": "Baignade",
+        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_02_nom": "Ski",
+        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_03_nom": "Éco-tourisme",
+        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
     },
 
     {
@@ -301,7 +381,12 @@
         "vol_duree": "12 heures",
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
-        "activites": "Donec ullamcorper nulla non metus auctor fringilla."
+        "activite_01_nom": "Baignade",
+        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_02_nom": "Ski",
+        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_03_nom": "Éco-tourisme",
+        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
     },
 
     {
@@ -319,7 +404,12 @@
         "vol_duree": "12 heures",
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
-        "activites": "Donec ullamcorper nulla non metus auctor fringilla."
+        "activite_01_nom": "Baignade",
+        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_02_nom": "Ski",
+        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_03_nom": "Éco-tourisme",
+        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
     },
 
     {
@@ -337,7 +427,12 @@
         "vol_duree": "12 heures",
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
-        "activites": "Donec ullamcorper nulla non metus auctor fringilla."
+        "activite_01_nom": "Baignade",
+        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_02_nom": "Ski",
+        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_03_nom": "Éco-tourisme",
+        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
     },
 
     {
@@ -355,7 +450,12 @@
         "vol_duree": "12 heures",
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
-        "activites": "Donec ullamcorper nulla non metus auctor fringilla."
+        "activite_01_nom": "Baignade",
+        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_02_nom": "Ski",
+        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_03_nom": "Éco-tourisme",
+        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
     },
 
     {
@@ -373,7 +473,12 @@
         "vol_duree": "12 heures",
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
-        "activites": "Donec ullamcorper nulla non metus auctor fringilla."
+        "activite_01_nom": "Baignade",
+        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_02_nom": "Ski",
+        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_03_nom": "Éco-tourisme",
+        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
     },
 
     {
@@ -391,7 +496,12 @@
         "vol_duree": "12 heures",
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
-        "activites": "Donec ullamcorper nulla non metus auctor fringilla."
+        "activite_01_nom": "Baignade",
+        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_02_nom": "Ski",
+        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_03_nom": "Éco-tourisme",
+        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
     },
 
     {
@@ -409,7 +519,12 @@
         "vol_duree": "12 heures",
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
-        "activites": "Donec ullamcorper nulla non metus auctor fringilla."
+        "activite_01_nom": "Baignade",
+        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_02_nom": "Ski",
+        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_03_nom": "Éco-tourisme",
+        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
     },
 
     {
@@ -427,7 +542,12 @@
         "vol_duree": "12 heures",
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
-        "activites": "Donec ullamcorper nulla non metus auctor fringilla."
+        "activite_01_nom": "Baignade",
+        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_02_nom": "Ski",
+        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_03_nom": "Éco-tourisme",
+        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
     },
 
     {
@@ -445,7 +565,12 @@
         "vol_duree": "12 heures",
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
-        "activites": "Donec ullamcorper nulla non metus auctor fringilla."
+        "activite_01_nom": "Baignade",
+        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_02_nom": "Ski",
+        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_03_nom": "Éco-tourisme",
+        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
     },
 
     {
@@ -463,7 +588,12 @@
         "vol_duree": "12 heures",
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
-        "activites": "Donec ullamcorper nulla non metus auctor fringilla."
+        "activite_01_nom": "Baignade",
+        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_02_nom": "Ski",
+        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_03_nom": "Éco-tourisme",
+        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
     },
 
     {
@@ -481,7 +611,12 @@
         "vol_duree": "12 heures",
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
-        "activites": "Donec ullamcorper nulla non metus auctor fringilla."
+        "activite_01_nom": "Baignade",
+        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_02_nom": "Ski",
+        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_03_nom": "Éco-tourisme",
+        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
     },
 
     {
@@ -499,7 +634,12 @@
         "vol_duree": "12 heures",
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
-        "activites": "Donec ullamcorper nulla non metus auctor fringilla."
+        "activite_01_nom": "Baignade",
+        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_02_nom": "Ski",
+        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_03_nom": "Éco-tourisme",
+        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
     },
 
     {
@@ -517,7 +657,12 @@
         "vol_duree": "12 heures",
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
-        "activites": "Donec ullamcorper nulla non metus auctor fringilla."
+        "activite_01_nom": "Baignade",
+        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_02_nom": "Ski",
+        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_03_nom": "Éco-tourisme",
+        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
     },
 
     {
@@ -535,6 +680,11 @@
         "vol_duree": "12 heures",
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
-        "activites": "Donec ullamcorper nulla non metus auctor fringilla."
+        "activite_01_nom": "Baignade",
+        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_02_nom": "Ski",
+        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_03_nom": "Éco-tourisme",
+        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
     }
 ]

@@ -176,7 +176,9 @@
                         <transition name="entreeSubInfo" mode="out-in" appear>
                             <div id="activites" class="boxShadow">
                                 <h3>ACTIVITÉS</h3>
-                                <p>{{destinations[destination].activites}}</p>
+                                <div><div v-bind:style="destinations[destination].activite_01_icon"></div><p>{{destinations[destination].activite_01_nom}}</p></div>
+                                <div><div v-bind:style="destinations[destination].activite_02_icon"></div><p>{{destinations[destination].activite_02_nom}}</p></div>
+                                <div><div v-bind:style="destinations[destination].activite_03_icon"></div><p>{{destinations[destination].activite_03_nom}}</p></div>
                             </div>
                         </transition>
                         <transition name="entreeSubInfo" mode="out-in" appear>
