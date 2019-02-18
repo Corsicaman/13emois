@@ -95,7 +95,7 @@
                 </div>
                 <transition-group v-bind:css="false" v-on:before-enter="beforeEnter" v-on:enter="enter" v-on:leave="leave" name="list" tag="div" id="contenant_liste">
                     <div class="destination boxShadowHover" v-for="(desti, index) in destinations" v-bind:key="desti.region" v-bind:data-index="index" mode="out-in">
-                        <router-link :to="{ name: 'destination', params: { region: desti.region }}">
+                        <router-link :to="{ name: 'paiement', params: { region: desti.region }}">
                             <div class="destiImage" v-bind:style="desti.backgroundImage"></div>
                             <div class="destiInfo">
                                 <div class="destiInfoGauche">
@@ -176,9 +176,18 @@
                         <transition name="entreeSubInfo" mode="out-in" appear>
                             <div id="activites" class="boxShadow">
                                 <h3>ACTIVITÉS</h3>
-                                <div><div v-bind:style="destinations[destination].activite_01_icon"></div><p>{{destinations[destination].activite_01_nom}}</p></div>
-                                <div><div v-bind:style="destinations[destination].activite_02_icon"></div><p>{{destinations[destination].activite_02_nom}}</p></div>
-                                <div><div v-bind:style="destinations[destination].activite_03_icon"></div><p>{{destinations[destination].activite_03_nom}}</p></div>
+                                <div>
+                                    <div v-bind:style="destinations[destination].activite_01_icon"></div>
+                                    <p>{{destinations[destination].activite_01_nom}}</p>
+                                </div>
+                                <div>
+                                    <div v-bind:style="destinations[destination].activite_02_icon"></div>
+                                    <p>{{destinations[destination].activite_02_nom}}</p>
+                                </div>
+                                <div>
+                                    <div v-bind:style="destinations[destination].activite_03_icon"></div>
+                                    <p>{{destinations[destination].activite_03_nom}}</p>
+                                </div>
                             </div>
                         </transition>
                         <transition name="entreeSubInfo" mode="out-in" appear>
@@ -196,17 +205,39 @@
         </div>
     </template>
     <template id="paiement-template">
-        <div id="bodyDestinations">
-            <router-link :to="{ name: 'accueil'}">
+        <div id="bodyPaiement">
+            <router-link :to="{ name: 'listeDestinations'}">
                 <div id="logo">
-                    <img src="../images/logos/13EM_Logo_White_Blue.png" alt="13e LOGO">
+                    <img src="../images/logos/13EM_Logo_Black_Blue.png" alt="13e LOGO">
                 </div>
             </router-link>
-            <main id="main_paiement">
-                <router-link :to="{ name: 'accueil'}" id="link">
-                    < RETOUR À LA LISTE</router-link> <p>VOTRE 13e CIEL</p>
-                        <h1>{{destinations[destination].region}}, {{destinations[destination].pays}}</h1>
-            </main>
+            <router-link :to="{ name: 'listeDestinations'}" id="bodyPaiementRetour">
+                < RETOUR À LA LISTE</router-link> <div id="lieu_background">{{destinations[destination].region}}, {{destinations[destination].pays}}
+        </div>
+        <main id="main_paiement">
+            <section>
+                <h1>VOS INFORMATIONS</h1>
+                <form>
+                    <p><label for="prenom">PRÉNOM</label>
+                    <input type="text" id="prenom" name="prenom"></p>
+                    <p><label for="nom">NOM</label>
+                    <input type="text" id="nom" name="nom"></p>
+                    <p><label for="tel">NUMÉRO DE TÉLÉPHONE</label>
+                    <input type="text" id="tel" name="tel"></p>
+                    <p><label for="adresse">ADRESSE COMPLÈTE</label>
+                    <input type="text" id="adresse" name="adresse"></p>                                  
+                </form>
+            </section>
+            <section>
+                <h1>CHOIX DE L'HÉBERGEMENT</h1>
+            </section>
+            <section>
+                <h1>SERVICES ET OPTIONS</h1>
+            </section>
+            <section>
+                <h1>FINALISATION</h1>
+            </section>
+        </main>
         </div>
     </template> <!-- VUE.JS - Version de developpement -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

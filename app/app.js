@@ -176,6 +176,10 @@ const paiement = {
     }),
     mounted() {
         this.getLaDestination();
+        this.overflowCheck();
+    },
+    beforeDestroy() {
+        this.overflowCheck();
     },
     methods: {
         getLaDestination() {
@@ -193,6 +197,14 @@ const paiement = {
             }).catch(error => {
                 console.log(error);
             })
+        },
+        overflowCheck() {
+            if ($('body').css("overflow-x") == "hidden") {
+                $('body').css("overflow-x", "initial");
+
+            } else {
+                $('body').css("overflow-x", "hidden");
+            }
         }
     }
 };
@@ -210,11 +222,11 @@ const paiement = {
 var router = new VueRouter({
     mode: 'history',
     routes: [
-    // {
-    //         name: 'accueil',
-    //         path: '/13e-mois_Web/index.htm',
-    //         component: accueil
-    //     },
+        // {
+        //         name: 'accueil',
+        //         path: '/13e-mois_Web/index.htm',
+        //         component: accueil
+        //     },
 
         {
             name: 'listeDestinations',
@@ -244,23 +256,3 @@ var router = new VueRouter({
 // =======================
 var vue = new Vue({ router });
 var app = vue.$mount('#app');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
