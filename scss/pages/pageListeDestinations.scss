@@ -28,10 +28,11 @@
     padding-bottom: 30px;
 
 }
+
 #contenant_liste {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;   
+    justify-content: space-between;
     margin-top: 20px;
 }
 
@@ -43,41 +44,83 @@
 #header_liste {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 50px 0 20px 0;
     border-bottom: 1px solid #dedede;
+    text-align: left;
 }
+
 #header_tri h2 {
     font-weight: 600;
-    padding-right: 10px;
-    font-size: 14px;
+    padding-right: 5px;
+    font-size: 13px;
 }
+
 #header_tri {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-top: 10px;
+
     i {
-        font-size: 16px;
-        padding-right: 4px;
+        font-size: 13px;
+        padding-right: 3px;
     }
+
     p {
         cursor: pointer;
         color: #444;
-        padding: 3px 10px;
+        padding: 3px 5px;
         transition: color 0.2s;
         vertical-align: middle;
         display: flex;
         align-items: center;
-        &:hover {
-            color: $color_bleu2;
-        }
     }
+
     span {
         vertical-align: middle;
-        font-size: 15px;
+        font-size: 13px;
     }
 }
 
+@media screen and (min-width: $breakpoint_mobile) {
+    #header_liste {
+        flex-direction: row;
+    }
 
+    #header_tri {
+        padding-top: 0px;
 
+        i {
+            font-size: 16px;
+            padding-right: 4px;
+        }
+
+        p {
+            cursor: pointer;
+            color: #444;
+            padding: 3px 10px;
+            transition: color 0.2s;
+            vertical-align: middle;
+            display: flex;
+            align-items: center;
+
+            &:hover {
+                color: $color_bleu2;
+            }
+        }
+
+        span {
+            vertical-align: middle;
+            font-size: 15px;
+        }
+    }
+
+    #header_tri h2 {
+        font-weight: 600;
+        padding-right: 10px;
+        font-size: 14px;
+    }
+}

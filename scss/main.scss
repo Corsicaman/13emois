@@ -1,12 +1,19 @@
+// STYLES ET PARAMÈTRES GLOBAUX 
 @import "base/fonts";
 @import "base/variables";
 @import "base/effects";
 @import "base/icons"; 
 @import "base/global";
 @import "base/animations";
+
+
+// COMPOSANTS RÉUTILISABLES
 @import "components/buttons";
 @import "components/destination";
-@import "pages/pagePaiement"; 
-@import "pages/pageDestination"; 
+
+
+// STYLES SPÉCIFIQUES À DES PAGES
 @import "pages/accueil"; 
-@import "pages/destinations";
+@import "pages/pageListeDestinations";
+@import "pages/pageDestination"; 
+@import "pages/pagePaiement"; 
