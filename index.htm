@@ -80,7 +80,7 @@
         <div id="bodyDestinations">
             <div id="logo">
                 <router-link :to="{ name: 'accueil'}">
-                    <img src="images/logos/13EM_Logo_White_Blue.png" alt="13e LOGO">
+                    <img src="../images/logos/13EM_Logo_White_Blue.png" alt="13e LOGO">
                 </router-link>
             </div>
             <main id="main_lesDestinations">
@@ -95,8 +95,8 @@
                 </div>
                 <transition-group v-bind:css="false" v-on:before-enter="beforeEnter" v-on:enter="enter" v-on:leave="leave" name="list" tag="div" id="contenant_liste">
                     <div class="destination boxShadowHover" v-for="(desti, index) in destinations" v-bind:key="desti.region" v-bind:data-index="index" mode="out-in">
-                        <router-link :to="{ name: 'paiement', params: { region: desti.region }}">
-                            <div class="destiImage" v-bind:style="desti.backgroundImage"></div>
+                        <router-link :to="{ name: 'destination', params: { region: desti.region }}">
+                            <div class="destiImage" v-bind:style="desti.backgroundImageMinia"></div>
                             <div class="destiInfo">
                                 <div class="destiInfoGauche">
                                     <div>{{desti.region}}, {{desti.pays}}</div>
@@ -206,7 +206,7 @@
     </template>
     <template id="paiement-template">
         <div id="bodyPaiement">
-            <router-link :to="{ name: 'listeDestinations'}">
+            <router-link :to="{ name: 'accueil'}">
                 <div id="logo">
                     <img src="../images/logos/13EM_Logo_Black_Blue.png" alt="13e LOGO">
                 </div>
