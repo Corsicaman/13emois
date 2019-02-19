@@ -215,27 +215,106 @@
                 < RETOUR À LA LISTE</router-link> <div id="lieu_background">{{destinations[destination].region}}, {{destinations[destination].pays}}
         </div>
         <main id="main_paiement">
-            <section>
+            <section id="section_informations">
                 <h1>VOS INFORMATIONS</h1>
                 <form>
                     <p><label for="prenom">PRÉNOM</label>
-                    <input type="text" id="prenom" name="prenom"></p>
+                        <input type="text" id="prenom" name="prenom" placeholder="Votre prénom"></p>
                     <p><label for="nom">NOM</label>
-                    <input type="text" id="nom" name="nom"></p>
+                        <input type="text" id="nom" name="nom" placeholder="Votre nom"></p>
                     <p><label for="tel">NUMÉRO DE TÉLÉPHONE</label>
-                    <input type="text" id="tel" name="tel"></p>
+                        <input type="text" id="tel" name="tel" placeholder="Votre numéro"></p>
                     <p><label for="adresse">ADRESSE COMPLÈTE</label>
-                    <input type="text" id="adresse" name="adresse"></p>                                  
+                        <input type="text" id="adresse" name="adresse" placeholder="Votre adresse"></p>
                 </form>
             </section>
-            <section>
+            <section id="section_hebergement">
                 <h1>CHOIX DE L'HÉBERGEMENT</h1>
+                <div>
+                    <div id="suite">
+                        <div class="hebergement_img" id="imgSuite"></div>
+                        <h3>SUITE</h3>
+                        <p>PAR DÉFAUT</p>
+                    </div>
+                    <div id="lodge">
+                        <div class="hebergement_img"></div>
+                        <h3>LODGE</h3>
+                        <p>+ 5000 $</p>
+                    </div>
+                    <div id="villa">
+                        <div class="hebergement_img"></div>
+                        <h3>VILLA</h3>
+                        <p>+ 10000 $</p>
+                    </div>
+                </div>
             </section>
-            <section>
-                <h1>SERVICES ET OPTIONS</h1>
+            <section id="section_options">
+                <h1>SERVICES & OPTIONS</h1>
+                <div>
+                    <div class="options_icon" id="options_icon_01"></div>
+                    <div class="options_texte">
+                        <h3>ASSURANCE BAGAGES</h3>
+                        <p>2000 $</p>
+                    </div>
+                    <div class="leToggle center">
+                        <input type="checkbox" id="option1" style="display : none">
+                        <label for="option1" class="toggle"><span></span></label>
+                    </div>
+                </div>
+                <div>
+                    <div class="options_icon" id="options_icon_02"></div>
+                    <div class="options_texte">
+                        <h3>SERVICES VIP</h3>
+                        <p>4000 $</p>
+                    </div>
+                    <div class="leToggle center">
+                        <input type="checkbox" id="option2" style="display : none">
+                        <label for="option2" class="toggle"><span></span></label>
+                    </div>
+                </div>
+                <div>
+                    <div class="options_icon" id="options_icon_03"></div>
+                    <div class="options_texte">
+                        <h3>PASSE EXPRESS</h3>
+                        <p>1500 $</p>
+                    </div>
+                    <div class="leToggle center">
+                        <input type="checkbox" id="option3" style="display : none">
+                        <label for="option3" class="toggle"><span></span></label>
+                    </div>
+                </div>
+                <div>
+                    <div class="options_icon" id="options_icon_04"></div>
+                    <div class="options_texte">
+                        <h3>RESTAURANT 24/7</h3>
+                        <p>3000 $</p>
+                    </div>
+                    <div class="leToggle center">
+                        <input type="checkbox" id="option4" style="display : none">
+                        <label for="option4" class="toggle"><span></span></label>
+                    </div>
+                </div>
             </section>
-            <section>
+            <section id="section_finalisation">
                 <h1>FINALISATION</h1>
+                <form>
+                    <p><label for="carte">NUMÉRO DE CARTE</label>
+                        <input type="text" id="carte" name="carte" placeholder="1234-4567-8901-1234"></p>
+                    <p><label for="titulaire">NOM DU TITULAIRE</label>
+                        <input type="text" id="titulaire" name="titulaire" placeholder="Votre nom"></p>
+                </form>
+                <div>
+                    <div id="total">
+                        <div>
+                            <p>PRIX TOTAL</p>
+                            <p>(SOUS-TOTAL :&nbsp; </p>
+                            <p id="sousTotal">{{destinations[destination].prix}}</p>
+                            <p>&nbsp; $)</p>
+                        </div>
+                        <h4 id="montantTotal">{{destinations[destination].prix}} $</h4>
+                    </div>
+                    <div class="bouton boutonTurquoiseOutline">CONFIRMER <i class="material-icons">send</i></div>
+                </div>
             </section>
         </main>
         </div>
@@ -247,6 +326,7 @@
     <script src="app/app.js"></script>
     <script src="js/animations.js"></script>
     <script src="js/accueil.js"></script>
+    <script src="js/total.js"></script>
 </body>
 
 </html>

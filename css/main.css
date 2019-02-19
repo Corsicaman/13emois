@@ -396,6 +396,64 @@ a {
   .destination {
     width: 27vw; } }
 
+#section_options .toggle {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0, 0, 0); }
+  #section_options .toggle:before {
+    content: "";
+    position: relative;
+    top: 3px;
+    left: 3px;
+    width: 34px;
+    height: 14px;
+    display: block;
+    background: #9A9999;
+    border-radius: 8px;
+    transition: background .2s ease; }
+
+#section_options span {
+  position: relative;
+  top: 4px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(154, 153, 153, 0.5);
+  transition: all .2s ease; }
+  #section_options span:before {
+    content: "";
+    position: relative;
+    display: block;
+    top: -18px;
+    margin: -18px;
+    width: 56px;
+    height: 56px;
+    background: rgba(52, 162, 255, 0.5);
+    border-radius: 50%;
+    transform: scale(0);
+    opacity: 1;
+    pointer-events: none; }
+
+#section_options #option1:checked + .toggle:before, #section_options #option2:checked + .toggle:before, #section_options #option3:checked + .toggle:before, #section_options #option4:checked + .toggle:before {
+  background: #CEE8FA; }
+
+#section_options #option1:checked + .toggle span, #section_options #option2:checked + .toggle span, #section_options #option3:checked + .toggle span, #section_options #option4:checked + .toggle span {
+  background: #34A2FF;
+  transform: translateX(20px);
+  transition: all 0.2s cubic-bezier(0.8, 0.4, 0.3, 1.25), background 0.15s ease;
+  box-shadow: 0 3px 8px rgba(52, 162, 255, 0.2); }
+  #section_options #option1:checked + .toggle span:before, #section_options #option2:checked + .toggle span:before, #section_options #option3:checked + .toggle span:before, #section_options #option4:checked + .toggle span:before {
+    transform: scale(1);
+    opacity: 0;
+    transition: all .4s ease; }
+
 #accueil {
   position: absolute;
   width: 100vw;
@@ -909,7 +967,7 @@ a {
   position: absolute;
   z-index: 1;
   top: 60px;
-  left: 25px;
+  left: 7.5%;
   color: #32D096;
   text-shadow: none;
   font-weight: 600;
@@ -921,7 +979,7 @@ a {
 
 #main_paiement {
   width: 85%;
-  padding: 100px 0 40px 0;
+  padding: 120px 0 40px 0;
   margin: 0 auto;
   display: grid;
   grid-gap: 50px;
@@ -945,20 +1003,186 @@ a {
 
 #main_paiement h1 {
   border-bottom: 1px solid #eee;
-  font-size: 19px;
+  font-size: 21px;
   font-weight: 800;
   padding-bottom: 10px;
+  margin-bottom: 10px;
   color: #333; }
 
 #main_paiement input[type=text] {
+  outline: none;
   width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  padding: 6px 15px 10px 15px;
   box-sizing: border-box;
   border: none;
-  border-bottom: 2px solid #ccc; }
+  border-bottom: 2px solid #D9D9D9;
+  background-color: #FAFAFA;
+  transition: border-bottom 0.2s; }
+  #main_paiement input[type=text]:focus {
+    border-bottom: 2px solid #34A2FF; }
+  #main_paiement input[type=text]::placeholder {
+    font-style: italic;
+    color: #C4C4C4;
+    font-size: 12px;
+    font-family: Montserrat; }
 
 #main_paiement label {
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 600;
-  background-color: #eee; }
+  color: #34A2FF;
+  padding-left: 15px; }
+
+#main_paiement form p {
+  background-color: #FAFAFA;
+  padding-top: 10px;
+  margin-bottom: 15px; }
+
+#section_hebergement > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px; }
+
+#section_hebergement > div > div {
+  cursor: pointer; }
+
+.hebergement_img {
+  height: 230px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  transition: box-shadow 0.2s; }
+
+#suite .hebergement_img {
+  background-image: url("../images/hebergements/suite.jpg");
+  box-shadow: inset 0 -5px 0 #32D096; }
+
+#lodge .hebergement_img {
+  background-image: url("../images/hebergements/lodge.jpg");
+  box-shadow: inset 0 0px 0 #32D096; }
+
+#villa .hebergement_img {
+  background-image: url("../images/hebergements/villa.jpg");
+  box-shadow: inset 0 0px 0 #32D096; }
+
+#suite:hover > .hebergement_img,
+#lodge:hover > .hebergement_img,
+#villa:hover > .hebergement_img {
+  box-shadow: inset 0 -5px 0 #32D096 !important; }
+
+#section_hebergement h3 {
+  padding-top: 12px;
+  padding-bottom: 3px;
+  font-weight: 700;
+  font-size: 17px; }
+
+#section_hebergement p {
+  padding-bottom: 15px;
+  font-weight: 600;
+  font-size: 13px;
+  color: #34A2FF; }
+
+#section_options {
+  display: grid; }
+  #section_options p {
+    padding: 0; }
+
+#section_options > div {
+  height: 60px;
+  margin: 4px 0;
+  display: flex;
+  align-items: center; }
+
+.options_icon {
+  width: 4vw;
+  height: 4vw;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+#options_icon_01 {
+  background-image: url("../images/icons/options/option_01.png"); }
+
+#options_icon_02 {
+  background-image: url("../images/icons/options/option_02.png"); }
+
+#options_icon_03 {
+  background-image: url("../images/icons/options/option_03.png"); }
+
+#options_icon_04 {
+  background-image: url("../images/icons/options/option_04.png"); }
+
+.options_texte {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 20px;
+  width: 60%; }
+
+.options_texte h3 {
+  padding-bottom: 4px;
+  padding-top: 0px;
+  font-size: 15px;
+  color: #444;
+  font-weight: 600; }
+
+.options_texte p {
+  font-size: 13px;
+  color: #34A2FF;
+  font-weight: 600;
+  background-color: white; }
+
+.leToggle {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end; }
+
+#section_finalisation input[type=text]:focus {
+  border-bottom: 2px solid #32D096; }
+
+#section_finalisation label {
+  color: #32D096; }
+
+#section_finalisation #total {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  width: 100%; }
+  #section_finalisation #total p {
+    color: #999;
+    font-size: 11px; }
+  #section_finalisation #total h4 {
+    border-radius: 2px;
+    border: 1px solid #32D096;
+    color: #32D096;
+    background-color: #EEFFF9;
+    padding: 13px 20px;
+    width: 70%;
+    font-size: 18px;
+    text-align: center; }
+  #section_finalisation #total > div:first-child {
+    display: flex; }
+    #section_finalisation #total > div:first-child p:first-child {
+      margin-right: 10px;
+      color: #32D096;
+      font-size: 13px;
+      margin-bottom: 5px; }
+
+#section_finalisation > div:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; }
+
+#section_finalisation .bouton {
+  margin: 0;
+  padding: 14px 18px !important;
+  font-size: 15px;
+  font-weight: 600; }
+
+#section_finalisation .bouton i {
+  font-size: 15px;
+  display: inline-block;
+  padding-left: 15px; }

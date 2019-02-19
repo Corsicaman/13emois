@@ -10,6 +10,7 @@
 // COMPOSANTS RÉUTILISABLES
 @import "components/buttons";
 @import "components/destination";
+@import "components/toggle";
 
 
 // STYLES SPÉCIFIQUES À DES PAGES
@@ -17,3 +18,5 @@
 @import "pages/pageListeDestinations";
 @import "pages/pageDestination"; 
 @import "pages/pagePaiement"; 
+
+

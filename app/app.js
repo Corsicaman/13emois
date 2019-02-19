@@ -105,7 +105,7 @@ const lesDestinations = {
             el.style.transform = "translateY(-30px)"
         },
         enter: function(el, done) {
-            var delay = el.dataset.index * 100 + 500
+            var delay = el.dataset.index * 100 + 300
             setTimeout(function() {
                 el.style.opacity = 1
                 el.style.transform = "translateY(0px)"
