@@ -8,5 +8,5 @@ import {
 $('body').on('click', '#btnAppelPaiement', function() {
     setTimeout(function() {
         let lancerAnimPaiement = new  AnimPaiement();
-    }, 1000);
+    }, 500);
 });
