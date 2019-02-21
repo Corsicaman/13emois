@@ -75,7 +75,7 @@
     justify-content: space-between;
     align-items: space-around;
     // height: 30vh;
-    padding: 5vh 9vw;
+    padding: 5vh 9vw 0vh 9vw;
     // padding-top: 0vw;
     font-weight: 700;
     margin-top: 0;
@@ -83,8 +83,8 @@
 
 #infos>div {
     width: 100%;
-    font-size: 18px;
-    line-height: 19px;
+    font-size: 15px;
+    line-height: 18px;
     text-align: center;
     color: white;
 }
@@ -130,7 +130,7 @@
 #bodyAccueil {
     position: relative;
     min-height: 100vh;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
 
     &::before {
         content: "";
@@ -160,10 +160,19 @@
         background-color: white;
         border-radius: 3px;
     }
-#btnListe {
-    width: 290px;
-    font-size: 15px;
-}
+
+    #btnListe {
+        width: 290px;
+        font-size: 15px;
+    }
+
+    #infos>div {
+        width: 100%;
+        font-size: 17px;
+        line-height: 19px;
+        text-align: center;
+        color: white;
+    }
 }
 
 @media only screen and (min-width: $breakpoint_mobile) {
@@ -172,7 +181,11 @@
     }
 
     #infos>div {
-        width: 25%;
+        width: 28%;
+    }
+
+    #infos>div>div:nth-child(2) {
+        height: 70px;
     }
 
     #infos>div>div:nth-child(3)>div {
@@ -182,6 +195,11 @@
         border-radius: 3px;
     }
 
+    #infos>div>div:nth-child(3) {
+    margin: 25px 0 8vh 0;
+ 
+    }
+
     #infos>div h1 {
         font-family: Ubuntu;
         color: white;
@@ -189,7 +207,7 @@
         padding-bottom: 30px;
         position: relative;
         left: -50%;
-        top: 35%;
+        top: 8%;
         z-index: 1;
     }
 }
