@@ -194,7 +194,7 @@
                             <div id="suivant">
                                 <p>SOUS TOTAL: 8500 $</p>
                                 <router-link :to="{ name: 'paiement'}">
-                                    <div class="bouton boutonTurquoiseOutline">SUIVANT <i class="material-icons">send</i></div>
+                                    <div class="bouton boutonTurquoiseOutline" id="btnAppelPaiement">SUIVANT <i class="material-icons">send</i></div>
                                 </router-link>
                             </div>
                         </transition>
@@ -324,8 +324,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
     <!-- MAIN VUE -->
     <script src="app/app.js"></script>
-    <script src="js/animations.js"></script>
-    <script src="js/accueil.js"></script>
+    <script type='module' src="js/application.js"></script>
     <script src="js/total.js"></script>
 </body>
 

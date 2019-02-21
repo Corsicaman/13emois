@@ -12,7 +12,6 @@ $('body').on('click', '.leToggle', function() {
 $('body').on('click', '#lodge', function() {
     hebergement = "lodge";
     updateTotal();
-	console.log("oui");
 	$("#lodge > .hebergement_img").css("box-shadow","inset 0 -5px 0 #32D096");
 	$("#villa > .hebergement_img").css("box-shadow","inset 0 0 0 #32D096");
 	$("#suite > .hebergement_img").css("box-shadow","inset 0 0 0 #32D096");
@@ -20,7 +19,6 @@ $('body').on('click', '#lodge', function() {
 $('body').on('click', '#villa', function() {
     hebergement = "villa";
     updateTotal();
-	console.log("oui");
 	$("#villa > .hebergement_img").css("box-shadow","inset 0 -5px 0 #32D096");
 	$("#lodge > .hebergement_img").css("box-shadow","inset 0 0 0 #32D096");
 	$("#suite > .hebergement_img").css("box-shadow","inset 0 0 0 #32D096");
@@ -28,7 +26,6 @@ $('body').on('click', '#villa', function() {
 $('body').on('click', '#suite', function() {
     hebergement = "suite";
     updateTotal();
-	console.log("oui");
 	$("#imgSuite").css("box-shadow","inset 0 -5px 0 #32D096");
 	$("#villa > .hebergement_img").css("box-shadow","inset 0 0 0 #32D096");
 	$("#lodge > .hebergement_img").css("box-shadow","inset 0 0 0 #32D096");

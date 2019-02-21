@@ -990,11 +990,14 @@ a {
   z-index: 0;
   top: 0;
   left: -4vw;
-  font-size: 14vw;
+  font-size: 15vw;
   font-weight: 800;
   color: #eee;
   text-transform: uppercase;
-  width: 300vw; }
+  width: 300vw;
+  transition: opacity 0.5s, transform 0.5s;
+  opacity: 0;
+  transform: translateY(-5vw); }
 
 #bodyPaiementRetour {
   position: absolute;
@@ -1004,25 +1007,34 @@ a {
   color: #32D096;
   text-shadow: none;
   font-weight: 600;
-  font-size: 14px; }
+  font-size: 14px;
+  transition: opacity 0.5s, transform 0.5s;
+  opacity: 0;
+  transform: translateX(30px); }
 
 #bodyPaiement #logo {
   position: relative;
   z-index: 1;
-  width: 150px; }
+  width: 150px;
+  transition: opacity 0.5s, transform 0.5s;
+  opacity: 0;
+  transform: translateY(30px); }
 
 #main_paiement {
   position: relative;
   z-index: 10;
   width: 85%;
-  padding: 15vw 0 40px 0;
+  padding: 12vw 0 40px 0;
   margin: 0 auto;
   display: grid;
   grid-gap: 50px;
   grid-template-areas: "infos" "hebergement" "services" "finalisation"; }
 
 #main_paiement section {
-  width: 100%; }
+  width: 100%;
+  transition: opacity 0.5s, transform 0.5s;
+  opacity: 0;
+  transform: translateY(-60px); }
 
 #main_paiement section:nth-child(1) {
   grid-area: infos; }
