@@ -1,9 +1,10 @@
 #bodyPaiement {
     max-width: 100vw;
-    // height: 100vh;
+    height: 100vh;
     position: relative;
     vertical-align: middle;
     background-color: white;
+
 }
 
 
@@ -22,7 +23,7 @@
 #bodyPaiementRetour {
     position: absolute;
     z-index: 1;
-    top: 60px;
+    top: 150px;
     left: 7.5%;
     color: $color_turquoise;
     text-shadow: none;
@@ -33,13 +34,16 @@
 #bodyPaiement #logo {
     position: relative;
     z-index: 1;
+    width: 150px;
 }
 
 
 // =========
 #main_paiement {
+    position: relative;
+    z-index: 10;
     width: 85%;
-    padding: 120px 0 40px 0;
+    padding: 15vw 0 40px 0;
     margin: 0 auto;
     display: grid;
     grid-gap: 50px;
@@ -53,10 +57,12 @@
 
 
 #main_paiement {
+
+
     section {
         // background-color: yellow;
         width: 100%;
-        min-height: 20vw;
+        // min-height: 20vw;
         // padding: 15px;
         // box-sizing: border-box;
     }
@@ -134,7 +140,7 @@
 
 #section_hebergement>div {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 20px;
 }
 
@@ -220,6 +226,10 @@
 .options_icon {
     width: 4vw;
     height: 4vw;
+    min-width: 30px;
+    min-height: 30px;
+    max-width: 60px;
+    max-height: 60px;
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: center;
@@ -331,13 +341,15 @@
 
     >div:last-child {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: flex-start;
 
     }
 
     .bouton {
         margin: 0;
+        margin-top: 20px;
         padding: 14px 18px !important;
         font-size: 15px;
         font-weight: 600;
@@ -357,16 +369,61 @@
 // ===============================================================
 // ===============================================================
 
+@media screen and (min-width: $breakpoint_mini) {
+
+// #bodyPaiementRetour {
+//     top: 20vw;
+// }
+}
+
+@media screen and (min-width: $breakpoint_mobile) {
 
 
+    #section_hebergement>div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    #section_finalisation {
+        #total {
+            >div:first-child {
+                display: flex;
+                // flex-direction: column;
+
+                p:first-child {
+                    margin-right: 10px;
+                    color: $color_turquoise;
+                    font-size: 13px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+        >div:last-child {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+
+        }
+
+        .bouton {
+            margin: 0px;
+        }
+    }
+}
 
 
 @media screen and (min-width: $breakpoint_bureau) {
 
+    #bodyPaiementRetour {
+        top: 60px;
+    }
 
     #main_paiement {
         width: 85%;
-        padding: 120px 0 40px 0;
+        // padding: 120px 0 40px 0;
         margin: 0 auto;
         display: grid;
         grid-gap: 50px;
