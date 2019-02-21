@@ -1,7 +1,6 @@
 export class AnimPaiement {
 
     constructor() {
-        console.log("Class paiement appelée");
         this.animerHeader();
         this.animerSections()
     }
