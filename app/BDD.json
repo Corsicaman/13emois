@@ -2,8 +2,8 @@
     {
         "region": "Paris",
         "pays": "France",
-        "backgroundImage": "background-image: url('/13e-mois_Web/images/destinations/fullsize/paris.jpg')",
-        "backgroundImageMinia": "background-image: url('/13e-mois_Web/images/destinations/minia/paris.jpg')",
+        "backgroundImage": "background-image: url('/images/destinations/fullsize/paris.jpg')",
+        "backgroundImageMinia": "background-image: url('/images/destinations/minia/paris.jpg')",
         "prix": "11500",
         "rang": "1",
         "etoiles": "5",
@@ -16,17 +16,17 @@
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
         "activite_01_nom": "Baignade",
-        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_01_icon": "background-image: url('/images/icons/activites/baignade.png')",
         "activite_02_nom": "Ski",
-        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_02_icon": "background-image: url('/images/icons/activites/ski.png')",
         "activite_03_nom": "Éco-tourisme",
-        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
+        "activite_03_icon": "background-image: url('/images/icons/activites/ecotourisme.png')"
     },
     {
         "region": "Ko Adang",
         "pays": "Indonésie",
-        "backgroundImage": "background-image: url('/13e-mois_Web/images/destinations/fullsize/koadang.jpg')",
-        "backgroundImageMinia": "background-image: url('/13e-mois_Web/images/destinations/minia/koadang.jpg')",
+        "backgroundImage": "background-image: url('/images/destinations/fullsize/koadang.jpg')",
+        "backgroundImageMinia": "background-image: url('/images/destinations/minia/koadang.jpg')",
         "prix": "18500",
         "rang": "2",
         "etoiles": "5",
@@ -39,18 +39,18 @@
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
         "activite_01_nom": "Baignade",
-        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_01_icon": "background-image: url('/images/icons/activites/baignade.png')",
         "activite_02_nom": "Ski",
-        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_02_icon": "background-image: url('/images/icons/activites/ski.png')",
         "activite_03_nom": "Éco-tourisme",
-        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
+        "activite_03_icon": "background-image: url('/images/icons/activites/ecotourisme.png')"
     },
 
     {
         "region": "Santorini",
         "pays": "Grèce",
-        "backgroundImage": "background-image: url('/13e-mois_Web/images/destinations/fullsize/santorini.jpg')",
-        "backgroundImageMinia": "background-image: url('/13e-mois_Web/images/destinations/minia/santorini.jpg')",
+        "backgroundImage": "background-image: url('/images/destinations/fullsize/santorini.jpg')",
+        "backgroundImageMinia": "background-image: url('/images/destinations/minia/santorini.jpg')",
         "prix": "16600",
         "rang": "3",
         "etoiles": "5",
@@ -63,18 +63,18 @@
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
         "activite_01_nom": "Baignade",
-        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_01_icon": "background-image: url('/images/icons/activites/baignade.png')",
         "activite_02_nom": "Ski",
-        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_02_icon": "background-image: url('/images/icons/activites/ski.png')",
         "activite_03_nom": "Éco-tourisme",
-        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
+        "activite_03_icon": "background-image: url('/images/icons/activites/ecotourisme.png')"
     },
     
     {
         "region": "Sardaigne",
         "pays": "Italie",
-        "backgroundImage": "background-image: url('/13e-mois_Web/images/destinations/fullsize/sardaigne.jpg')",
-        "backgroundImageMinia": "background-image: url('/13e-mois_Web/images/destinations/minia/sardaigne.jpg')",
+        "backgroundImage": "background-image: url('/images/destinations/fullsize/sardaigne.jpg')",
+        "backgroundImageMinia": "background-image: url('/images/destinations/minia/sardaigne.jpg')",
         "prix": "14500",
         "rang": "4",
         "etoiles": "5",
@@ -87,18 +87,18 @@
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
         "activite_01_nom": "Baignade",
-        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_01_icon": "background-image: url('/images/icons/activites/baignade.png')",
         "activite_02_nom": "Ski",
-        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_02_icon": "background-image: url('/images/icons/activites/ski.png')",
         "activite_03_nom": "Éco-tourisme",
-        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
+        "activite_03_icon": "background-image: url('/images/icons/activites/ecotourisme.png')"
     },
 
     {
         "region": "Navagio",
         "pays": "Grèce",
-        "backgroundImage": "background-image: url('/13e-mois_Web/images/destinations/fullsize/navagio.jpg')",
-        "backgroundImageMinia": "background-image: url('/13e-mois_Web/images/destinations/minia/navagio.jpg')",
+        "backgroundImage": "background-image: url('/images/destinations/fullsize/navagio.jpg')",
+        "backgroundImageMinia": "background-image: url('/images/destinations/minia/navagio.jpg')",
         "prix": "12500",
         "rang": "5",
         "etoiles": "5",
@@ -111,18 +111,18 @@
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
         "activite_01_nom": "Baignade",
-        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_01_icon": "background-image: url('/images/icons/activites/baignade.png')",
         "activite_02_nom": "Ski",
-        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_02_icon": "background-image: url('/images/icons/activites/ski.png')",
         "activite_03_nom": "Éco-tourisme",
-        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
+        "activite_03_icon": "background-image: url('/images/icons/activites/ecotourisme.png')"
     },
 
     {
         "region": "Golfito",
         "pays": "Costa Rica",
-        "backgroundImage": "background-image: url('/13e-mois_Web/images/destinations/fullsize/golfito.jpg')",
-        "backgroundImageMinia": "background-image: url('/13e-mois_Web/images/destinations/minia/golfito.jpg')",
+        "backgroundImage": "background-image: url('/images/destinations/fullsize/golfito.jpg')",
+        "backgroundImageMinia": "background-image: url('/images/destinations/minia/golfito.jpg')",
         "prix": "15500",
         "rang": "6",
         "etoiles": "5",
@@ -135,19 +135,19 @@
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
         "activite_01_nom": "Baignade",
-        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_01_icon": "background-image: url('/images/icons/activites/baignade.png')",
         "activite_02_nom": "Ski",
-        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_02_icon": "background-image: url('/images/icons/activites/ski.png')",
         "activite_03_nom": "Éco-tourisme",
-        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
+        "activite_03_icon": "background-image: url('/images/icons/activites/ecotourisme.png')"
     },
 
 
     {
         "region": "Bali",
         "pays": "Indonésie",
-        "backgroundImage": "background-image: url('/13e-mois_Web/images/destinations/fullsize/bali.jpg')",
-        "backgroundImageMinia": "background-image: url('/13e-mois_Web/images/destinations/minia/bali.jpg')",
+        "backgroundImage": "background-image: url('/images/destinations/fullsize/bali.jpg')",
+        "backgroundImageMinia": "background-image: url('/images/destinations/minia/bali.jpg')",
         "prix": "18200",
         "rang": "7",
         "etoiles": "5",
@@ -160,18 +160,18 @@
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
         "activite_01_nom": "Baignade",
-        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_01_icon": "background-image: url('/images/icons/activites/baignade.png')",
         "activite_02_nom": "Ski",
-        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_02_icon": "background-image: url('/images/icons/activites/ski.png')",
         "activite_03_nom": "Éco-tourisme",
-        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
+        "activite_03_icon": "background-image: url('/images/icons/activites/ecotourisme.png')"
     },
 
     {
         "region": "Venise",
         "pays": "Italie",
-        "backgroundImage": "background-image: url('/13e-mois_Web/images/destinations/fullsize/venise.jpg')",
-        "backgroundImageMinia": "background-image: url('/13e-mois_Web/images/destinations/minia/venise.jpg')",
+        "backgroundImage": "background-image: url('/images/destinations/fullsize/venise.jpg')",
+        "backgroundImageMinia": "background-image: url('/images/destinations/minia/venise.jpg')",
         "prix": "7500",
         "rang": "8",
         "etoiles": "5",
@@ -184,17 +184,17 @@
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
         "activite_01_nom": "Baignade",
-        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_01_icon": "background-image: url('/images/icons/activites/baignade.png')",
         "activite_02_nom": "Ski",
-        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_02_icon": "background-image: url('/images/icons/activites/ski.png')",
         "activite_03_nom": "Éco-tourisme",
-        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
+        "activite_03_icon": "background-image: url('/images/icons/activites/ecotourisme.png')"
     },
     {
         "region": "Alpes",
         "pays": "France",
-        "backgroundImage": "background-image: url('/13e-mois_Web/images/destinations/fullsize/alpes.jpg')",
-        "backgroundImageMinia": "background-image: url('/13e-mois_Web/images/destinations/minia/alpes.jpg')",
+        "backgroundImage": "background-image: url('/images/destinations/fullsize/alpes.jpg')",
+        "backgroundImageMinia": "background-image: url('/images/destinations/minia/alpes.jpg')",
         "prix": "6800",
         "rang": "9",
         "etoiles": "5",
@@ -207,18 +207,18 @@
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
         "activite_01_nom": "Baignade",
-        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_01_icon": "background-image: url('/images/icons/activites/baignade.png')",
         "activite_02_nom": "Ski",
-        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_02_icon": "background-image: url('/images/icons/activites/ski.png')",
         "activite_03_nom": "Éco-tourisme",
-        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
+        "activite_03_icon": "background-image: url('/images/icons/activites/ecotourisme.png')"
     },
 
     {
         "region": "Jacó",
         "pays": "Costa Rica",
-        "backgroundImage": "background-image: url('/13e-mois_Web/images/destinations/fullsize/jaco.jpg')",
-        "backgroundImageMinia": "background-image: url('/13e-mois_Web/images/destinations/minia/jaco.jpg')",
+        "backgroundImage": "background-image: url('/images/destinations/fullsize/jaco.jpg')",
+        "backgroundImageMinia": "background-image: url('/images/destinations/minia/jaco.jpg')",
         "prix": "12500",
         "rang": "10",
         "etoiles": "5",
@@ -231,18 +231,18 @@
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
         "activite_01_nom": "Baignade",
-        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_01_icon": "background-image: url('/images/icons/activites/baignade.png')",
         "activite_02_nom": "Ski",
-        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_02_icon": "background-image: url('/images/icons/activites/ski.png')",
         "activite_03_nom": "Éco-tourisme",
-        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
+        "activite_03_icon": "background-image: url('/images/icons/activites/ecotourisme.png')"
     },
 
     {
         "region": "Banff",
         "pays": "Canada",
-        "backgroundImage": "background-image: url('/13e-mois_Web/images/destinations/fullsize/banff.jpg')",
-        "backgroundImageMinia": "background-image: url('/13e-mois_Web/images/destinations/minia/banff.jpg')",
+        "backgroundImage": "background-image: url('/images/destinations/fullsize/banff.jpg')",
+        "backgroundImageMinia": "background-image: url('/images/destinations/minia/banff.jpg')",
         "prix": "7500",
         "rang": "11",
         "etoiles": "5",
@@ -255,18 +255,18 @@
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
         "activite_01_nom": "Baignade",
-        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_01_icon": "background-image: url('/images/icons/activites/baignade.png')",
         "activite_02_nom": "Ski",
-        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_02_icon": "background-image: url('/images/icons/activites/ski.png')",
         "activite_03_nom": "Éco-tourisme",
-        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
+        "activite_03_icon": "background-image: url('/images/icons/activites/ecotourisme.png')"
     },
 
     {
         "region": "Vernazza",
         "pays": "Italie",
-        "backgroundImage": "background-image: url('/13e-mois_Web/images/destinations/fullsize/vernazza.jpg')",
-        "backgroundImageMinia": "background-image: url('/13e-mois_Web/images/destinations/minia/vernazza.jpg')",
+        "backgroundImage": "background-image: url('/images/destinations/fullsize/vernazza.jpg')",
+        "backgroundImageMinia": "background-image: url('/images/destinations/minia/vernazza.jpg')",
         "prix": "8500",
         "rang": "12",
         "etoiles": "5",
@@ -279,18 +279,18 @@
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
         "activite_01_nom": "Baignade",
-        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_01_icon": "background-image: url('/images/icons/activites/baignade.png')",
         "activite_02_nom": "Ski",
-        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_02_icon": "background-image: url('/images/icons/activites/ski.png')",
         "activite_03_nom": "Éco-tourisme",
-        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
+        "activite_03_icon": "background-image: url('/images/icons/activites/ecotourisme.png')"
     },
 
     {
         "region": "Barcelone",
         "pays": "Espagne",
-        "backgroundImage": "background-image: url('/13e-mois_Web/images/destinations/fullsize/barcelone.jpg')",
-        "backgroundImageMinia": "background-image: url('/13e-mois_Web/images/destinations/minia/barcelone.jpg')",
+        "backgroundImage": "background-image: url('/images/destinations/fullsize/barcelone.jpg')",
+        "backgroundImageMinia": "background-image: url('/images/destinations/minia/barcelone.jpg')",
         "prix": "18500",
         "rang": "13",
         "etoiles": "5",
@@ -303,18 +303,18 @@
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
         "activite_01_nom": "Baignade",
-        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_01_icon": "background-image: url('/images/icons/activites/baignade.png')",
         "activite_02_nom": "Ski",
-        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_02_icon": "background-image: url('/images/icons/activites/ski.png')",
         "activite_03_nom": "Éco-tourisme",
-        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
+        "activite_03_icon": "background-image: url('/images/icons/activites/ecotourisme.png')"
     },
 
     {
         "region": "Budapest",
         "pays": "Hongrie",
-        "backgroundImage": "background-image: url('/13e-mois_Web/images/destinations/fullsize/budapest.jpg')",
-        "backgroundImageMinia": "background-image: url('/13e-mois_Web/images/destinations/minia/budapest.jpg')",
+        "backgroundImage": "background-image: url('/images/destinations/fullsize/budapest.jpg')",
+        "backgroundImageMinia": "background-image: url('/images/destinations/minia/budapest.jpg')",
         "prix": "12500",
         "rang": "14",
         "etoiles": "5",
@@ -327,18 +327,18 @@
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
         "activite_01_nom": "Baignade",
-        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_01_icon": "background-image: url('/images/icons/activites/baignade.png')",
         "activite_02_nom": "Ski",
-        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_02_icon": "background-image: url('/images/icons/activites/ski.png')",
         "activite_03_nom": "Éco-tourisme",
-        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
+        "activite_03_icon": "background-image: url('/images/icons/activites/ecotourisme.png')"
     },
 
     {
         "region": "Byron Bay",
         "pays": "Australie",
-        "backgroundImage": "background-image: url('/13e-mois_Web/images/destinations/fullsize/byronbay.jpg')",
-        "backgroundImageMinia": "background-image: url('/13e-mois_Web/images/destinations/minia/byronbay.jpg')",
+        "backgroundImage": "background-image: url('/images/destinations/fullsize/byronbay.jpg')",
+        "backgroundImageMinia": "background-image: url('/images/destinations/minia/byronbay.jpg')",
         "prix": "11500",
         "rang": "15",
         "etoiles": "5",
@@ -351,18 +351,18 @@
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
         "activite_01_nom": "Baignade",
-        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_01_icon": "background-image: url('/images/icons/activites/baignade.png')",
         "activite_02_nom": "Ski",
-        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_02_icon": "background-image: url('/images/icons/activites/ski.png')",
         "activite_03_nom": "Éco-tourisme",
-        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
+        "activite_03_icon": "background-image: url('/images/icons/activites/ecotourisme.png')"
     },
 
     {
         "region": "Cappadocia",
         "pays": "Italie",
-        "backgroundImage": "background-image: url('/13e-mois_Web/images/destinations/fullsize/cappadocia.jpg')",
-        "backgroundImageMinia": "background-image: url('/13e-mois_Web/images/destinations/minia/cappadocia.jpg')",
+        "backgroundImage": "background-image: url('/images/destinations/fullsize/cappadocia.jpg')",
+        "backgroundImageMinia": "background-image: url('/images/destinations/minia/cappadocia.jpg')",
         "prix": "9500",
         "rang": "16",
         "etoiles": "5",
@@ -375,18 +375,18 @@
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
         "activite_01_nom": "Baignade",
-        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_01_icon": "background-image: url('/images/icons/activites/baignade.png')",
         "activite_02_nom": "Ski",
-        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_02_icon": "background-image: url('/images/icons/activites/ski.png')",
         "activite_03_nom": "Éco-tourisme",
-        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
+        "activite_03_icon": "background-image: url('/images/icons/activites/ecotourisme.png')"
     },
 
     {
         "region": "Grand Canyon",
         "pays": "États-Unis",
-        "backgroundImage": "background-image: url('/13e-mois_Web/images/destinations/fullsize/grandcanyon.jpg')",
-        "backgroundImageMinia": "background-image: url('/13e-mois_Web/images/destinations/minia/grandcanyon.jpg')",
+        "backgroundImage": "background-image: url('/images/destinations/fullsize/grandcanyon.jpg')",
+        "backgroundImageMinia": "background-image: url('/images/destinations/minia/grandcanyon.jpg')",
         "prix": "6500",
         "rang": "17",
         "etoiles": "5",
@@ -399,18 +399,18 @@
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
         "activite_01_nom": "Baignade",
-        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_01_icon": "background-image: url('/images/icons/activites/baignade.png')",
         "activite_02_nom": "Ski",
-        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_02_icon": "background-image: url('/images/icons/activites/ski.png')",
         "activite_03_nom": "Éco-tourisme",
-        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
+        "activite_03_icon": "background-image: url('/images/icons/activites/ecotourisme.png')"
     },
 
     {
         "region": "Lauterbrunnen",
         "pays": "Suisse",
-        "backgroundImage": "background-image: url('/13e-mois_Web/images/destinations/fullsize/lauterbrunnen.jpg')",
-        "backgroundImageMinia": "background-image: url('/13e-mois_Web/images/destinations/minia/lauterbrunnen.jpg')",
+        "backgroundImage": "background-image: url('/images/destinations/fullsize/lauterbrunnen.jpg')",
+        "backgroundImageMinia": "background-image: url('/images/destinations/minia/lauterbrunnen.jpg')",
         "prix": "12500",
         "rang": "18",
         "etoiles": "5",
@@ -423,18 +423,18 @@
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
         "activite_01_nom": "Baignade",
-        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_01_icon": "background-image: url('/images/icons/activites/baignade.png')",
         "activite_02_nom": "Ski",
-        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_02_icon": "background-image: url('/images/icons/activites/ski.png')",
         "activite_03_nom": "Éco-tourisme",
-        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
+        "activite_03_icon": "background-image: url('/images/icons/activites/ecotourisme.png')"
     },
 
     {
         "region": "Manarola",
         "pays": "Italie",
-        "backgroundImage": "background-image: url('/13e-mois_Web/images/destinations/fullsize/manarola.jpg')",
-        "backgroundImageMinia": "background-image: url('/13e-mois_Web/images/destinations/minia/manarola.jpg')",
+        "backgroundImage": "background-image: url('/images/destinations/fullsize/manarola.jpg')",
+        "backgroundImageMinia": "background-image: url('/images/destinations/minia/manarola.jpg')",
         "prix": "15000",
         "rang": "19",
         "etoiles": "5",
@@ -447,18 +447,18 @@
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
         "activite_01_nom": "Baignade",
-        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_01_icon": "background-image: url('/images/icons/activites/baignade.png')",
         "activite_02_nom": "Ski",
-        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_02_icon": "background-image: url('/images/icons/activites/ski.png')",
         "activite_03_nom": "Éco-tourisme",
-        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
+        "activite_03_icon": "background-image: url('/images/icons/activites/ecotourisme.png')"
     },
 
     {
         "region": "Maui",
         "pays": "Hawaï",
-        "backgroundImage": "background-image: url('/13e-mois_Web/images/destinations/fullsize/maui.jpg')",
-        "backgroundImageMinia": "background-image: url('/13e-mois_Web/images/destinations/minia/maui.jpg')",
+        "backgroundImage": "background-image: url('/images/destinations/fullsize/maui.jpg')",
+        "backgroundImageMinia": "background-image: url('/images/destinations/minia/maui.jpg')",
         "prix": "12000",
         "rang": "20",
         "etoiles": "5",
@@ -471,18 +471,18 @@
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
         "activite_01_nom": "Baignade",
-        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_01_icon": "background-image: url('/images/icons/activites/baignade.png')",
         "activite_02_nom": "Ski",
-        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_02_icon": "background-image: url('/images/icons/activites/ski.png')",
         "activite_03_nom": "Éco-tourisme",
-        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
+        "activite_03_icon": "background-image: url('/images/icons/activites/ecotourisme.png')"
     },
 
     {
         "region": "New York",
         "pays": "États-Unis",
-        "backgroundImage": "background-image: url('/13e-mois_Web/images/destinations/fullsize/newyork.jpg')",
-        "backgroundImageMinia": "background-image: url('/13e-mois_Web/images/destinations/minia/newyork.jpg')",
+        "backgroundImage": "background-image: url('/images/destinations/fullsize/newyork.jpg')",
+        "backgroundImageMinia": "background-image: url('/images/destinations/minia/newyork.jpg')",
         "prix": "9000",
         "rang": "21",
         "etoiles": "5",
@@ -495,18 +495,18 @@
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
         "activite_01_nom": "Baignade",
-        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_01_icon": "background-image: url('/images/icons/activites/baignade.png')",
         "activite_02_nom": "Ski",
-        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_02_icon": "background-image: url('/images/icons/activites/ski.png')",
         "activite_03_nom": "Éco-tourisme",
-        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
+        "activite_03_icon": "background-image: url('/images/icons/activites/ecotourisme.png')"
     },
 
     {
         "region": "Piana",
         "pays": "Corse",
-        "backgroundImage": "background-image: url('/13e-mois_Web/images/destinations/fullsize/piana.jpg')",
-        "backgroundImageMinia": "background-image: url('/13e-mois_Web/images/destinations/minia/piana.jpg')",
+        "backgroundImage": "background-image: url('/images/destinations/fullsize/piana.jpg')",
+        "backgroundImageMinia": "background-image: url('/images/destinations/minia/piana.jpg')",
         "prix": "15000",
         "rang": "22",
         "etoiles": "5",
@@ -519,18 +519,18 @@
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
         "activite_01_nom": "Baignade",
-        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_01_icon": "background-image: url('/images/icons/activites/baignade.png')",
         "activite_02_nom": "Ski",
-        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_02_icon": "background-image: url('/images/icons/activites/ski.png')",
         "activite_03_nom": "Éco-tourisme",
-        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
+        "activite_03_icon": "background-image: url('/images/icons/activites/ecotourisme.png')"
     },
 
     {
         "region": "Pokhara",
         "pays": "Népal",
-        "backgroundImage": "background-image: url('/13e-mois_Web/images/destinations/fullsize/pokhara.jpg')",
-        "backgroundImageMinia": "background-image: url('/13e-mois_Web/images/destinations/minia/pokhara.jpg')",
+        "backgroundImage": "background-image: url('/images/destinations/fullsize/pokhara.jpg')",
+        "backgroundImageMinia": "background-image: url('/images/destinations/minia/pokhara.jpg')",
         "prix": "16000",
         "rang": "23",
         "etoiles": "5",
@@ -543,18 +543,18 @@
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
         "activite_01_nom": "Baignade",
-        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_01_icon": "background-image: url('/images/icons/activites/baignade.png')",
         "activite_02_nom": "Ski",
-        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_02_icon": "background-image: url('/images/icons/activites/ski.png')",
         "activite_03_nom": "Éco-tourisme",
-        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
+        "activite_03_icon": "background-image: url('/images/icons/activites/ecotourisme.png')"
     },
 
     {
         "region": "Porto-Vecchio",
         "pays": "Corse",
-        "backgroundImage": "background-image: url('/13e-mois_Web/images/destinations/fullsize/portovecchio.jpg')",
-        "backgroundImageMinia": "background-image: url('/13e-mois_Web/images/destinations/minia/portovecchio.jpg')",
+        "backgroundImage": "background-image: url('/images/destinations/fullsize/portovecchio.jpg')",
+        "backgroundImageMinia": "background-image: url('/images/destinations/minia/portovecchio.jpg')",
         "prix": "18000",
         "rang": "24",
         "etoiles": "5",
@@ -567,18 +567,18 @@
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
         "activite_01_nom": "Baignade",
-        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_01_icon": "background-image: url('/images/icons/activites/baignade.png')",
         "activite_02_nom": "Ski",
-        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_02_icon": "background-image: url('/images/icons/activites/ski.png')",
         "activite_03_nom": "Éco-tourisme",
-        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
+        "activite_03_icon": "background-image: url('/images/icons/activites/ecotourisme.png')"
     },
 
     {
         "region": "Queensland",
         "pays": "Australie",
-        "backgroundImage": "background-image: url('/13e-mois_Web/images/destinations/fullsize/queensland.jpg')",
-        "backgroundImageMinia": "background-image: url('/13e-mois_Web/images/destinations/minia/queensland.jpg')",
+        "backgroundImage": "background-image: url('/images/destinations/fullsize/queensland.jpg')",
+        "backgroundImageMinia": "background-image: url('/images/destinations/minia/queensland.jpg')",
         "prix": "19000",
         "rang": "25",
         "etoiles": "5",
@@ -591,18 +591,18 @@
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
         "activite_01_nom": "Baignade",
-        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_01_icon": "background-image: url('/images/icons/activites/baignade.png')",
         "activite_02_nom": "Ski",
-        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_02_icon": "background-image: url('/images/icons/activites/ski.png')",
         "activite_03_nom": "Éco-tourisme",
-        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
+        "activite_03_icon": "background-image: url('/images/icons/activites/ecotourisme.png')"
     },
 
     {
         "region": "Queenstown",
         "pays": "Nouvelle-Zélande",
-        "backgroundImage": "background-image: url('/13e-mois_Web/images/destinations/fullsize/queenstown.jpg')",
-        "backgroundImageMinia": "background-image: url('/13e-mois_Web/images/destinations/minia/queenstown.jpg')",
+        "backgroundImage": "background-image: url('/images/destinations/fullsize/queenstown.jpg')",
+        "backgroundImageMinia": "background-image: url('/images/destinations/minia/queenstown.jpg')",
         "prix": "15500",
         "rang": "26",
         "etoiles": "5",
@@ -615,18 +615,18 @@
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
         "activite_01_nom": "Baignade",
-        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_01_icon": "background-image: url('/images/icons/activites/baignade.png')",
         "activite_02_nom": "Ski",
-        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_02_icon": "background-image: url('/images/icons/activites/ski.png')",
         "activite_03_nom": "Éco-tourisme",
-        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
+        "activite_03_icon": "background-image: url('/images/icons/activites/ecotourisme.png')"
     },
 
     {
         "region": "Sahara",
         "pays": "Maghreb",
-        "backgroundImage": "background-image: url('/13e-mois_Web/images/destinations/fullsize/sahara.jpg')",
-        "backgroundImageMinia": "background-image: url('/13e-mois_Web/images/destinations/minia/sahara.jpg')",
+        "backgroundImage": "background-image: url('/images/destinations/fullsize/sahara.jpg')",
+        "backgroundImageMinia": "background-image: url('/images/destinations/minia/sahara.jpg')",
         "prix": "16800",
         "rang": "27",
         "etoiles": "5",
@@ -639,18 +639,18 @@
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
         "activite_01_nom": "Baignade",
-        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_01_icon": "background-image: url('/images/icons/activites/baignade.png')",
         "activite_02_nom": "Ski",
-        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_02_icon": "background-image: url('/images/icons/activites/ski.png')",
         "activite_03_nom": "Éco-tourisme",
-        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
+        "activite_03_icon": "background-image: url('/images/icons/activites/ecotourisme.png')"
     },
 
     {
         "region": "Varadero",
         "pays": "Cuba",
-        "backgroundImage": "background-image: url('/13e-mois_Web/images/destinations/fullsize/varadero.jpg')",
-        "backgroundImageMinia": "background-image: url('/13e-mois_Web/images/destinations/minia/varadero.jpg')",
+        "backgroundImage": "background-image: url('/images/destinations/fullsize/varadero.jpg')",
+        "backgroundImageMinia": "background-image: url('/images/destinations/minia/varadero.jpg')",
         "prix": "5800",
         "rang": "28",
         "etoiles": "5",
@@ -663,18 +663,18 @@
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
         "activite_01_nom": "Baignade",
-        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_01_icon": "background-image: url('/images/icons/activites/baignade.png')",
         "activite_02_nom": "Ski",
-        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_02_icon": "background-image: url('/images/icons/activites/ski.png')",
         "activite_03_nom": "Éco-tourisme",
-        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
+        "activite_03_icon": "background-image: url('/images/icons/activites/ecotourisme.png')"
     },
 
     {
         "region": "Whitehaven Beach",
         "pays": "Australie",
-        "backgroundImage": "background-image: url('/13e-mois_Web/images/destinations/fullsize/whitehavenbeach.jpg')",
-        "backgroundImageMinia": "background-image: url('/13e-mois_Web/images/destinations/minia/whitehavenbeach.jpg')",
+        "backgroundImage": "background-image: url('/images/destinations/fullsize/whitehavenbeach.jpg')",
+        "backgroundImageMinia": "background-image: url('/images/destinations/minia/whitehavenbeach.jpg')",
         "prix": "15900",
         "rang": "29",
         "etoiles": "5",
@@ -687,18 +687,18 @@
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
         "activite_01_nom": "Baignade",
-        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_01_icon": "background-image: url('/images/icons/activites/baignade.png')",
         "activite_02_nom": "Ski",
-        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_02_icon": "background-image: url('/images/icons/activites/ski.png')",
         "activite_03_nom": "Éco-tourisme",
-        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
+        "activite_03_icon": "background-image: url('/images/icons/activites/ecotourisme.png')"
     },
 
     {
         "region": "Yellowstone",
         "pays": "États-Unis",
-        "backgroundImage": "background-image: url('/13e-mois_Web/images/destinations/fullsize/yellowstone.jpg')",
-        "backgroundImageMinia": "background-image: url('/13e-mois_Web/images/destinations/minia/yellowstone.jpg')",
+        "backgroundImage": "background-image: url('/images/destinations/fullsize/yellowstone.jpg')",
+        "backgroundImageMinia": "background-image: url('/images/destinations/minia/yellowstone.jpg')",
         "prix": "12600",
         "rang": "30",
         "etoiles": "5",
@@ -711,10 +711,10 @@
         "hotel_comp": "Hyatt",
         "hotel_duree": "30 jours",
         "activite_01_nom": "Baignade",
-        "activite_01_icon": "background-image: url('/13e-mois_web/images/icons/activites/baignade.png')",
+        "activite_01_icon": "background-image: url('/images/icons/activites/baignade.png')",
         "activite_02_nom": "Ski",
-        "activite_02_icon": "background-image: url('/13e-mois_web/images/icons/activites/ski.png')",
+        "activite_02_icon": "background-image: url('/images/icons/activites/ski.png')",
         "activite_03_nom": "Éco-tourisme",
-        "activite_03_icon": "background-image: url('/13e-mois_web/images/icons/activites/ecotourisme.png')"
+        "activite_03_icon": "background-image: url('/images/icons/activites/ecotourisme.png')"
     }
 ]
