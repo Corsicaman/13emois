@@ -1,57 +1,92 @@
 #accueil {
     position: absolute;
     width: 100vw;
-    height: 100vh;
-    font-size: 12vw;
+    min-height: 100vh;
+    font-size: 11vw;
     font-weight: 700;
-    font-family: Montserrat;
+    font-family: Axis;
     text-align: center;
     background-color: white;
-    transition: background-color 1s, opacity 0.5s;
+    transition: background-color 0.5s, opacity 0.5s;
     z-index: 10;
 }
 
 #accueil h1 {
+    position: absolute;
+    top: 40%;
     display: inline-block;
     color: $color_bleu2;
-    margin-top: 35vh;
-    transition: opacity 1s, margin 1s, color 1s, transform 0.5s;
+    // margin-top: 35vh;
+    transition: opacity 0.5s, margin 0.5s, color 0.5s, transform 0.5s;
+    margin: 0;
+    padding: 0;
+    width: 30vw;
 }
 
-#accueil h1:first-child,
-#accueil h1:last-child {
+
+#accueil h1 div,
+#accueil h1 p {
+    transition: opacity 0.5s, margin 0.5s, color 0.5s, transform 0.5s;
+    // display: inline-block;
+    // text-align: left;
+    // text-align: left;
+}
+
+#accueil h1:first-child {
     color: #222;
+    left: 2%;
+    text-align: right;
 }
 
 #accueil h1:nth-child(2) {
-    width: 19vw;
+    text-align: center;
+    left: 36%;
+    display: flex;
+    // position: relative; 
 }
 
-main {
-    // background-color: #FCFCFC;
+#accueil h1:last-child {
+    color: #222;
+    right: 14%;
+    text-align: left;
+    display: flex;
+}
+
+#logo p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 17px;
+    color: white;
+    padding: 15px 0;
+    margin-top: 18px;
+    border-top: 1px solid white;
+}
+
+#bodyAccueil #logo {
+    width: 150px;
 }
 
 #infos {
+    // height: auto;
     margin: 0 auto;
     // background-color: #aaa;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: space-around;
-    height: 30vh;
-    padding: 9vw;
-    padding-top: 0vw;
+    // height: 30vh;
+    padding: 5vh 9vw 0vh 9vw;
+    // padding-top: 0vw;
     font-weight: 700;
-    margin-top: -5vh;
-    margin-bottom: 100px;
+    margin-top: 0;
 }
 
 #infos>div {
-    width: 25%;
-    // background-color: red;
+    width: 100%;
+    font-size: 15px;
+    line-height: 18px;
     text-align: center;
     color: white;
-    font-size: 16px;
 }
 
 #infos>div>div:nth-child(2) {
@@ -65,9 +100,10 @@ main {
 }
 
 #infos>div>div:nth-child(3) {
+    // height: 60px;
     border-top: 2px solid $color_bleu2;
-    margin-top: 5vh;
-    padding-top: 5vh;
+    margin: 25px 0 100px 0;
+    padding-top: 25px;
     display: flex;
     justify-content: space-between;
     align-items: space-between;
@@ -75,9 +111,8 @@ main {
 }
 
 #infos>div>div:nth-child(3)>div {
-    width: 6vw;
-    height: 6vw;
-    // margin: 5vw;
+    width: 25vw;
+    height: 25vw;
     background-color: white;
     border-radius: 3px;
 }
@@ -88,14 +123,14 @@ main {
     font-size: 90px;
     padding-bottom: 30px;
     position: relative;
-    left: -50%;
-    top: 35%;
+    top: 3vh;
     z-index: 1;
 }
 
 #bodyAccueil {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
+    padding-bottom: 70px;
 
     &::before {
         content: "";
@@ -114,13 +149,65 @@ main {
 
 
 #btnListe {
-    width: 220px;
-    margin-top: 140px;
+    width: 230px;
+    font-size: 14px;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: $breakpoint_mini) {
+    #infos>div>div:nth-child(3)>div {
+        width: 20vw;
+        height: 20vw;
+        background-color: white;
+        border-radius: 3px;
+    }
+
+    #btnListe {
+        width: 290px;
+        font-size: 15px;
+    }
+
+    #infos>div {
+        width: 100%;
+        font-size: 17px;
+        line-height: 19px;
+        text-align: center;
+        color: white;
+    }
+}
+
+@media only screen and (min-width: $breakpoint_mobile) {
     #infos {
         flex-direction: row;
     }
 
+    #infos>div {
+        width: 28%;
+    }
+
+    #infos>div>div:nth-child(2) {
+        height: 70px;
+    }
+
+    #infos>div>div:nth-child(3)>div {
+        width: 6vw;
+        height: 6vw;
+        background-color: white;
+        border-radius: 3px;
+    }
+
+    #infos>div>div:nth-child(3) {
+    margin: 25px 0 8vh 0;
+ 
+    }
+
+    #infos>div h1 {
+        font-family: Ubuntu;
+        color: white;
+        font-size: 90px;
+        padding-bottom: 30px;
+        position: relative;
+        left: -50%;
+        top: 8%;
+        z-index: 1;
+    }
 }
