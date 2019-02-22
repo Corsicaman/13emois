@@ -1,10 +1,10 @@
 // STYLES ET PARAMÈTRES GLOBAUX 
-@import "base/fonts";
-@import "base/variables";
-@import "base/effects";
-@import "base/icons"; 
-@import "base/global";
-@import "base/animations";
+@import "site-global/fonts";
+@import "site-global/variables";
+@import "site-global/effects";
+@import "site-global/icons"; 
+@import "site-global/global";
+@import "site-global/animations";
 
 
 // COMPOSANTS RÉUTILISABLES
@@ -14,9 +14,9 @@
 
 
 // STYLES SPÉCIFIQUES À DES PAGES
-@import "pages/accueil"; 
-@import "pages/pageListeDestinations";
-@import "pages/pageDestination"; 
-@import "pages/pagePaiement"; 
+@import "layout/accueil"; 
+@import "layout/pageListeDestinations";
+@import "layout/pageDestination"; 
+@import "layout/pagePaiement"; 
 
 

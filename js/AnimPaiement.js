@@ -1,3 +1,5 @@
+// Classe gérant les animations d'apparation sur la page
+
 export class AnimPaiement {
 
     constructor() {
@@ -5,7 +7,7 @@ export class AnimPaiement {
         this.animerSections()
     }
 
-
+    // Animations du header
     animerHeader() {
         $("#bodyPaiementRetour").css("transform", "translate(0)");
         $("#bodyPaiementRetour").css("opacity", "1");
@@ -17,7 +19,7 @@ export class AnimPaiement {
         $("#lieu_background").css("opacity", "1");
     }
 
-
+    // Animations des 4 sections principales de la page
     animerSections() {
         $("#main_paiement > section").css("transform", "translate(0)");
         $("#main_paiement > section").css("opacity", "1");
@@ -27,10 +29,4 @@ export class AnimPaiement {
         $("#main_paiement > section:nth-child(4)").css("transition-delay", "0.6s");
 
     }
-
-
-
-
-
-
 }
