@@ -10,6 +10,8 @@
     // height: 100vh;
     display: flex;
     flex-direction: column;
+        background-color: #fefefe;
+
 }
 
 #uneDestinationImage {
@@ -55,7 +57,7 @@
 }
 
 #uneDestinationImage h1 {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 800;
     text-shadow: 0 0 120px #444;
     text-transform: uppercase;
@@ -233,6 +235,9 @@
 
 
 @media screen and (min-width: $breakpoint_mobile) {
+    #uneDestinationImage h1 {
+    font-size: 50px;
+}
     #uneDestinationInfos {
         background-color: #fefefe;
         // height: 100vh;
@@ -321,12 +326,16 @@
 @media screen and (min-width: $breakpoint_bureau) {
     #uneDestination {
         flex-direction: row;
+        align-items: stretch;
+        min-height: 100%;
     }
 
     #uneDestinationImage {
+    position: fixed;
+        flex: 1;
         background-size: cover;
         background-position: center center;
-        height: 100vh;
+        // min-height: 100vh;
         width: 50vw;
         padding: 50px 70px;
         box-sizing: border-box;
@@ -339,8 +348,11 @@
 
 
     #uneDestinationInfos {
+        // flex: 1;
+        position: relative;
+        left: 50%;
         background-color: #fefefe;
-        height: 100vh;
+        min-height: 100vh;
         width: 50vw;
         padding: 50px 70px;
         box-sizing: border-box;

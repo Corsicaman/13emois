@@ -22,7 +22,7 @@
 
     .entreePhoto-enter-active,
     .entreePhoto-leave-active {
-        animation: entreePhoto 4s;
+        animation: entreePhoto 3.5s;
         animation-timing-function: ease-out;
     }
 
@@ -51,7 +51,7 @@
 
     .entreeTitre-enter-active,
     .entreeTitre-leave-active {
-        animation: entreeTitre 4.5s;
+        animation: entreeTitre 4s;
         animation-timing-function: ease-out;
         // animation-delay: 1s;
         animation-fill-mode: forwards;
@@ -107,7 +107,7 @@
 
     .entreeSousTitre-enter-active,
     .entreeSousTitre-leave-active {
-        animation: entreeSousTitre 4s;
+        animation: entreeSousTitre 3.5s;
         animation-timing-function: ease-out;
         // animation-delay: 1s;
         animation-fill-mode: forwards;
@@ -146,7 +146,7 @@
 
     .entreeResume-enter-active,
     .entreeResume-leave-active {
-        animation: entreeResume 4s;
+        animation: entreeResume 3.5s;
         animation-timing-function: ease-out;
         // animation-delay: 1s;
         animation-fill-mode: forwards;
@@ -187,7 +187,7 @@
 
     .entreeInfos-enter-active,
     .entreeInfos-leave-active {
-        animation: entreeInfos 4s;
+        animation: entreeInfos 3.5s;
         animation-timing-function: ease-out;
 
     }
@@ -235,27 +235,27 @@
     }
 
     #uneDestinationInfos>*:nth-child(1) {
-        animation-delay: 4s;
+        animation-delay: 3.6s;
     }
 
     #uneDestinationInfos>*:nth-child(2) {
-        animation-delay: 4.1s;
+        animation-delay: 3.7s;
     }
 
     #uneDestinationInfos>*:nth-child(3) {
-        animation-delay: 4.2s;
+        animation-delay: 3.8s;
     }
 
     #uneDestinationInfos>*:nth-child(4) {
-        animation-delay: 4.3s;
+        animation-delay: 3.9s;
     }
 
     #uneDestinationInfos>*:nth-child(5) {
-        animation-delay: 4.4s;
+        animation-delay: 4s;
     }
 
     #uneDestinationInfos>*:nth-child(6) {
-        animation-delay: 4.5s;
+        animation-delay: 4.1s;
     }
 
 }

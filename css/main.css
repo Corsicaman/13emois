@@ -55,7 +55,8 @@
   background-size: contain; }
 
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  overflow: hidden; }
 
 body {
   font-family: Montserrat;
@@ -104,7 +105,7 @@ a {
 @media screen and (min-width: 1080px) {
   .entreePhoto-enter-active,
   .entreePhoto-leave-active {
-    animation: entreePhoto 4s;
+    animation: entreePhoto 3.5s;
     animation-timing-function: ease-out; }
   @keyframes entreePhoto {
     0% {
@@ -119,7 +120,7 @@ a {
       width: 50vw; } }
   .entreeTitre-enter-active,
   .entreeTitre-leave-active {
-    animation: entreeTitre 4.5s;
+    animation: entreeTitre 4s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards; }
   @keyframes entreeTitre {
@@ -152,7 +153,7 @@ a {
       opacity: 1; } }
   .entreeSousTitre-enter-active,
   .entreeSousTitre-leave-active {
-    animation: entreeSousTitre 4s;
+    animation: entreeSousTitre 3.5s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
     opacity: 0.01; }
@@ -170,7 +171,7 @@ a {
       opacity: 1; } }
   .entreeResume-enter-active,
   .entreeResume-leave-active {
-    animation: entreeResume 4s;
+    animation: entreeResume 3.5s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
     opacity: 0.01; }
@@ -189,7 +190,7 @@ a {
       opacity: 1; } }
   .entreeInfos-enter-active,
   .entreeInfos-leave-active {
-    animation: entreeInfos 4s;
+    animation: entreeInfos 3.5s;
     animation-timing-function: ease-out; }
   @keyframes entreeInfos {
     0% {
@@ -213,17 +214,17 @@ a {
       transform: translateY(0px);
       opacity: 1; } }
   #uneDestinationInfos > *:nth-child(1) {
-    animation-delay: 4s; }
+    animation-delay: 3.6s; }
   #uneDestinationInfos > *:nth-child(2) {
-    animation-delay: 4.1s; }
+    animation-delay: 3.7s; }
   #uneDestinationInfos > *:nth-child(3) {
-    animation-delay: 4.2s; }
+    animation-delay: 3.8s; }
   #uneDestinationInfos > *:nth-child(4) {
-    animation-delay: 4.3s; }
+    animation-delay: 3.9s; }
   #uneDestinationInfos > *:nth-child(5) {
-    animation-delay: 4.4s; }
+    animation-delay: 4s; }
   #uneDestinationInfos > *:nth-child(6) {
-    animation-delay: 4.5s; } }
+    animation-delay: 4.1s; } }
 
 .bouton {
   border-radius: 100px;
@@ -464,7 +465,8 @@ a {
   text-align: center;
   background-color: white;
   transition: background-color 0.5s, opacity 0.5s;
-  z-index: 10; }
+  z-index: 10;
+  margin-top: -8vh; }
 
 #accueil h1 {
   position: absolute;
@@ -561,7 +563,8 @@ a {
 #bodyAccueil {
   position: relative;
   min-height: 100vh;
-  padding-bottom: 70px; }
+  padding-bottom: 40px;
+  box-sizing: border-box; }
   #bodyAccueil::before {
     content: "";
     position: absolute;
@@ -618,6 +621,10 @@ a {
     left: -50%;
     top: 8%;
     z-index: 1; } }
+
+@media only screen and (min-width: 800px) {
+  #bodyAccueil {
+    padding-top: 8vh; } }
 
 #bodyDestinations {
   position: relative;
@@ -722,7 +729,8 @@ a {
 #uneDestination {
   width: 100vw;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  background-color: #fefefe; }
 
 #uneDestinationImage {
   background-size: cover;
@@ -757,7 +765,7 @@ a {
   border-radius: 2px; }
 
 #uneDestinationImage h1 {
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 800;
   text-shadow: 0 0 120px #444;
   text-transform: uppercase;
@@ -895,6 +903,8 @@ a {
   border-bottom: none; }
 
 @media screen and (min-width: 800px) {
+  #uneDestinationImage h1 {
+    font-size: 50px; }
   #uneDestinationInfos {
     background-color: #fefefe;
     width: 100vw;
@@ -958,11 +968,14 @@ a {
 
 @media screen and (min-width: 1080px) {
   #uneDestination {
-    flex-direction: row; }
+    flex-direction: row;
+    align-items: stretch;
+    min-height: 100%; }
   #uneDestinationImage {
+    position: fixed;
+    flex: 1;
     background-size: cover;
     background-position: center center;
-    height: 100vh;
     width: 50vw;
     padding: 50px 70px;
     box-sizing: border-box;
@@ -972,8 +985,10 @@ a {
     flex-direction: column;
     justify-content: space-between; }
   #uneDestinationInfos {
+    position: relative;
+    left: 50%;
     background-color: #fefefe;
-    height: 100vh;
+    min-height: 100vh;
     width: 50vw;
     padding: 50px 70px;
     box-sizing: border-box; } }

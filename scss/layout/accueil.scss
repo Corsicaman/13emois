@@ -9,6 +9,7 @@
     background-color: white;
     transition: background-color 0.5s, opacity 0.5s;
     z-index: 10;
+    margin-top: -8vh;
 }
 
 #accueil h1 {
@@ -130,7 +131,8 @@
 #bodyAccueil {
     position: relative;
     min-height: 100vh;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
 
     &::before {
         content: "";
@@ -210,4 +212,11 @@
         top: 8%;
         z-index: 1;
     }
+}
+
+@media only screen and (min-width: $breakpoint_mobile) {
+    #bodyAccueil {
+        padding-top: 8vh;
+    }
+
 }
