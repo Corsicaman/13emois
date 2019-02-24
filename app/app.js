@@ -30,8 +30,7 @@ const accueil = {
                     i++;
                     self.theLoop(i);
                 }
-                // if (i > 2) {
-                // }
+
 
                 if (i == 14) {
                     setTimeout(function() {
