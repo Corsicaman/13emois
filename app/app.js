@@ -1,5 +1,5 @@
 // base Url of the API
-const urlJsonDestinations = "/13e-mois_Web/app/BDD.json";
+const urlJsonDestinations = "/app/BDD.json";
 var s = 0;
 var i = 1;
 
@@ -19,27 +19,17 @@ const accueil = {
         theLoop(i) {
             let self = this;
             setTimeout(function() {
-                if (i == 1) {
-                    setTimeout(function() {
-                        i++;
-                        self.theLoop(i);
-
-                    }, 700)
-                } else if (i < 14) {
+                if (i < 14) {
                     $('#accueil > h1:nth-child(2)').html(i + "<p>e</p>");
                     i++;
                     self.theLoop(i);
-                }
-                // if (i > 2) {
-                // }
-
-                if (i == 14) {
+                } else if (i == 14) {
                     setTimeout(function() {
                         i++;
                         self.theLoop(i);
                     }, 700)
                 }
-            }, 25 + i * 15);
+            }, 30 + i * 15);
 
             if (i > 14) {
                 if (s == 0) {
@@ -48,40 +38,37 @@ const accueil = {
                     $('#accueil > h1:nth-child(3) div:last-child').css("opacity", "0");
                     $('#accueil > h1:nth-child(3) div:first-child').css("transform", "rotate(-90deg) translate(37%, -45%) scale(0.4)");
                     $('#accueil > h1:nth-child(2)').css("margin-left", "5vw");
+                    // $('#accueil > h1:nth-child(3) div:first-child').css("color","#34A2FF");
 
                     setTimeout(function() {
                         s = 1;
                         self.theLoop(i);
-                    }, 500)
+                    }, 700)
                 } else if (s == 1) {
 
                     $('#accueil > h1:nth-child(2)').css("color", "white");
+                    // $('#accueil > h1:nth-child(3) div:first-child').css("color","white");
                     $('#accueil').css("background-color", "#34A2FF");
 
                     setTimeout(function() {
                         s = 2;
                         self.theLoop(i);
-                    }, 1000)
+                    }, 1500)
                 } else if (s == 2) {
-                    $('#fondBlanc').css("display", "none");
                     $('#accueil > h1:nth-child(3) div:first-child').css("transform", "rotate(-90deg) translate(100%, -45%) scale(0.4)");
                     $('#accueil > h1:nth-child(3) div:first-child').css("opacity", "0");
                     $('#accueil > h1:nth-child(2)').css("transform", "translateY(-100px)");
                     $('#accueil > h1:nth-child(2)').css("opacity", "0");
                     $('#accueil').css("opacity", "0");
-                    $('html').scrollTop(0);
                     setTimeout(function() {
                         s = 3;
                         self.theLoop(i);
                     }, 500)
                 } else if (s == 3) {
                     $('#accueil').css("display", "none");
-                    $('html').css("overflow-y", "initial");
                     s = 0;
                 }
             }
-
-
         },
     }
 };
@@ -236,25 +223,25 @@ var router = new VueRouter({
     mode: 'history',
     routes: [{
             name: 'accueil',
-            path: '/13e-mois_Web/index.htm',
+            path: '/',
             component: accueil
         },
-
+        
         {
             name: 'listeDestinations',
-            path: '/13e-mois_Web/index.htm/liste',
+            path: '/liste',
             component: lesDestinations
         },
 
         {
             name: 'destination',
-            path: '/13e-mois_Web/index.htm/:region',
+            path: '/:region',
             component: uneDestination
         },
 
         {
             name: 'paiement',
-            path: '/13e-mois_Web/index.htm/paiement-:region',
+            path: '/paiement-:region',
             component: paiement
         }
     ]
