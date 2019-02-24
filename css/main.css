@@ -1023,7 +1023,7 @@ a {
 
 #bodyPaiementRetour {
   position: absolute;
-  z-index: 1;
+  z-index: 1000;
   top: 190px;
   left: 7.5%;
   color: #32D096;
