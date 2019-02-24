@@ -1,12 +1,11 @@
 html {
     scroll-behavior: smooth;
-    // overflow: hidden;
+    overflow: hidden;
 }
 
 body {
     font-family: Montserrat;
     background-color: #FCFCFC;
-    // min-height: 100vh;
 }
 
 .clearfix:after {
@@ -21,13 +20,11 @@ a {
 }
 
 #logo13 {
-	// font-family: Montserrat;
     font-family: Axis;
 	text-align: center;
 	padding: 50px 0 30px 0;
 	font-size: 30vw;
 	font-weight: 700;
-	// color: $color_turquoise;
     color: white;
 }
 

@@ -19,11 +19,21 @@ const accueil = {
         theLoop(i) {
             let self = this;
             setTimeout(function() {
-                if (i < 14) {
+                if (i == 1) {
+                    setTimeout(function() {
+                        i++;
+                        self.theLoop(i);
+
+                    }, 700)
+                } else if (i < 14) {
                     $('#accueil > h1:nth-child(2)').html(i + "<p>e</p>");
                     i++;
                     self.theLoop(i);
-                } else if (i == 14) {
+                }
+                // if (i > 2) {
+                // }
+
+                if (i == 14) {
                     setTimeout(function() {
                         i++;
                         self.theLoop(i);
@@ -51,8 +61,9 @@ const accueil = {
                     setTimeout(function() {
                         s = 2;
                         self.theLoop(i);
-                    }, 1200)
+                    }, 1000)
                 } else if (s == 2) {
+                    $('#fondBlanc').css("display", "none");
                     $('#accueil > h1:nth-child(3) div:first-child').css("transform", "rotate(-90deg) translate(100%, -45%) scale(0.4)");
                     $('#accueil > h1:nth-child(3) div:first-child').css("opacity", "0");
                     $('#accueil > h1:nth-child(2)').css("transform", "translateY(-100px)");
@@ -65,9 +76,12 @@ const accueil = {
                     }, 500)
                 } else if (s == 3) {
                     $('#accueil').css("display", "none");
+                    $('html').css("overflow-y", "initial");
                     s = 0;
                 }
             }
+
+
         },
     }
 };

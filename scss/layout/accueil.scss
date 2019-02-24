@@ -1,7 +1,7 @@
 #accueil {
     position: fixed;
     width: 100vw;
-    min-height: 116vh;
+    min-height: 120vh;
     font-size: 11vw;
     font-weight: 700;
     font-family: Axis;
@@ -12,9 +12,17 @@
     margin-top: -8vh;
 }
 
+#fondBlanc {
+    width: 100vw;
+    height: 200vh;
+    background-color: white;
+    position: absolute;
+    top: -8vh;
+}
+
 #accueil h1 {
     position: absolute;
-    top: 40%;
+    top: 40vh;
     display: inline-block;
     color: $color_bleu2;
     // margin-top: 35vh;
