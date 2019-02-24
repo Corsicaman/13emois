@@ -30,6 +30,8 @@ const accueil = {
                     i++;
                     self.theLoop(i);
                 }
+
+
                 if (i == 14) {
                     setTimeout(function() {
                         i++;
@@ -82,8 +84,6 @@ const accueil = {
         },
     }
 };
-
-
 
 // =======================
 // =======================
