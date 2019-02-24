@@ -58,13 +58,13 @@ const accueil = {
                     $('#accueil > h1:nth-child(2)').css("transform", "translateY(-100px)");
                     $('#accueil > h1:nth-child(2)').css("opacity", "0");
                     $('#accueil').css("opacity", "0");
+                    $('html').scrollTop(0);
                     setTimeout(function() {
                         s = 3;
                         self.theLoop(i);
                     }, 500)
                 } else if (s == 3) {
                     $('#accueil').css("display", "none");
-                    $('html').css("overflow-y", "visible");
                     s = 0;
                 }
             }
@@ -225,7 +225,7 @@ var router = new VueRouter({
             path: '/13e-mois_Web/index.htm',
             component: accueil
         },
-        
+
         {
             name: 'listeDestinations',
             path: '/13e-mois_Web/index.htm/liste',

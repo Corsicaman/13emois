@@ -55,8 +55,7 @@
   background-size: contain; }
 
 html {
-  scroll-behavior: smooth;
-  overflow: hidden; }
+  scroll-behavior: smooth; }
 
 body {
   font-family: Montserrat;
@@ -456,9 +455,9 @@ a {
     transition: all .4s ease; }
 
 #accueil {
-  position: absolute;
+  position: fixed;
   width: 100vw;
-  min-height: 100vh;
+  min-height: 116vh;
   font-size: 11vw;
   font-weight: 700;
   font-family: Axis;

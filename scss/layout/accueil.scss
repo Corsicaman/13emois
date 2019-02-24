@@ -1,7 +1,7 @@
 #accueil {
-    position: absolute;
+    position: fixed;
     width: 100vw;
-    min-height: 100vh;
+    min-height: 116vh;
     font-size: 11vw;
     font-weight: 700;
     font-family: Axis;
@@ -129,6 +129,7 @@
 }
 
 #bodyAccueil {
+    // overflow: hidden;
     position: relative;
     min-height: 100vh;
     padding-bottom: 40px;
