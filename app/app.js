@@ -4,6 +4,8 @@ var s = 0;
 var i = 1;
 
 
+
+
 // =======================
 // =======================
 // PAGE D'ACCUEIL
@@ -177,7 +179,7 @@ const uneDestination = {
 
 // =======================
 // =======================
-// PAGE DE CONFIRMATION ET PAIEMENT
+// PAGE DE PAIEMENT
 // =======================
 // =======================
 const paiement = {
@@ -226,6 +228,48 @@ const paiement = {
 
 
 
+
+
+
+// =======================
+// =======================
+// PAGE DE CONFIRMATION
+// =======================
+// =======================
+const confirmation = {
+    template: '#confirmation-template',
+    data: () => ({
+        destinations: [],
+        destination: null
+    }),
+    mounted() {
+        this.getLaDestination();
+    },
+    methods: {
+        getLaDestination() {
+            var region = this.$route.params.region;
+            axios.get(urlJsonDestinations).then(response => {
+                this.destinations = response.data;
+                for (var desti in this.destinations) {
+                    if (this.destinations[desti].region == region) {
+                        this.destination = desti;
+                        // console.log(image);
+                        break;
+                    }
+                }
+                // console.log(this.post);
+            }).catch(error => {
+                console.log(error);
+            })
+        }
+    }
+};
+
+
+
+
+
+
 // =======================
 // =======================
 // VUE ROUTER : GESTIONS DES PAGES
@@ -255,6 +299,12 @@ var router = new VueRouter({
             name: 'paiement',
             path: '/13e-mois_Web/index.htm/paiement-:region',
             component: paiement
+        },
+
+        {
+            name: 'confirmation',
+            path: '/13e-mois_Web/index.htm/confirmation-:region',
+            component: confirmation
         }
     ]
 });

@@ -5,7 +5,7 @@
     <title>Le 13e mois</title>
     <meta charset='UTF-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"">
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel=" stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <meta name="description" content="Le 13e mois est un site de réservation de voyage dans un endroit paradisiaque pendant 1 mois.">
     <!-- JQUERY -->
@@ -194,7 +194,7 @@
                         <transition name="entreeSubInfo" mode="out-in" appear>
                             <div id="suivant">
                                 <p>SOUS TOTAL: 8500 $</p>
-                                <router-link :to="{ name: 'paiement'}">
+                                <router-link :to="{ name: 'paiement', params: { region: destinations[destination].region }}">
                                     <div class="bouton boutonTurquoiseOutline" id="btnAppelPaiement">SUIVANT <i class="material-icons">send</i></div>
                                 </router-link>
                             </div>
@@ -314,12 +314,47 @@
                         </div>
                         <h4 id="montantTotal">{{destinations[destination].prix}} $</h4>
                     </div>
-                    <div class="bouton boutonTurquoiseOutline">CONFIRMER <i class="material-icons">send</i></div>
+                    <router-link :to="{ name: 'confirmation', params: { region: destinations[destination].region}}" id="btnAppelPaiement">
+                        <div class="bouton boutonTurquoiseOutline">CONFIRMER <i class="material-icons">send</i></div>
+                    </router-link>
                 </div>
             </section>
         </main>
         </div>
-    </template> <!-- VUE.JS - Version de developpement -->
+    </template>
+    <template id="confirmation-template">
+        <div id="bodyPaiement">
+            <router-link :to="{ name: 'accueil'}">
+                <div id="logo">
+                    <img src="../images/logos/13EM_Logo_Black_Blue.png" alt="13e LOGO">
+                </div>
+            </router-link>
+            <router-link :to="{ name: 'listeDestinations'}" id="bodyConfirmationRetour">
+                < RETOUR À LA LISTE</router-link> <div id="lieu_background">{{destinations[destination].region}}, {{destinations[destination].pays}}
+        </div>
+        <main id="main_paiement">
+            <section id="section_informations">
+                <h1>VOUS AVEZ RÉSERVÉ VOTRE VOYAGE À :</h1>
+                <h2>{{destinations[destination].region}}, {{destinations[destination].pays}}</h2>
+            </section>
+            <section id="section_hebergement">
+                <h1>MONTANT TOTAL :</h1>
+                <h2 id="confTotal"></h2>
+            </section>
+            <section id="section_options">
+                <h1 id="lesOptionsConf">OPTIONS</h1>
+                <h2 id=""><p id="nomHebergement"></p><p id="assuranceBagages"></p><p id="serviceVIP"></p><p id="passeExpress"></p><p id="restaurant24"></p></h2>
+            </section>
+            <section id="section_finalisation">
+                <h1 id="lesOptionsConf">FACTURATION</h1>
+                <h3 id="Merci pour votre réservation!"></h3>
+                <h2 id="confPrenom"></h2>
+                <h2 id="confNom"></h2>
+            </section>
+        </main>
+        </div>
+    </template>
+    <!-- VUE.JS - Version de developpement -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>

@@ -1023,7 +1023,300 @@ a {
 
 #bodyPaiementRetour {
   position: absolute;
+  z-index: 1000;
+  top: 190px;
+  left: 7.5%;
+  color: #32D096;
+  text-shadow: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: opacity 0.5s, transform 0.5s;
+  opacity: 0;
+  transform: translateX(30px); }
+
+#bodyPaiement #logo {
+  position: relative;
   z-index: 1;
+  width: 150px;
+  transition: opacity 0.5s, transform 0.5s;
+  opacity: 0;
+  transform: translateY(30px); }
+
+#main_paiement {
+  position: relative;
+  z-index: 10;
+  width: 85%;
+  padding: 120px 0 40px 0;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-areas: "infos" "hebergement" "services" "finalisation"; }
+
+#main_paiement section {
+  width: 100%;
+  transition: opacity 0.5s, transform 0.5s;
+  opacity: 0;
+  transform: translateY(-60px); }
+
+#main_paiement section:nth-child(1) {
+  grid-area: infos; }
+
+#main_paiement section:nth-child(2) {
+  grid-area: hebergement; }
+
+#main_paiement section:nth-child(3) {
+  grid-area: services; }
+
+#main_paiement section:nth-child(4) {
+  grid-area: finalisation; }
+
+#main_paiement h1 {
+  border-bottom: 1px solid #eee;
+  font-size: 21px;
+  font-weight: 800;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  color: #333; }
+
+#main_paiement input[type=text] {
+  outline: none;
+  width: 100%;
+  padding: 6px 15px 10px 15px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #D9D9D9;
+  background-color: #FAFAFA;
+  transition: border-bottom 0.2s; }
+  #main_paiement input[type=text]:focus {
+    border-bottom: 2px solid #34A2FF; }
+  #main_paiement input[type=text]::placeholder {
+    font-style: italic;
+    color: #C4C4C4;
+    font-size: 12px;
+    font-family: Montserrat; }
+
+#main_paiement label {
+  font-size: 10px;
+  font-weight: 600;
+  color: #34A2FF;
+  padding-left: 15px; }
+
+#main_paiement form p {
+  background-color: #FAFAFA;
+  padding-top: 10px;
+  margin-bottom: 15px; }
+
+#section_hebergement > div {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px; }
+
+#section_hebergement > div > div {
+  cursor: pointer; }
+
+.hebergement_img {
+  height: 230px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  transition: box-shadow 0.2s; }
+
+#suite .hebergement_img {
+  background-image: url("../images/hebergements/suite.jpg");
+  box-shadow: inset 0 -5px 0 #32D096; }
+
+#lodge .hebergement_img {
+  background-image: url("../images/hebergements/lodge.jpg");
+  box-shadow: inset 0 0px 0 #32D096; }
+
+#villa .hebergement_img {
+  background-image: url("../images/hebergements/villa.jpg");
+  box-shadow: inset 0 0px 0 #32D096; }
+
+#suite:hover > .hebergement_img,
+#lodge:hover > .hebergement_img,
+#villa:hover > .hebergement_img {
+  box-shadow: inset 0 -5px 0 #32D096 !important; }
+
+#section_hebergement h3 {
+  padding-top: 12px;
+  padding-bottom: 3px;
+  font-weight: 700;
+  font-size: 17px; }
+
+#section_hebergement p {
+  padding-bottom: 15px;
+  font-weight: 600;
+  font-size: 13px;
+  color: #34A2FF; }
+
+#section_options {
+  display: grid; }
+  #section_options p {
+    padding: 0; }
+
+#section_options > div {
+  height: 60px;
+  margin: 4px 0;
+  display: flex;
+  align-items: center; }
+
+.options_icon {
+  width: 4vw;
+  height: 4vw;
+  min-width: 30px;
+  min-height: 30px;
+  max-width: 60px;
+  max-height: 60px;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+#options_icon_01 {
+  background-image: url("../images/icons/options/option_01.png"); }
+
+#options_icon_02 {
+  background-image: url("../images/icons/options/option_02.png"); }
+
+#options_icon_03 {
+  background-image: url("../images/icons/options/option_03.png"); }
+
+#options_icon_04 {
+  background-image: url("../images/icons/options/option_04.png"); }
+
+.options_texte {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 20px;
+  width: 60%; }
+
+.options_texte h3 {
+  padding-bottom: 4px;
+  padding-top: 0px;
+  font-size: 15px;
+  color: #444;
+  font-weight: 600; }
+
+.options_texte p {
+  font-size: 13px;
+  color: #34A2FF;
+  font-weight: 600;
+  background-color: white; }
+
+.leToggle {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end; }
+
+#section_finalisation input[type=text]:focus {
+  border-bottom: 2px solid #32D096; }
+
+#section_finalisation label {
+  color: #32D096; }
+
+#section_finalisation #total {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  width: 100%; }
+  #section_finalisation #total p {
+    color: #999;
+    font-size: 11px; }
+  #section_finalisation #total h4 {
+    border-radius: 2px;
+    border: 1px solid #32D096;
+    color: #32D096;
+    background-color: #EEFFF9;
+    padding: 13px 20px;
+    width: 70%;
+    font-size: 18px;
+    text-align: center; }
+  #section_finalisation #total > div:first-child {
+    display: flex; }
+    #section_finalisation #total > div:first-child p:first-child {
+      margin-right: 10px;
+      color: #32D096;
+      font-size: 13px;
+      margin-bottom: 5px; }
+
+#section_finalisation > div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+#section_finalisation .bouton {
+  margin: 0;
+  margin-top: 20px;
+  padding: 14px 18px !important;
+  font-size: 15px;
+  font-weight: 600; }
+
+#section_finalisation .bouton i {
+  font-size: 15px;
+  display: inline-block;
+  padding-left: 15px; }
+
+@media screen and (min-width: 800px) {
+  #section_hebergement > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px; }
+  #section_finalisation #total > div:first-child {
+    display: flex; }
+    #section_finalisation #total > div:first-child p:first-child {
+      margin-right: 10px;
+      color: #32D096;
+      font-size: 13px;
+      margin-bottom: 5px; }
+  #section_finalisation > div:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end; }
+  #section_finalisation .bouton {
+    margin: 0px; } }
+
+@media screen and (min-width: 1080px) {
+  #bodyPaiementRetour {
+    top: 60px; }
+  #main_paiement {
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 50px;
+    padding: 12vw 0 40px 0;
+    grid-template-areas: "infos hebergement" "services  finalisation"; } }
+
+#bodyConfirmation {
+  max-width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  vertical-align: middle;
+  background-color: white; }
+
+#lieu_background {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: -4vw;
+  font-size: 15vw;
+  font-weight: 800;
+  color: #eee;
+  text-transform: uppercase;
+  width: 300vw;
+  transition: opacity 0.5s, transform 0.5s;
+  opacity: 0;
+  transform: translateY(-5vw); }
+
+#bodyConfirmationRetour {
+  position: absolute;
+  z-index: 1000;
   top: 190px;
   left: 7.5%;
   color: #32D096;
