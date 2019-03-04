@@ -4,14 +4,12 @@
 <head>
     <title>Le 13e mois</title>
     <meta charset='UTF-8'>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <meta name="description" content="Le 13e mois est un site de réservation de voyage dans un endroit paradisiaque pendant 1 mois.">
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
-    <!-- MODERNIZR.JS -->
-    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script> -->
     <!-- MATERIAL ICONS -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- POLICES -->
@@ -19,57 +17,315 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
 </head>
 
-<body id="bodyAccueil">
-    <div id="accueil">
-        <h1>le &nbsp</h1><h1>1er</h1><h1>&nbsp mois</h1>
+<body>
+    <div id="app">
+        <transition name="fade" mode="out-in">
+            <router-view />
+        </transition>
     </div>
-    <a href="index.htm"><h1 id="logo13">Le 13e mois</h1></a>
-    <main>
-        <section id="infos">
-            <div>
-                <h1>1</h1>
-                <div class="boxShadow">CHOISIR UNE DESTINATION PARADISIAQUE</div>
-                <div>
-                    <div class="boxShadow" id="icon_pays"></div>
-                    <div class="boxShadow" id="icon_prix"></div>
-                    <div class="boxShadow" id="icon_note"></div>
-                </div>
+    <template id="accueil-template">
+        <div id="bodyAccueil">
+            <div id="accueil">
+                <h1>LE</h1>
+                <h1>1<p>er</p>
+                </h1>
+                <h1>
+                    <div>M</div>
+                    <div>OIS</div>
+                </h1>
             </div>
-            <div>
-                <h1>2</h1>
-                <div class="boxShadow">EN APPRENDRE PLUS SUR LE VOYAGE QUI VOUS ATTIRE</div>
-                <div>
-                    <div class="boxShadow" id="icon_activites"></div>
-                    <div class="boxShadow" id="icon_services"></div>
-                    <div class="boxShadow" id="icon_climat"></div>
+            <div id="fondBlanc"></div>
+            <router-link :to="{ name: 'accueil'}">
+                <div id="logo">
+                    <img src="images/logos/13EM_Logo_White_Blue.png" alt="13e LOGO">
+                    <p>VOYAGES DE LUXE</p>
                 </div>
+            </router-link>
+            <main>
+                <section id="infos">
+                    <div>
+                        <h1>1</h1>
+                        <div class="boxShadow">CHOISIR UNE DESTINATION PARADISIAQUE</div>
+                        <div>
+                            <div class="boxShadow" id="icon_pays"></div>
+                            <div class="boxShadow" id="icon_prix"></div>
+                            <div class="boxShadow" id="icon_note"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h1>2</h1>
+                        <div class="boxShadow">EN APPRENDRE PLUS SUR UN VOYAGE</div>
+                        <div>
+                            <div class="boxShadow" id="icon_activites"></div>
+                            <div class="boxShadow" id="icon_services"></div>
+                            <div class="boxShadow" id="icon_climat"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h1>3</h1>
+                        <div class="boxShadow">RÉSERVEZ VOTRE MOIS AU 3e CIEL</div>
+                        <div>
+                            <div class="boxShadow" id="icon_date"></div>
+                            <div class="boxShadow" id="icon_options"></div>
+                            <div class="boxShadow" id="icon_paiement"></div>
+                        </div>
+                    </div>
+                </section>
+                <router-link :to="{ name: 'listeDestinations'}">
+                    <div id="btnListe" class="bouton boutonBlanc boxShadow">LISTE DES DESTINATIONS <i class="material-icons">send</i></div>
+                </router-link>
+            </main>
+        </div>
+    </template>
+    <template id="lesDestinations-template">
+        <div id="bodyDestinations">
+            <div id="logo">
+                <router-link :to="{ name: 'accueil'}">
+                    <img src="../images/logos/13EM_Logo_White_Blue.png" alt="13e LOGO">
+                </router-link>
             </div>
-            <div>
-                <h1>3</h1>
-                <div class="boxShadow">RÉSERVEZ VOTRE MOIS AU 3e CIEL</div>
-                <div>
-                    <div class="boxShadow" id="icon_date"></div>
-                    <div class="boxShadow" id="icon_options"></div>
-                    <div class="boxShadow" id="icon_paiement"></div>
+            <main id="main_lesDestinations">
+                <div id="header_liste">
+                    <h1 id="titre_liste">LISTE DES DESTINATIONS</h1>
+                    <div id="header_tri">
+                        <h2>TRIER PAR : </h2>
+                        <p><i class="material-icons">accessibility_new</i><span>Popularité</span></p>
+                        <p><i class="material-icons">star</i><span>Note</span></p>
+                        <p><i class="material-icons">attach_money</i><span>Prix</span></p>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <a href="destinations.htm"><div id="btnListe" class="bouton boutonBlanc boxShadow">Liste des destinations <i class="material-icons">send</i></div></a>
-        <!--         <div id="destinations">
-            <ol>
-                <todo-item
-                    v-for="item in groceryList"
-                    v-bind:todo="item"
-                    v-bind:key="item.id">
-               </todo-item>
-            </ol>
-        </div> -->
-    </main>
-    <!-- VUE.JS - Version de developpement  -->
+                <transition-group v-bind:css="false" v-on:before-enter="beforeEnter" v-on:enter="enter" v-on:leave="leave" name="list" tag="div" id="contenant_liste">
+                    <div class="destination boxShadowHover" v-for="(desti, index) in destinations" v-bind:key="desti.region" v-bind:data-index="index" mode="out-in">
+                        <router-link :to="{ name: 'destination', params: { region: desti.region }}">
+                            <div class="destiImage" v-bind:style="desti.backgroundImageMinia"></div>
+                            <div class="destiInfo">
+                                <div class="destiInfoGauche">
+                                    <div>{{desti.region}}, {{desti.pays}}</div>
+                                    <div>DESTINATION #{{desti.rang}} EN 2018</div>
+                                    <div><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
+                                        <p>({{desti.notes}})</p>
+                                    </div>
+                                </div>
+                                <div class="destiInfoDroite">
+                                    <div class="bouton boutonTurquoiseOutline">{{desti.prix}} $</div>
+                                    <div class="bouton boutonTurquoise">CONSULTER</div>
+                                </div>
+                            </div>
+                            <div class="destiBorderBot"></div>
+                        </router-link>
+                    </div>
+                </transition-group>
+            </main>
+        </div>
+    </template>
+    <template id="uneDestination-template">
+        <div id="bodyDestinations">
+            <router-link :to="{ name: 'accueil'}">
+                <div id="logo">
+                    <img src="../images/logos/13EM_Logo_White_Blue.png" alt="13e LOGO">
+                </div>
+            </router-link>
+            <main id="main_uneDestination">
+                <div id="uneDestination">
+                    <transition name="entreePhoto" mode="out-in" appear>
+                        <div id="uneDestinationImage" :style="destinations[destination].backgroundImage">
+                            <transition name="entreeResume" mode="out-in" appear>
+                                <router-link :to="{ name: 'listeDestinations'}" id="link">
+                                    < RETOUR À LA LISTE</router-link> </transition> <div>
+                                        <transition name="entreeResume" mode="out-in" appear>
+                                            <p id="sousTitre">VOTRE 13e CIEL</p>
+                                        </transition>
+                                        <transition name="entreeTitre" mode="out-in" appear>
+                                            <h1>{{destinations[destination].region}}, {{destinations[destination].pays}}</h1>
+                                        </transition>
+                        </div>
+                        <transition name="entreeResume" mode="out-in" appear>
+                            <div id="resumeInfos">
+                                <div>
+                                    <div><i class="material-icons">person</i>{{destinations[destination].notes}}</div>
+                                    <div>VISITES</div>
+                                </div>
+                                <div>
+                                    <div><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></div>
+                                    <div>NOTE MOYENNE</div>
+                                </div>
+                                <div>
+                                    <div>#{{destinations[destination].rang}}</div>
+                                    <div>EN 2018</div>
+                                </div>
+                            </div>
+                        </transition>
+                </div>
+                </transition>
+                <transition name="entreeInfos" mode="out-in" appear>
+                    <div id="uneDestinationInfos">
+                        <transition name="entreeSubInfo" mode="out-in" appear>
+                            <h1>{{destinations[destination].region}}, {{destinations[destination].pays}}</h1>
+                        </transition>
+                        <transition name="entreeSubInfo" mode="out-in" appear>
+                            <div>DESTINATION #{{destinations[destination].rang}} LA PLUS VISITÉE EN 2018</div>
+                        </transition>
+                        <transition name="entreeSubInfo" mode="out-in" appear>
+                            <div><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i> ({{destinations[destination].notes}})</div>
+                        </transition>
+                        <transition name="entreeSubInfo" mode="out-in" appear>
+                            <div id="description" class="boxShadow">
+                                <h3>DESCRIPTION</h3>
+                                <p>{{destinations[destination].description}}</p>
+                            </div>
+                        </transition>
+                        <transition name="entreeSubInfo" mode="out-in" appear>
+                            <div id="activites" class="boxShadow">
+                                <h3>ACTIVITÉS</h3>
+                                <div>
+                                    <div v-bind:style="destinations[destination].activite_01_icon"></div>
+                                    <p>{{destinations[destination].activite_01_nom}}</p>
+                                </div>
+                                <div>
+                                    <div v-bind:style="destinations[destination].activite_02_icon"></div>
+                                    <p>{{destinations[destination].activite_02_nom}}</p>
+                                </div>
+                                <div>
+                                    <div v-bind:style="destinations[destination].activite_03_icon"></div>
+                                    <p>{{destinations[destination].activite_03_nom}}</p>
+                                </div>
+                            </div>
+                        </transition>
+                        <transition name="entreeSubInfo" mode="out-in" appear>
+                            <div id="suivant">
+                                <p>SOUS TOTAL: 8500 $</p>
+                                <router-link :to="{ name: 'paiement'}">
+                                    <div class="bouton boutonTurquoiseOutline" id="btnAppelPaiement">SUIVANT <i class="material-icons">send</i></div>
+                                </router-link>
+                            </div>
+                        </transition>
+                    </div>
+                </transition>
+        </div>
+        </main>
+        </div>
+    </template>
+    <template id="paiement-template">
+        <div id="bodyPaiement">
+            <router-link :to="{ name: 'accueil'}">
+                <div id="logo">
+                    <img src="../images/logos/13EM_Logo_Black_Blue.png" alt="13e LOGO">
+                </div>
+            </router-link>
+            <router-link :to="{ name: 'listeDestinations'}" id="bodyPaiementRetour">
+                < RETOUR À LA LISTE</router-link> <div id="lieu_background">{{destinations[destination].region}}, {{destinations[destination].pays}}
+        </div>
+        <main id="main_paiement">
+            <section id="section_informations">
+                <h1>VOS INFORMATIONS</h1>
+                <form>
+                    <p><label for="prenom">PRÉNOM</label>
+                        <input type="text" id="prenom" name="prenom" placeholder="Votre prénom"></p>
+                    <p><label for="nom">NOM</label>
+                        <input type="text" id="nom" name="nom" placeholder="Votre nom"></p>
+                    <p><label for="tel">NUMÉRO DE TÉLÉPHONE</label>
+                        <input type="text" id="tel" name="tel" placeholder="Votre numéro"></p>
+                    <p><label for="adresse">ADRESSE COMPLÈTE</label>
+                        <input type="text" id="adresse" name="adresse" placeholder="Votre adresse"></p>
+                </form>
+            </section>
+            <section id="section_hebergement">
+                <h1>CHOIX DE L'HÉBERGEMENT</h1>
+                <div>
+                    <div id="suite">
+                        <div class="hebergement_img" id="imgSuite"></div>
+                        <h3>SUITE</h3>
+                        <p>PAR DÉFAUT</p>
+                    </div>
+                    <div id="lodge">
+                        <div class="hebergement_img"></div>
+                        <h3>LODGE</h3>
+                        <p>+ 5000 $</p>
+                    </div>
+                    <div id="villa">
+                        <div class="hebergement_img"></div>
+                        <h3>VILLA</h3>
+                        <p>+ 10000 $</p>
+                    </div>
+                </div>
+            </section>
+            <section id="section_options">
+                <h1>SERVICES & OPTIONS</h1>
+                <div>
+                    <div class="options_icon" id="options_icon_01"></div>
+                    <div class="options_texte">
+                        <h3>ASSURANCE BAGAGES</h3>
+                        <p>2000 $</p>
+                    </div>
+                    <div class="leToggle center">
+                        <input type="checkbox" id="option1" style="display : none">
+                        <label for="option1" class="toggle"><span></span></label>
+                    </div>
+                </div>
+                <div>
+                    <div class="options_icon" id="options_icon_02"></div>
+                    <div class="options_texte">
+                        <h3>SERVICES VIP</h3>
+                        <p>4000 $</p>
+                    </div>
+                    <div class="leToggle center">
+                        <input type="checkbox" id="option2" style="display : none">
+                        <label for="option2" class="toggle"><span></span></label>
+                    </div>
+                </div>
+                <div>
+                    <div class="options_icon" id="options_icon_03"></div>
+                    <div class="options_texte">
+                        <h3>PASSE EXPRESS</h3>
+                        <p>1500 $</p>
+                    </div>
+                    <div class="leToggle center">
+                        <input type="checkbox" id="option3" style="display : none">
+                        <label for="option3" class="toggle"><span></span></label>
+                    </div>
+                </div>
+                <div>
+                    <div class="options_icon" id="options_icon_04"></div>
+                    <div class="options_texte">
+                        <h3>RESTAURANT 24/7</h3>
+                        <p>3000 $</p>
+                    </div>
+                    <div class="leToggle center">
+                        <input type="checkbox" id="option4" style="display : none">
+                        <label for="option4" class="toggle"><span></span></label>
+                    </div>
+                </div>
+            </section>
+            <section id="section_finalisation">
+                <h1>FINALISATION</h1>
+                <form>
+                    <p><label for="carte">NUMÉRO DE CARTE</label>
+                        <input type="text" id="carte" name="carte" placeholder="1234-4567-8901-1234"></p>
+                    <p><label for="titulaire">NOM DU TITULAIRE</label>
+                        <input type="text" id="titulaire" name="titulaire" placeholder="Votre nom"></p>
+                </form>
+                <div>
+                    <div id="total">
+                        <div>
+                            <p>PRIX TOTAL</p>
+                            <p>(SOUS-TOTAL :&nbsp; </p>
+                            <p id="sousTotal">{{destinations[destination].prix}}</p>
+                            <p>&nbsp; $)</p>
+                        </div>
+                        <h4 id="montantTotal">{{destinations[destination].prix}} $</h4>
+                    </div>
+                    <div class="bouton boutonTurquoiseOutline">CONFIRMER <i class="material-icons">send</i></div>
+                </div>
+            </section>
+        </main>
+        </div>
+    </template> <!-- VUE.JS - Version de developpement -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="js/accueil.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
     <!-- MAIN VUE -->
-    <!-- <script src="src/main.js"></script> -->
+    <script src="app/app.js"></script>
+    <script type='module' src="js/application.js"></script>
 </body>
 
 </html>

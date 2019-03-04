@@ -1,10 +1,22 @@
-@import "base/variables";
-@import "base/effects";
-@import "base/icons"; 
-@import "base/global";
-@import "base/animations";
+// STYLES ET PARAMÈTRES GLOBAUX 
+@import "site-global/fonts";
+@import "site-global/variables";
+@import "site-global/effects";
+@import "site-global/icons"; 
+@import "site-global/global";
+@import "site-global/animations";
+
+
+// COMPOSANTS RÉUTILISABLES
 @import "components/buttons";
 @import "components/destination";
-@import "pages/pageDestination"; 
-@import "pages/accueil"; 
-@import "pages/destinations"; 
+@import "components/toggle";
+
+
+// STYLES SPÉCIFIQUES À DES PAGES
+@import "layout/accueil"; 
+@import "layout/pageListeDestinations";
+@import "layout/pageDestination"; 
+@import "layout/pagePaiement"; 
+
+
