@@ -525,6 +525,9 @@ a {
 #bodyAccueil #logo {
   width: 150px; }
 
+#bodyAccueil main {
+  display: none; }
+
 #infos {
   margin: 0 auto;
   display: flex;

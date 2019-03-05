@@ -62,19 +62,20 @@ const accueil = {
                     setTimeout(function() {
                         s = 2;
                         self.theLoop(i);
-                    }, 1000)
+                    }, 900)
                 } else if (s == 2) {
                     $('#fondBlanc').css("display", "none");
+                    $('#bodyAccueil main').css("display", "block");
                     $('#accueil > h1:nth-child(3) div:first-child').css("transform", "rotate(-90deg) translate(100%, -45%) scale(0.4)");
                     $('#accueil > h1:nth-child(3) div:first-child').css("opacity", "0");
                     $('#accueil > h1:nth-child(2)').css("transform", "translateY(-100px)");
                     $('#accueil > h1:nth-child(2)').css("opacity", "0");
                     $('#accueil').css("opacity", "0");
-                    $('html').scrollTop(0);
+                    // $('html').scrollTop(0);
                     setTimeout(function() {
                         s = 3;
                         self.theLoop(i);
-                    }, 500)
+                    }, 300)
                 } else if (s == 3) {
                     $('#accueil').css("display", "none");
                     $('html').css("overflow-y", "initial");
