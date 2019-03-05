@@ -2,7 +2,7 @@
 @import "site-global/fonts";
 @import "site-global/variables";
 @import "site-global/effects";
-@import "site-global/icons"; 
+@import "site-global/icons";
 @import "site-global/global";
 @import "site-global/animations";
 
@@ -14,10 +14,8 @@
 
 
 // STYLES SPÉCIFIQUES À DES PAGES
-@import "layout/accueil"; 
+@import "layout/accueil";
 @import "layout/pageListeDestinations";
-@import "layout/pageDestination"; 
-@import "layout/pagePaiement"; 
-@import "layout/pageConfirmation"; 
-
-
+@import "layout/pageDestination";
+@import "layout/pagePaiement";
+@import "layout/pageConfirmation";

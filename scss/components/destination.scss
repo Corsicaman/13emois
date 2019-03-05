@@ -22,7 +22,7 @@
     flex-direction: column;
     justify-content: space-between;
     top: 0px;
-    transition: transform 0.25s, opacity 0.25s, box-shadow 0.25s, top 0.25s;
+    transition: transform 0.7s, opacity 0.25s, box-shadow 0.25s, top 0.25s;
     // transform: translateY(-20px);
 
     transition-timing-function: cubic-bezier(.25, .8, .25, 1);
@@ -161,8 +161,8 @@
     .destination {
         width: 27vw;
 
-        // &:hover {
-        //     top: -7px;
-        // }
+        &:hover {
+            top: -7px;
+        }
     }
 }

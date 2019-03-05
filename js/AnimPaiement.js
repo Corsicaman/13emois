@@ -3,10 +3,11 @@
 export class AnimPaiement {
 
 
-    constructor(total, prenom, nom, nomHebergement, assuranceBagages, serviceVIP, passeExpress, restaurant24) {
+    constructor(total, prenom, nom, carte, nomHebergement, assuranceBagages, serviceVIP, passeExpress, restaurant24) {
         this.total = total;
         this.prenom = prenom;
         this.nom = nom;
+        this.carte = carte;
         this.nomHebergement = nomHebergement;
         this.assuranceBagages = assuranceBagages;
         this.serviceVIP = serviceVIP;
@@ -47,14 +48,15 @@ export class AnimPaiement {
 
 
     remplirOptions() {
-        $("#confTotal").text(this.total);
-        $("#confPrenom").text(this.prenom);
-        $("#confNom").text(this.nom);
-        $("#nomHebergement").text(this.nomHebergement);
-        $("#assuranceBagages").text(this.assuranceBagages);
-        $("#serviceVIP").text(this.serviceVIP);
-        $("#passeExpress").text(this.passeExpress);
-        $("#restaurant24").text(this.restaurant24);
+        $("#confTotal").html(this.total);
+        $("#confPrenom").html("<span class='confSpan'>Au nom de : </span><span class='turquoise'>"+this.prenom+"</span>");
+        $("#confNom").html("<span class='turquoise'>"+this.nom+"</span>");
+        $("#confCarte").html("<span class='confSpan'>Carte de crédit : </span><span class='turquoise'>"+this.carte+ " xxxx xxxx xxxx</span>");
+        $("#nomHebergement").html(this.nomHebergement);
+        $("#assuranceBagages").html(this.assuranceBagages);
+        $("#serviceVIP").html(this.serviceVIP);
+        $("#passeExpress").html(this.passeExpress);
+        $("#restaurant24").html(this.restaurant24);
 
     }
 }

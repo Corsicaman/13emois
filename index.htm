@@ -89,9 +89,9 @@
                     <h1 id="titre_liste">LISTE DES DESTINATIONS</h1>
                     <div id="header_tri">
                         <h2>TRIER PAR : </h2>
-                        <p><i class="material-icons">accessibility_new</i><span>Popularité</span></p>
-                        <p><i class="material-icons">star</i><span>Note</span></p>
-                        <p><i class="material-icons">attach_money</i><span>Prix</span></p>
+                        <p v-on:click="ordre('popularite')" id="ordrePop"><i class="material-icons">accessibility_new</i><span>Popularité</span></p>
+                        <p v-on:click="ordre('note')" id="ordreNote"><i class="material-icons">star</i><span>Avis</span></p>
+                        <p v-on:click="ordre('prix')" id="ordrePrix"><i class="material-icons">attach_money</i><span>Prix</span></p>
                     </div>
                 </div>
                 <transition-group v-bind:css="false" v-on:before-enter="beforeEnter" v-on:enter="enter" v-on:leave="leave" name="list" tag="div" id="contenant_liste">
@@ -329,8 +329,17 @@
                     <img src="../images/logos/13EM_Logo_Black_Blue.png" alt="13e LOGO">
                 </div>
             </router-link>
-            <router-link :to="{ name: 'listeDestinations'}" id="bodyConfirmationRetour">
-                < RETOUR À LA LISTE</router-link> <div id="lieu_background">{{destinations[destination].region}}, {{destinations[destination].pays}}
+            <router-link :to="{ name: 'paiement', params: { region: destinations[destination].region }}" id="btnAppelPaiement">
+                <div id="bodyConfirmationRetour">< RETOUR AUX OPTIONS</div></router-link> <div id="lieu_background">
+        </div>
+        <h1 id="titreConfirmation">IL EST L'HEURE DE FAIRE VOS BAGAGES!</h1>
+        <div class="check_mark">
+            <div class="sa-icon sa-success animate">
+                <span class="sa-line sa-tip animateSuccessTip"></span>
+                <span class="sa-line sa-long animateSuccessLong"></span>
+                <div class="sa-placeholder"></div>
+                <div class="sa-fix"></div>
+            </div>
         </div>
         <main id="main_paiement">
             <section id="section_informations">
@@ -341,15 +350,22 @@
                 <h1>MONTANT TOTAL :</h1>
                 <h2 id="confTotal"></h2>
             </section>
-            <section id="section_options">
-                <h1 id="lesOptionsConf">OPTIONS</h1>
-                <h2 id=""><p id="nomHebergement"></p><p id="assuranceBagages"></p><p id="serviceVIP"></p><p id="passeExpress"></p><p id="restaurant24"></p></h2>
+            <section id="section_optionsConf">
+                <h1>OPTIONS</h1>
+                <h2 id="lesOptionsConf" class="confSpan">
+                    <p id="nomHebergement" class="confSpan"></p>
+                    <p id="assuranceBagages"></p>
+                    <p id="serviceVIP"></p>
+                    <p id="passeExpress"></p>
+                    <p id="restaurant24"></p>
+                </h2>
             </section>
-            <section id="section_finalisation">
-                <h1 id="lesOptionsConf">FACTURATION</h1>
-                <h3 id="Merci pour votre réservation!"></h3>
+            <section id="section_facturation">
+                <h1>FACTURATION</h1>
+                <h2 class="confSpan">Merci pour votre réservation!</h2>
                 <h2 id="confPrenom"></h2>
                 <h2 id="confNom"></h2>
+                <h2 id="confCarte"></h2>
             </section>
         </main>
         </div>

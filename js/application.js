@@ -9,11 +9,13 @@ import {
 var total = 0;
 var prenom = "Réservation";
 var nom = "anonyme";
-var nomHebergement = "Hébergement : Suite";
+var carte = "3214"
+var nomHebergement = "Hébergement : <span class='turquoise'>&nbsp Suite</span>";
 var assuranceBagages = "";
 var serviceVIP = "";
 var passeExpress = "";
 var restaurant24 = "";
+
 
 
 
@@ -22,26 +24,28 @@ var restaurant24 = "";
 $('body').on('click', '#btnAppelPaiement', function() {
     total = $("#montantTotal").html();
     if ($("#prenom").val() != "" && $("#prenom").length > 0) {
-        console.log($("#prenom").val());
         prenom = $("#prenom").val();
         nom = $("#nom").val();
     }
+    if ($("#carte").val() != "" && $("#carte").length > 0) {
+        carte = $("#carte").val().substring(1, 5);
+    }
     if ($('#option1').is(':checked')) {
-        assuranceBagages = "Assurance bagages";
+        assuranceBagages = "<p>Assurance bagages</p> <i class='material-icons'>check</i>";
     }
     if ($('#option2').is(':checked')) {
-        serviceVIP = "Service VIP";
+        serviceVIP = "<p>Service VIP</p> <i class='material-icons'>check</i>";
     }
     if ($('#option3').is(':checked')) {
-        passeExpress = "Passe Express";
+        passeExpress = "<p>Passe Express</p> <i class='material-icons'>check</i>";
     }
     if ($('#option4').is(':checked')) {
-        restaurant24 = "Restaurant 24/7";
+        restaurant24 = "<p>Restaurant 24/7</p> <i class='material-icons'>check</i>";
     }
     setTimeout(function() {
 
         // On met à jour le total// 
-        let lancerAnimPaiement = new AnimPaiement(total, prenom, nom, nomHebergement, assuranceBagages, serviceVIP, passeExpress, restaurant24);
+        let lancerAnimPaiement = new AnimPaiement(total, prenom, nom, carte, nomHebergement, assuranceBagages, serviceVIP, passeExpress, restaurant24);
     }, 400);
 });
 
@@ -58,7 +62,7 @@ $('body').on('click', '.leToggle', function() {
 
 $('body').on('click', '#lodge', function() {
     hebergement = "lodge";
-    nomHebergement = "Hébergement : Lodge";
+    nomHebergement = "Hébergement : <span class='turquoise'>&nbsp Lodge</span>";
     let lancerAnimTotal = new AnimTotal(hebergement);
     $("#lodge > .hebergement_img").css("box-shadow", "inset 0 -5px 0 #32D096");
     $("#villa > .hebergement_img").css("box-shadow", "inset 0 0 0 #32D096");
@@ -66,7 +70,7 @@ $('body').on('click', '#lodge', function() {
 });
 $('body').on('click', '#villa', function() {
     hebergement = "villa";
-    nomHebergement = "Hébergement : Villa";
+    nomHebergement = "Hébergement : <span class='turquoise'>&nbsp Villa</span>";
     let lancerAnimTotal = new AnimTotal(hebergement);
     $("#villa > .hebergement_img").css("box-shadow", "inset 0 -5px 0 #32D096");
     $("#lodge > .hebergement_img").css("box-shadow", "inset 0 0 0 #32D096");
@@ -74,7 +78,7 @@ $('body').on('click', '#villa', function() {
 });
 $('body').on('click', '#suite', function() {
     hebergement = "suite";
-    nomHebergement = "Hébergement : Suite";
+    nomHebergement = "Hébergement : <span class='turquoise'>&nbsp Suite</span>";
     let lancerAnimTotal = new AnimTotal(hebergement);
     $("#imgSuite").css("box-shadow", "inset 0 -5px 0 #32D096");
     $("#villa > .hebergement_img").css("box-shadow", "inset 0 0 0 #32D096");

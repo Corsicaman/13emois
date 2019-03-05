@@ -112,8 +112,6 @@ const lesDestinations = {
         },
 
 
-
-
         beforeEnter: function(el) {
             el.style.opacity = 0
             el.style.transform = "translateY(-30px)"
@@ -131,6 +129,118 @@ const lesDestinations = {
                 el.style.opacity = 0
                 el.style.transform = "translateY(-30px)"
             }, delay)
+        },
+
+        ordre: function(classement) {
+            console.log("Fonction ordre par " + classement);
+            var nD = JSON.parse(JSON.stringify(this.destinations));
+            let index = 0;
+            let max = 50000;
+            let maxIndex = 0;
+            let dejaPasse = [];
+            let length = this.destinations.length;
+            let add = true;
+            // if (classement == "note") {} else if (classement == "popularite") {} else 
+
+
+            // CLASSER PAR PRIX
+            if (classement == "prix") {
+
+
+                // On parcourt le nouveau tableau pour le remplir case par case
+                for (i = 0; i < length; i++) {
+                    max = 50000;
+                    // On parcourt l'ensemble des destinations pour trouver la moins chère
+                    for (j = 0; j < length; j++) {
+
+                        // Si c'est la moins chère temporaire, on essaie de la save 
+                        if (parseInt(this.destinations[j].prix) < max) {
+                            add = true;
+                            
+
+                            // On loop les nombres déjà passés pour voir s'il y est déjà
+                            for (k = 0; k < dejaPasse.length; k++) {
+                                if (dejaPasse[k] == j) {
+                                    add = false;
+                                }
+                            }
+                            if (add == true) {
+                                max = parseInt(this.destinations[j].prix);
+                                maxIndex = j;
+                            }
+                        }
+                    }
+                    dejaPasse.push(maxIndex);
+                    nD[i] = this.destinations[maxIndex];
+                }
+            }
+
+
+            // CLASSER PAR popularite
+            else if (classement == "popularite") {
+
+                // On parcourt le nouveau tableau pour le remplir case par case
+                for (i = 0; i < length; i++) {
+                    max = 50000;
+                    // On parcourt l'ensemble des destinations pour trouver la moins chère
+                    for (j = 0; j < length; j++) {
+
+                        // Si c'est la moins chère temporaire, on essaie de la save 
+                        if (parseInt(this.destinations[j].rang) < max) {
+                            add = true;
+                            
+
+                            // On loop les nombres déjà passés pour voir s'il y est déjà
+                            for (k = 0; k < dejaPasse.length; k++) {
+                                if (dejaPasse[k] == j) {
+                                    add = false;
+                                }
+                            }
+                            if (add == true) {
+                                max = parseInt(this.destinations[j].rang);
+                                maxIndex = j;
+                            }
+                        }
+                    }
+                    dejaPasse.push(maxIndex);
+                    nD[i] = this.destinations[maxIndex];
+                }
+            }
+
+
+            // CLASSER PAR note
+            if (classement == "note") {
+
+                // On parcourt le nouveau tableau pour le remplir case par case
+                for (i = 0; i < length; i++) {
+                    max = 0;
+                    // On parcourt l'ensemble des destinations pour trouver la moins chère
+                    for (j = 0; j < length; j++) {
+
+                        // Si c'est la moins chère temporaire, on essaie de la save 
+                        if (parseInt(this.destinations[j].notes) > max) {
+                            add = true;
+                            
+
+                            // On loop les nombres déjà passés pour voir s'il y est déjà
+                            for (k = 0; k < dejaPasse.length; k++) {
+                                if (dejaPasse[k] == j) {
+                                    add = false;
+                                }
+                            }
+                            if (add == true) {
+                                max = parseInt(this.destinations[j].notes);
+                                maxIndex = j;
+                            }
+                        }
+                    }
+                    dejaPasse.push(maxIndex);
+                    nD[i] = this.destinations[maxIndex];
+                }
+            }
+
+
+            this.destinations = nD;
         }
 
 

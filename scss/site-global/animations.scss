@@ -6,6 +6,9 @@
     transition-property: opacity;
     transition-timing-function: ease;
 }
+.fade-enter-active{
+    transition-delay: 0.2s;
+}
 
 .fade-enter,
 .fade-leave-active {
