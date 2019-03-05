@@ -1,5 +1,5 @@
 // base Url of the API
-const urlJsonDestinations = "/13e-mois_Web/app/BDD.json";
+const urlJsonDestinations = "/app/BDD.json";
 var s = 0;
 var i = 1;
 
@@ -389,31 +389,30 @@ var router = new VueRouter({
     mode: 'history',
     routes: [{
             name: 'accueil',
-            path: '/13e-mois_Web/index.htm',
+            path: '/',
             component: accueil
         },
-
+        
         {
             name: 'listeDestinations',
-            path: '/13e-mois_Web/index.htm/liste',
+            path: '/liste',
             component: lesDestinations
         },
 
         {
             name: 'destination',
-            path: '/13e-mois_Web/index.htm/:region',
+            path: '/:region',
             component: uneDestination
         },
 
         {
             name: 'paiement',
-            path: '/13e-mois_Web/index.htm/paiement-:region',
+            path: '/paiement-:region',
             component: paiement
         },
-
         {
             name: 'confirmation',
-            path: '/13e-mois_Web/index.htm/confirmation-:region',
+            path: '/confirmation-:region',
             component: confirmation
         }
     ]
