@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <title>Le 13e mois</title>
     <meta charset='UTF-8'>
@@ -22,7 +23,6 @@
             <router-view />
         </transition>
     </div>
-    
     <!-- VUE.JS -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.min.js"></script>
     <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
@@ -31,5 +31,56 @@
     <script type="module" src="app/app.js"></script>
     <script type='module' src="js/application.js"></script>
 </body>
+<script type="text/javascript">
+var images = new Array()
+
+function preload() {
+    for (i = 0; i < preload.arguments.length; i++) {
+        images[i] = new Image()
+        images[i].src = preload.arguments[i]
+    }
+}
+preload(
+    "/images/backgrounds/destinations_background.jpg",
+    "/images/destinations/fullsize/lauterbrunnen.jpg",
+    "/images/destinations/fullsize/grandcanyon.jpg",
+    "/images/destinations/fullsize/cappadocia.jpg",
+    "/images/destinations/fullsize/byronbay.jpg",
+    "/images/destinations/fullsize/budapest.jpg",
+    "/images/destinations/fullsize/barcelone.jpg",
+    "/images/destinations/fullsize/vernazza.jpg",
+    "/images/destinations/fullsize/banff.jpg",
+    "/images/destinations/fullsize/jaco.jpg",
+    "/images/destinations/fullsize/alpes.jpg",
+    "/images/destinations/fullsize/venise.jpg",
+    "/images/destinations/fullsize/bali.jpg",
+    "/images/destinations/fullsize/koadang.jpg",
+    "/images/destinations/fullsize/golfito.jpg",
+    "/images/destinations/fullsize/navagio.jpg",
+    "/images/destinations/fullsize/sardaigne.jpg",
+    "/images/destinations/fullsize/santorini.jpg",
+    "/images/destinations/fullsize/paris.jpg",
+
+    "/images/destinations/minia/grandcanyon.jpg",
+    "/images/destinations/minia/cappadocia.jpg",
+    "/images/destinations/minia/byronbay.jpg",
+    "/images/destinations/minia/budapest.jpg",
+    "/images/destinations/minia/barcelone.jpg",
+    "/images/destinations/minia/vernazza.jpg",
+    "/images/destinations/minia/banff.jpg",
+    "/images/destinations/minia/jaco.jpg",
+    "/images/destinations/minia/alpes.jpg",
+    "/images/destinations/minia/venise.jpg",
+    "/images/destinations/minia/bali.jpg",
+    "/images/destinations/minia/koadang.jpg",
+    "/images/destinations/minia/golfito.jpg",
+    "/images/destinations/minia/navagio.jpg",
+    "/images/destinations/minia/sardaigne.jpg",
+    "/images/destinations/minia/santorini.jpg",
+    "/images/destinations/minia/paris.jpg"
+)
+
+
+</script>
 
 </html>

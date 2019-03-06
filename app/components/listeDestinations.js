@@ -9,7 +9,7 @@
 
 
 // Lien vers la base de donnée JSON
-const urlJsonDestinations = "/13e-mois_Web/app/BDD.json";
+const urlJsonDestinations = "/app/BDD.json";
 
 
 export const listeDestinations = {
@@ -51,12 +51,17 @@ export const listeDestinations = {
                     </div>
                 </transition-group>
             </main>
-        </div>`,
+        </div>
+    
+
+
+        `,
     data: () => ({
         destinations: []
     }),
     mounted() {
         this.getDestinations();
+        
     },
     methods: {
         getDestinations() {
@@ -67,11 +72,11 @@ export const listeDestinations = {
             })
         },
 
-
         beforeEnter: function(el) {
             el.style.opacity = 0
             el.style.transform = "translateY(-30px)"
         },
+
         enter: function(el, done) {
             var delay = el.dataset.index * 100 + 300
             setTimeout(function() {
@@ -110,7 +115,7 @@ export const listeDestinations = {
                         // Si c'est la moins chère temporaire, on essaie de la save 
                         if (parseInt(this.destinations[j].prix) < max) {
                             add = true;
-                            
+
 
                             // On loop les nombres déjà passés pour voir s'il y est déjà
                             for (var k = 0; k < dejaPasse.length; k++) {
@@ -142,7 +147,7 @@ export const listeDestinations = {
                         // Si c'est la moins chère temporaire, on essaie de la save 
                         if (parseInt(this.destinations[j].rang) < max) {
                             add = true;
-                            
+
 
                             // On loop les nombres déjà passés pour voir s'il y est déjà
                             for (k = 0; k < dejaPasse.length; k++) {
@@ -174,7 +179,7 @@ export const listeDestinations = {
                         // Si c'est la moins chère temporaire, on essaie de la save 
                         if (parseInt(this.destinations[j].notes) > max) {
                             add = true;
-                            
+
 
                             // On loop les nombres déjà passés pour voir s'il y est déjà
                             for (k = 0; k < dejaPasse.length; k++) {
@@ -201,4 +206,3 @@ export const listeDestinations = {
 
     }
 };
-

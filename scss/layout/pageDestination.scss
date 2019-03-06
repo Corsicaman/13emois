@@ -238,8 +238,9 @@
 
 @media screen and (min-width: $breakpoint_mobile) {
     #uneDestinationImage h1 {
-    font-size: 50px;
-}
+        font-size: 50px;
+    }
+
     #uneDestinationInfos {
         background-color: #fefefe;
         /* height: 100vh;*/
@@ -256,73 +257,76 @@
         border-bottom: none;
         padding-bottom: 0px;
     }
-#suivant {
-    margin-top: 40px;
-    color: $color_turquoise;
-    font-weight: 500;
-    font-size: 15px;
-    display: flex;
-    flex-direction: row;
-    text-align: right;
-    justify-content: flex-end;
-    align-items: center;
-}
-#suivant p {
-    vertical-align: middle;
-    margin-right: 20px;
-    font-weight: 600;
-}
-#resumeInfos {
-    width: 100%;
-    padding: 25px 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    box-sizing: border-box;
-    border-radius: 2px;
-    font-size: 14px;
-}
 
-#resumeInfos>div {
-    width: 30%;
-    text-align: center;
-}
+    #suivant {
+        margin-top: 40px;
+        color: $color_turquoise;
+        font-weight: 500;
+        font-size: 15px;
+        display: flex;
+        flex-direction: row;
+        text-align: right;
+        justify-content: flex-end;
+        align-items: center;
+    }
 
-#resumeInfos>div:first-child>div:first-child {
-    padding-bottom: 4px;
-    color: $color_turquoise;
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    #suivant p {
+        vertical-align: middle;
+        margin-right: 20px;
+        font-weight: 600;
+    }
 
-#resumeInfos>div:first-child>div:first-child i {
-    font-size: 16px;
-}
+    #resumeInfos {
+        width: 100%;
+        padding: 25px 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        box-sizing: border-box;
+        border-radius: 2px;
+        font-size: 14px;
+    }
 
+    #resumeInfos>div {
+        width: 30%;
+        text-align: center;
+    }
 
-#resumeInfos>div:nth-child(2)>div:first-child {
-    padding-bottom: 4px;
-    display: flex;
-    justify-content: center;
-}
+    #resumeInfos>div:first-child>div:first-child {
+        padding-bottom: 4px;
+        color: $color_turquoise;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-#resumeInfos>div:nth-child(2)>div:first-child i {
-    color: orange;
-    font-size: 18px;
-}
+    #resumeInfos>div:first-child>div:first-child i {
+        font-size: 16px;
+    }
 
 
-#resumeInfos>div:nth-child(3)>div:first-child {
-    padding-bottom: 4px;
-    color: $color_turquoise;
-    font-weight: 800;
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
-}
+    #resumeInfos>div:nth-child(2)>div:first-child {
+        padding-bottom: 4px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #resumeInfos>div:nth-child(2)>div:first-child i {
+        color: orange;
+        font-size: 18px;
+    }
+
+
+    #resumeInfos>div:nth-child(3)>div:first-child {
+        padding-bottom: 4px;
+        color: $color_turquoise;
+        font-weight: 800;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media screen and (min-width: $breakpoint_bureau) {
@@ -333,7 +337,7 @@
     }
 
     #uneDestinationImage {
-    position: fixed;
+        position: fixed;
         flex: 1;
         background-size: cover;
         background-position: center center;

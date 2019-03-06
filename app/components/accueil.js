@@ -9,7 +9,7 @@
 
 
 // Lien vers la base de donnée JSON
-const urlJsonDestinations = "/13e-mois_Web/app/BDD.json";
+const urlJsonDestinations = "/app/BDD.json";
 var s = 0;
 var i = 1;
 

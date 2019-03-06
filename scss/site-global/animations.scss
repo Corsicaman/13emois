@@ -13,7 +13,8 @@
     transition-property: opacity;
     transition-timing-function: ease;
 }
-.fade-enter-active{
+
+.fade-enter-active {
     transition-delay: 0.2s;
 }
 
@@ -30,12 +31,15 @@
 
 
 
+
+
     .entreePhoto-enter-active,
     .entreePhoto-leave-active {
         -webkit-animation: entreePhoto 3.5s;
-                animation: entreePhoto 3.5s;
+        animation: entreePhoto 3.5s;
+        // animation-delay: 2s;
         -webkit-animation-timing-function: ease-out;
-                animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
     }
 
     @-webkit-keyframes entreePhoto {
@@ -85,12 +89,12 @@
     .entreeTitre-enter-active,
     .entreeTitre-leave-active {
         -webkit-animation: entreeTitre 4s;
-                animation: entreeTitre 4s;
+        animation: entreeTitre 4s;
         -webkit-animation-timing-function: ease-out;
-                animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
         /* animation-delay: 1s;*/
         -webkit-animation-fill-mode: forwards;
-                animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
     }
 
     @-webkit-keyframes entreeTitre {
@@ -191,12 +195,12 @@
     .entreeSousTitre-enter-active,
     .entreeSousTitre-leave-active {
         -webkit-animation: entreeSousTitre 3.5s;
-                animation: entreeSousTitre 3.5s;
+        animation: entreeSousTitre 3.5s;
         -webkit-animation-timing-function: ease-out;
-                animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
         /* animation-delay: 1s;*/
         -webkit-animation-fill-mode: forwards;
-                animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
         opacity: 0.01;
     }
 
@@ -262,12 +266,12 @@
     .entreeResume-enter-active,
     .entreeResume-leave-active {
         -webkit-animation: entreeResume 3.5s;
-                animation: entreeResume 3.5s;
+        animation: entreeResume 3.5s;
         -webkit-animation-timing-function: ease-out;
-                animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
         /* animation-delay: 1s;*/
         -webkit-animation-fill-mode: forwards;
-                animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
         opacity: 0.01;
     }
 
@@ -336,9 +340,9 @@
     .entreeInfos-enter-active,
     .entreeInfos-leave-active {
         -webkit-animation: entreeInfos 3.5s;
-                animation: entreeInfos 3.5s;
+        animation: entreeInfos 3.5s;
         -webkit-animation-timing-function: ease-out;
-                animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
 
     }
 
@@ -396,17 +400,17 @@
     .entreeSubInfo-enter-active,
     .entreeSubInfo-leave-active {
         -webkit-animation: entreeSubInfo 0.5s;
-                animation: entreeSubInfo 0.5s;
+        animation: entreeSubInfo 0.5s;
         /* animation-timing-function: ease-in;*/
         -webkit-transform: translateY(-30px);
-                transform: translateY(-30px);
+        transform: translateY(-30px);
         opacity: 0;
     }
 
     @-webkit-keyframes entreeSubInfo {
         100% {
             -webkit-transform: translateY(0px);
-                    transform: translateY(0px);
+            transform: translateY(0px);
             opacity: 1;
         }
     }
@@ -414,39 +418,48 @@
     @keyframes entreeSubInfo {
         100% {
             -webkit-transform: translateY(0px);
-                    transform: translateY(0px);
+            transform: translateY(0px);
             opacity: 1;
         }
     }
 
     #uneDestinationInfos>*:nth-child(1) {
         -webkit-animation-delay: 3.6s;
-                animation-delay: 3.6s;
+        animation-delay: 3.6s;
     }
 
     #uneDestinationInfos>*:nth-child(2) {
         -webkit-animation-delay: 3.7s;
-                animation-delay: 3.7s;
+        animation-delay: 3.7s;
     }
 
     #uneDestinationInfos>*:nth-child(3) {
         -webkit-animation-delay: 3.8s;
-                animation-delay: 3.8s;
+        animation-delay: 3.8s;
     }
 
     #uneDestinationInfos>*:nth-child(4) {
         -webkit-animation-delay: 3.9s;
-                animation-delay: 3.9s;
+        animation-delay: 3.9s;
     }
 
     #uneDestinationInfos>*:nth-child(5) {
         -webkit-animation-delay: 4s;
-                animation-delay: 4s;
+        animation-delay: 4s;
     }
 
     #uneDestinationInfos>*:nth-child(6) {
         -webkit-animation-delay: 4.1s;
-                animation-delay: 4.1s;
+        animation-delay: 4.1s;
     }
 
+
+
+    // .entreePhoto-enter-active,
+    // .entreeTitre-enter-active,
+    // .entreeSousTitre-enter-active,
+    // .entreeInfos-enter-active,
+    // .entreeSubInfo-enter-active {
+    //     animation-delay: 3s;
+    // }
 }

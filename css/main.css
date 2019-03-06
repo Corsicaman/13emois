@@ -6,6 +6,22 @@
   font-weight: bold;
   font-style: normal; }
 
+/* ========================================================================*/
+/* ========================================================================*/
+/* CSS DE L'APPLICATION WEB - LE 13E MOIS*/
+/* @author = Lucas Theillet*/
+/* ========================================================================*/
+/* VARIABLES GLOBALES*/
+/* ========================================================================*/
+/* ========================================================================*/
+/* ========================================================================*/
+/* ========================================================================*/
+/* CSS DE L'APPLICATION WEB - LE 13E MOIS*/
+/* @author = Lucas Theillet*/
+/* ========================================================================*/
+/* EFFETS GLOBAUX*/
+/* ========================================================================*/
+/* ========================================================================*/
 .boxShadow {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   border-radius: 2px; }
@@ -18,6 +34,14 @@
   .boxShadowHover:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); } }
 
+/* ========================================================================*/
+/* ========================================================================*/
+/* CSS DE L'APPLICATION WEB - LE 13E MOIS*/
+/* @author = Lucas Theillet*/
+/* ========================================================================*/
+/* LISTE DES ICONS DE LA PAGE D'ACCUEIL*/
+/* ========================================================================*/
+/* ========================================================================*/
 #icon_pays {
   background-image: url("../images/icons/accueil/icon_pays.png");
   background-size: contain; }
@@ -54,6 +78,14 @@
   background-image: url("../images/icons/accueil/icon_paiement.png");
   background-size: contain; }
 
+/* ========================================================================*/
+/* ========================================================================*/
+/* CSS DE L'APPLICATION WEB - LE 13E MOIS*/
+/* @author = Lucas Theillet*/
+/* ========================================================================*/
+/* STYLES GÉNÉRAUX PRÉSENTS SUR TOUTES LES PAGES*/
+/* ========================================================================*/
+/* ========================================================================*/
 html {
   scroll-behavior: smooth;
   overflow: hidden; }
@@ -88,13 +120,24 @@ a {
 #logo img {
   margin: 0 auto;
   width: 100%;
-  transition: filter 0.2s; }
+  transition: -webkit-filter 0.2s;
+  transition: filter 0.2s;
+  transition: filter 0.2s, -webkit-filter 0.2s; }
   #logo img:hover {
+    -webkit-filter: grayscale(100%);
     filter: grayscale(100%); }
 
 .turquoise {
   color: #32D096; }
 
+/* ========================================================================*/
+/* ========================================================================*/
+/* CSS DE L'APPLICATION WEB - LE 13E MOIS*/
+/* @author = Lucas Theillet*/
+/* ========================================================================*/
+/* ANIMATIONS DE TRANSITION VIA VUE.JS*/
+/* ========================================================================*/
+/* ========================================================================*/
 .fade-enter-active,
 .fade-leave-active {
   transition-duration: 0.2s;
@@ -108,11 +151,25 @@ a {
 .fade-leave-active {
   opacity: 0; }
 
+/* ACTIVÉES UNIQUEMENT SUR GRAND ÉCRAN*/
 @media screen and (min-width: 1080px) {
   .entreePhoto-enter-active,
   .entreePhoto-leave-active {
+    -webkit-animation: entreePhoto 3.5s;
     animation: entreePhoto 3.5s;
+    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out; }
+  @-webkit-keyframes entreePhoto {
+    0% {
+      width: 100vw;
+      opacity: 0; }
+    20% {
+      opacity: 1; }
+    91% {
+      opacity: 1;
+      width: 100vw; }
+    100% {
+      width: 50vw; } }
   @keyframes entreePhoto {
     0% {
       width: 100vw;
@@ -126,12 +183,48 @@ a {
       width: 50vw; } }
   .entreeTitre-enter-active,
   .entreeTitre-leave-active {
+    -webkit-animation: entreeTitre 4s;
     animation: entreeTitre 4s;
+    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
+    /* animation-delay: 1s;*/
+    -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards; }
+  @-webkit-keyframes entreeTitre {
+    0% {
+      /* width: 1vw;*/
+      opacity: 0;
+      /* margin-left: 30vw;*/
+      font-size: 90px;
+      width: 100%;
+      text-align: center; }
+    20% {
+      opacity: 0; }
+    40% {
+      opacity: 1; }
+    70% {
+      opacity: 1; }
+    80% {
+      font-size: 90px;
+      opacity: 0;
+      text-align: center;
+      width: 100%; }
+    81% {
+      font-size: 50px;
+      opacity: 0;
+      text-align: left;
+      width: 20%; }
+    95% {
+      opacity: 0; }
+    to {
+      width: 50%;
+      font-size: 50px;
+      opacity: 1; } }
   @keyframes entreeTitre {
     0% {
+      /* width: 1vw;*/
       opacity: 0;
+      /* margin-left: 30vw;*/
       font-size: 90px;
       width: 100%;
       text-align: center; }
@@ -159,31 +252,61 @@ a {
       opacity: 1; } }
   .entreeSousTitre-enter-active,
   .entreeSousTitre-leave-active {
+    -webkit-animation: entreeSousTitre 3.5s;
     animation: entreeSousTitre 3.5s;
+    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
+    /* animation-delay: 1s;*/
+    -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
     opacity: 0.01; }
-  @keyframes entreeSousTitre {
+  @-webkit-keyframes entreeSousTitre {
     0% {
-      opacity: 0; }
+      /* width: 1vw;*/
+      opacity: 0;
+      /* margin-left: 30vw;*/ }
     20% {
       opacity: 0; }
     50% {
       opacity: 0; }
     55% {
       opacity: 1; }
-    91% { }
+    91% {
+      /* margin-left: 30vw;*/ }
     100% {
-      opacity: 1; } }
+      opacity: 1;
+      /* margin-left: 0;*/ } }
+  @keyframes entreeSousTitre {
+    0% {
+      /* width: 1vw;*/
+      opacity: 0;
+      /* margin-left: 30vw;*/ }
+    20% {
+      opacity: 0; }
+    50% {
+      opacity: 0; }
+    55% {
+      opacity: 1; }
+    91% {
+      /* margin-left: 30vw;*/ }
+    100% {
+      opacity: 1;
+      /* margin-left: 0;*/ } }
   .entreeResume-enter-active,
   .entreeResume-leave-active {
+    -webkit-animation: entreeResume 3.5s;
     animation: entreeResume 3.5s;
+    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
+    /* animation-delay: 1s;*/
+    -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
     opacity: 0.01; }
-  @keyframes entreeResume {
+  @-webkit-keyframes entreeResume {
     0% {
-      opacity: 0; }
+      /* width: 1vw;*/
+      opacity: 0;
+      /* margin-left: 30vw;*/ }
     20% {
       opacity: 0; }
     50% {
@@ -191,18 +314,57 @@ a {
     70% {
       opacity: 0; }
     91% {
+      /* margin-left: 30vw;*/
       opacity: 0; }
     100% {
-      opacity: 1; } }
+      opacity: 1;
+      /* margin-left: 0;*/ } }
+  @keyframes entreeResume {
+    0% {
+      /* width: 1vw;*/
+      opacity: 0;
+      /* margin-left: 30vw;*/ }
+    20% {
+      opacity: 0; }
+    50% {
+      opacity: 0; }
+    70% {
+      opacity: 0; }
+    91% {
+      /* margin-left: 30vw;*/
+      opacity: 0; }
+    100% {
+      opacity: 1;
+      /* margin-left: 0;*/ } }
   .entreeInfos-enter-active,
   .entreeInfos-leave-active {
+    -webkit-animation: entreeInfos 3.5s;
     animation: entreeInfos 3.5s;
+    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out; }
+  @-webkit-keyframes entreeInfos {
+    0% {
+      width: 0;
+      padding: 0;
+      opacity: 0; }
+    /* 60% {*/
+    /*     opacity: 1;*/
+    /* }*/
+    91% {
+      width: 0;
+      padding: 0;
+      opacity: 0; }
+    100% {
+      opacity: 1;
+      width: 50vw; } }
   @keyframes entreeInfos {
     0% {
       width: 0;
       padding: 0;
       opacity: 0; }
+    /* 60% {*/
+    /*     opacity: 1;*/
+    /* }*/
     91% {
       width: 0;
       padding: 0;
@@ -212,26 +374,49 @@ a {
       width: 50vw; } }
   .entreeSubInfo-enter-active,
   .entreeSubInfo-leave-active {
+    -webkit-animation: entreeSubInfo 0.5s;
     animation: entreeSubInfo 0.5s;
+    /* animation-timing-function: ease-in;*/
+    -webkit-transform: translateY(-30px);
     transform: translateY(-30px);
     opacity: 0; }
+  @-webkit-keyframes entreeSubInfo {
+    100% {
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
+      opacity: 1; } }
   @keyframes entreeSubInfo {
     100% {
+      -webkit-transform: translateY(0px);
       transform: translateY(0px);
       opacity: 1; } }
   #uneDestinationInfos > *:nth-child(1) {
+    -webkit-animation-delay: 3.6s;
     animation-delay: 3.6s; }
   #uneDestinationInfos > *:nth-child(2) {
+    -webkit-animation-delay: 3.7s;
     animation-delay: 3.7s; }
   #uneDestinationInfos > *:nth-child(3) {
+    -webkit-animation-delay: 3.8s;
     animation-delay: 3.8s; }
   #uneDestinationInfos > *:nth-child(4) {
+    -webkit-animation-delay: 3.9s;
     animation-delay: 3.9s; }
   #uneDestinationInfos > *:nth-child(5) {
+    -webkit-animation-delay: 4s;
     animation-delay: 4s; }
   #uneDestinationInfos > *:nth-child(6) {
+    -webkit-animation-delay: 4.1s;
     animation-delay: 4.1s; } }
 
+/* ========================================================================*/
+/* ========================================================================*/
+/* CSS DE L'APPLICATION WEB - LE 13E MOIS*/
+/* @author = Lucas Theillet*/
+/* ========================================================================*/
+/* ÉLÉMENT : BOUTON*/
+/* ========================================================================*/
+/* ========================================================================*/
 .bouton {
   border-radius: 100px;
   padding: 12px 12px !important;
@@ -281,6 +466,14 @@ a {
     color: white;
     background-color: #32D096; } }
 
+/* ========================================================================*/
+/* ========================================================================*/
+/* CSS DE L'APPLICATION WEB - LE 13E MOIS*/
+/* @author = Lucas Theillet*/
+/* ========================================================================*/
+/* ÉLÉMENT : UNE DESTINATION*/
+/* ========================================================================*/
+/* ========================================================================*/
 #bodyDestinations #logo {
   width: 180px;
   padding: 100px 0 80px 0; }
@@ -295,19 +488,19 @@ a {
   flex-direction: column;
   justify-content: space-between;
   top: 0px;
+  transition: opacity 0.25s, box-shadow 0.25s, top 0.25s, -webkit-transform 0.7s;
   transition: transform 0.7s, opacity 0.25s, box-shadow 0.25s, top 0.25s;
+  transition: transform 0.7s, opacity 0.25s, box-shadow 0.25s, top 0.25s, -webkit-transform 0.7s;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1); }
 
 .destiInfo {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  /* flex-wrap: wrap;*/ }
+  justify-content: space-between; }
 
 .destiImage {
   width: 100%;
   height: 25vh;
-  /* background-image: url("../images/destinations/corse.jpg");*/
   background-size: cover;
   background-position: center center;
   border-radius: 4px 4px 0 0; }
@@ -317,8 +510,6 @@ a {
   width: 100%;
   padding: 6% 10%;
   box-sizing: border-box;
-  /* text-align: center;*/
-  /* float: left;*/
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -354,7 +545,6 @@ a {
 
 .destination .bouton {
   width: 100%;
-  /* height: 50px;*/
   padding: 6px 10px !important;
   font-size: 13px;
   box-sizing: border-box; }
@@ -381,7 +571,6 @@ a {
     width: 55%; }
   .destination .bouton {
     width: 80px;
-    /* height: 50px;*/
     padding: 4px 10px;
     margin: 5px 0;
     font-size: 13px;
@@ -405,6 +594,14 @@ a {
     .destination:hover {
       top: -7px; } }
 
+/* ========================================================================*/
+/* ========================================================================*/
+/* CSS DE L'APPLICATION WEB - LE 13E MOIS*/
+/* @author = Lucas Theillet*/
+/* ========================================================================*/
+/* ÉLÉMENT : TOGGLE*/
+/* ========================================================================*/
+/* ========================================================================*/
 #section_options .toggle {
   position: relative;
   display: block;
@@ -412,6 +609,7 @@ a {
   height: 20px;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
+  -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
   #section_options .toggle:before {
     content: "";
@@ -446,6 +644,7 @@ a {
     height: 56px;
     background: rgba(52, 162, 255, 0.5);
     border-radius: 50%;
+    -webkit-transform: scale(0);
     transform: scale(0);
     opacity: 1;
     pointer-events: none; }
@@ -455,14 +654,24 @@ a {
 
 #section_options #option1:checked + .toggle span, #section_options #option2:checked + .toggle span, #section_options #option3:checked + .toggle span, #section_options #option4:checked + .toggle span {
   background: #34A2FF;
+  -webkit-transform: translateX(20px);
   transform: translateX(20px);
   transition: all 0.2s cubic-bezier(0.8, 0.4, 0.3, 1.25), background 0.15s ease;
   box-shadow: 0 3px 8px rgba(52, 162, 255, 0.2); }
   #section_options #option1:checked + .toggle span:before, #section_options #option2:checked + .toggle span:before, #section_options #option3:checked + .toggle span:before, #section_options #option4:checked + .toggle span:before {
+    -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 0;
     transition: all .4s ease; }
 
+/* ========================================================================*/
+/* ========================================================================*/
+/* CSS DE L'APPLICATION WEB - LE 13E MOIS*/
+/* @author = Lucas Theillet*/
+/* ========================================================================*/
+/* PAGE : ACCUEIL*/
+/* ========================================================================*/
+/* ========================================================================*/
 #accueil {
   position: fixed;
   width: 100vw;
@@ -499,14 +708,22 @@ a {
   top: 40vh;
   display: inline-block;
   color: #34A2FF;
+  /* margin-top: 35vh;*/
+  transition: opacity 0.5s, margin 0.5s, color 0.5s, -webkit-transform 0.5s;
   transition: opacity 0.5s, margin 0.5s, color 0.5s, transform 0.5s;
+  transition: opacity 0.5s, margin 0.5s, color 0.5s, transform 0.5s, -webkit-transform 0.5s;
   margin: 0;
   padding: 0;
   width: 30vw; }
 
 #accueil h1 div,
 #accueil h1 p {
-  transition: opacity 0.5s, margin 0.5s, color 0.5s, transform 0.5s; }
+  transition: opacity 0.5s, margin 0.5s, color 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, margin 0.5s, color 0.5s, transform 0.5s;
+  transition: opacity 0.5s, margin 0.5s, color 0.5s, transform 0.5s, -webkit-transform 0.5s;
+  /* display: inline-block;*/
+  /* text-align: left;*/
+  /* text-align: left;*/ }
 
 #accueil h1:first-child {
   color: #222;
@@ -516,7 +733,8 @@ a {
 #accueil h1:nth-child(2) {
   text-align: center;
   left: 36%;
-  display: flex; }
+  display: flex;
+  /* position: relative; */ }
 
 #accueil h1:last-child {
   color: #222;
@@ -540,12 +758,16 @@ a {
   display: none; }
 
 #infos {
+  /* height: auto;*/
   margin: 0 auto;
+  /* background-color: #aaa;*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: space-around;
+  /* height: 30vh;*/
   padding: 5vh 9vw 0vh 9vw;
+  /* padding-top: 0vw;*/
   font-weight: 700;
   margin-top: 0; }
 
@@ -566,6 +788,7 @@ a {
   border-radius: 3px; }
 
 #infos > div > div:nth-child(3) {
+  /* height: 60px;*/
   border-top: 2px solid #34A2FF;
   margin: 25px 0 100px 0;
   padding-top: 25px;
@@ -590,6 +813,7 @@ a {
   z-index: 1; }
 
 #bodyAccueil {
+  /* overflow: hidden;*/
   position: relative;
   min-height: 100vh;
   padding-bottom: 40px;
@@ -602,6 +826,7 @@ a {
     width: 100%;
     height: 100%;
     background-image: url("../images/backgrounds/accueil_background.jpg");
+    -webkit-filter: brightness(75%);
     filter: brightness(75%);
     background-size: cover;
     background-position: center center;
@@ -655,6 +880,14 @@ a {
   #bodyAccueil {
     padding-top: 8vh; } }
 
+/* ========================================================================*/
+/* ========================================================================*/
+/* CSS DE L'APPLICATION WEB - LE 13E MOIS*/
+/* @author = Lucas Theillet*/
+/* ========================================================================*/
+/* PAGE : LISTE DES DESTINATIONS*/
+/* ========================================================================*/
+/* ========================================================================*/
 #bodyDestinations {
   position: relative;
   min-height: 100vh; }
@@ -667,6 +900,7 @@ a {
     height: 100%;
     background-image: url("../images/backgrounds/destinations_background.jpg");
     background-attachment: fixed;
+    -webkit-filter: brightness(110%);
     filter: brightness(110%);
     background-size: cover;
     background-position: center center;
@@ -749,6 +983,14 @@ a {
     padding-right: 10px;
     font-size: 14px; } }
 
+/* ========================================================================*/
+/* ========================================================================*/
+/* CSS DE L'APPLICATION WEB - LE 13E MOIS*/
+/* @author = Lucas Theillet*/
+/* ========================================================================*/
+/* PAGE : PRÉSENTATION D'UNE DESTINATION*/
+/* ========================================================================*/
+/* ========================================================================*/
 #main_uneDestination {
   position: absolute;
   top: 0;
@@ -840,8 +1082,12 @@ a {
   display: flex;
   justify-content: center; }
 
+/* ===============================================*/
+/* ===============================================*/
+/* ===============================================*/
 #uneDestinationInfos {
   background-color: #fefefe;
+  /* height: 100vh;*/
   width: 100vw;
   padding: 5vw 6vw;
   box-sizing: border-box; }
@@ -937,6 +1183,7 @@ a {
     font-size: 50px; }
   #uneDestinationInfos {
     background-color: #fefefe;
+    /* height: 100vh;*/
     width: 100vw;
     padding: 50px 70px;
     box-sizing: border-box; }
@@ -1006,6 +1253,7 @@ a {
     flex: 1;
     background-size: cover;
     background-position: center center;
+    /* min-height: 100vh;*/
     width: 50vw;
     padding: 50px 70px;
     box-sizing: border-box;
@@ -1015,6 +1263,7 @@ a {
     flex-direction: column;
     justify-content: space-between; }
   #uneDestinationInfos {
+    /* flex: 1;*/
     position: relative;
     left: 50%;
     background-color: #fefefe;
@@ -1023,6 +1272,14 @@ a {
     padding: 50px 70px;
     box-sizing: border-box; } }
 
+/* ========================================================================*/
+/* ========================================================================*/
+/* CSS DE L'APPLICATION WEB - LE 13E MOIS*/
+/* @author = Lucas Theillet*/
+/* ========================================================================*/
+/* PAGE : OPTIONS ET PAIEMENT*/
+/* ========================================================================*/
+/* ========================================================================*/
 #bodyPaiement {
   max-width: 100vw;
   min-height: 100vh;
@@ -1040,8 +1297,11 @@ a {
   color: #eee;
   text-transform: uppercase;
   width: 300vw;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
   opacity: 0;
+  -webkit-transform: translateY(-5vw);
   transform: translateY(-5vw); }
 
 #bodyPaiementRetour {
@@ -1053,44 +1313,65 @@ a {
   text-shadow: none;
   font-weight: 600;
   font-size: 14px;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
   opacity: 0;
+  -webkit-transform: translateX(30px);
   transform: translateX(30px); }
 
 #bodyPaiement #logo {
   position: relative;
   z-index: 1;
   width: 150px;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
   opacity: 0;
+  -webkit-transform: translateY(30px);
   transform: translateY(30px); }
 
+/* ================================*/
+/* CONTENU DE LA PAGE*/
+/* ================================*/
 #main_paiement {
   position: relative;
   z-index: 10;
   width: 85%;
   padding: 120px 0 40px 0;
   margin: 0 auto;
+  display: -ms-grid;
   display: grid;
   grid-gap: 50px;
   grid-template-areas: "infos" "hebergement" "services" "finalisation"; }
 
 #main_paiement section {
   width: 100%;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
   opacity: 0;
+  -webkit-transform: translateY(-60px);
   transform: translateY(-60px); }
 
 #main_paiement section:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: infos; }
 
 #main_paiement section:nth-child(2) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: hebergement; }
 
 #main_paiement section:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: services; }
 
 #main_paiement section:nth-child(4) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
   grid-area: finalisation; }
 
 #main_paiement h1 {
@@ -1112,6 +1393,21 @@ a {
   transition: border-bottom 0.2s; }
   #main_paiement input[type=text]:focus {
     border-bottom: 2px solid #34A2FF; }
+  #main_paiement input[type=text]::-webkit-input-placeholder {
+    font-style: italic;
+    color: #C4C4C4;
+    font-size: 12px;
+    font-family: Montserrat; }
+  #main_paiement input[type=text]:-ms-input-placeholder {
+    font-style: italic;
+    color: #C4C4C4;
+    font-size: 12px;
+    font-family: Montserrat; }
+  #main_paiement input[type=text]::-ms-input-placeholder {
+    font-style: italic;
+    color: #C4C4C4;
+    font-size: 12px;
+    font-family: Montserrat; }
   #main_paiement input[type=text]::placeholder {
     font-style: italic;
     color: #C4C4C4;
@@ -1129,8 +1425,15 @@ a {
   padding-top: 10px;
   margin-bottom: 15px; }
 
+/* ===============================================================*/
+/* ===============================================================*/
+/* SECTION HÉBERGEMENT*/
+/* ===============================================================*/
+/* ===============================================================*/
 #section_hebergement > div {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
   grid-gap: 20px; }
 
@@ -1138,6 +1441,7 @@ a {
   cursor: pointer; }
 
 .hebergement_img {
+  /* background-color: red;*/
   height: 230px;
   width: 100%;
   background-position: center;
@@ -1173,7 +1477,13 @@ a {
   font-size: 13px;
   color: #34A2FF; }
 
+/* ===============================================================*/
+/* ===============================================================*/
+/* SECTION OPTIONS*/
+/* ===============================================================*/
+/* ===============================================================*/
 #section_options {
+  display: -ms-grid;
   display: grid; }
   #section_options p {
     padding: 0; }
@@ -1212,7 +1522,8 @@ a {
   flex-direction: column;
   justify-content: space-around;
   margin-left: 20px;
-  width: 60%; }
+  width: 60%;
+  /* height: 100%;*/ }
 
 .options_texte h3 {
   padding-bottom: 4px;
@@ -1235,6 +1546,11 @@ a {
   justify-content: center;
   align-items: flex-end; }
 
+/* ===============================================================*/
+/* ===============================================================*/
+/* SECTION FINALISATION*/
+/* ===============================================================*/
+/* ===============================================================*/
 #section_finalisation input[type=text]:focus {
   border-bottom: 2px solid #32D096; }
 
@@ -1285,13 +1601,21 @@ a {
   display: inline-block;
   padding-left: 15px; }
 
+/* ===============================================================*/
+/* ===============================================================*/
+/* MEDIA QUERIES MOBILE FIRST*/
+/* ===============================================================*/
+/* ===============================================================*/
 @media screen and (min-width: 800px) {
   #section_hebergement > div {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px; }
   #section_finalisation #total > div:first-child {
-    display: flex; }
+    display: flex;
+    /* flex-direction: column;*/ }
     #section_finalisation #total > div:first-child p:first-child {
       margin-right: 10px;
       color: #32D096;
@@ -1310,12 +1634,22 @@ a {
     top: 60px; }
   #main_paiement {
     width: 85%;
+    /* padding: 120px 0 40px 0;*/
     margin: 0 auto;
+    display: -ms-grid;
     display: grid;
     grid-gap: 50px;
     padding: 12vw 0 40px 0;
     grid-template-areas: "infos hebergement" "services  finalisation"; } }
 
+/* ========================================================================*/
+/* ========================================================================*/
+/* CSS DE L'APPLICATION WEB - LE 13E MOIS*/
+/* @author = Lucas Theillet*/
+/* ========================================================================*/
+/* PAGE : CONFIRMATION DE RÉSERVATION*/
+/* ========================================================================*/
+/* ========================================================================*/
 #confPrenom,
 #confNom {
   display: inline-block; }
@@ -1345,8 +1679,11 @@ a {
   text-shadow: none;
   font-weight: 600;
   font-size: 14px;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
   opacity: 0;
+  -webkit-transform: translateX(30px);
   transform: translateX(30px); }
 
 #section_facturation h2 {
@@ -1365,6 +1702,7 @@ a {
     margin: 0 auto;
     margin-top: 70px; } }
 
+/* ====================================*/
 .check_mark {
   width: 80px;
   height: 130px;
@@ -1383,7 +1721,6 @@ button {
   width: 80px;
   height: 80px;
   border: 4px solid gray;
-  -webkit-border-radius: 40px;
   border-radius: 40px;
   border-radius: 50%;
   margin: 20px auto;
@@ -1396,7 +1733,6 @@ button {
 
 .sa-icon.sa-success::before, .sa-icon.sa-success::after {
   content: '';
-  -webkit-border-radius: 40px;
   border-radius: 40px;
   border-radius: 50%;
   position: absolute;
@@ -1407,7 +1743,6 @@ button {
   transform: rotate(45deg); }
 
 .sa-icon.sa-success::before {
-  -webkit-border-radius: 120px 0 0 120px;
   border-radius: 120px 0 0 120px;
   top: -7px;
   left: -33px;
@@ -1417,7 +1752,6 @@ button {
   transform-origin: 60px 60px; }
 
 .sa-icon.sa-success::after {
-  -webkit-border-radius: 0 120px 120px 0;
   border-radius: 0 120px 120px 0;
   top: -11px;
   left: 30px;
@@ -1430,7 +1764,6 @@ button {
   width: 80px;
   height: 80px;
   border: 4px solid rgba(76, 175, 80, 0.5);
-  -webkit-border-radius: 40px;
   border-radius: 40px;
   border-radius: 50%;
   box-sizing: content-box;
@@ -1453,6 +1786,7 @@ button {
 .sa-icon.sa-success.animate::after {
   -webkit-animation: rotatePlaceholder 4.25s ease-in;
   animation: rotatePlaceholder 4.25s ease-in;
+  -webkit-animation-delay: 1.5s;
   animation-delay: 1.5s; }
 
 .sa-icon.sa-success {
@@ -1467,11 +1801,13 @@ button {
 .animateSuccessTip {
   -webkit-animation: animateSuccessTip 0.75s;
   animation: animateSuccessTip 0.75s;
+  -webkit-animation-delay: 1.5s;
   animation-delay: 1.5s; }
 
 .animateSuccessLong {
   -webkit-animation: animateSuccessLong 0.75s;
   animation: animateSuccessLong 0.75s;
+  -webkit-animation-delay: 1.5s;
   animation-delay: 1.5s; }
 
 @-webkit-keyframes animateSuccessLong {
