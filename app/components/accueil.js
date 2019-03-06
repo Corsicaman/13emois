@@ -5,7 +5,6 @@ var i = 1;
 
 
 
-
 // =======================
 // =======================
 // PAGE D'ACCUEIL
@@ -23,6 +22,8 @@ export const accueil = {
                     <div>OIS</div>
                 </h1>
             </div>
+
+            <a href="credits.htm" target="_blank" id="btnCredits">Crédits externes</a>
             <div id="fondBlanc"></div>
             <router-link :to="{ name: 'accueil'}">
                 <div id="logo">
