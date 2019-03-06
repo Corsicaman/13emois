@@ -1,4 +1,13 @@
-$gray: #9A9999;
+/* ========================================================================*/
+/* ========================================================================*/
+/* CSS DE L'APPLICATION WEB - LE 13E MOIS*/
+/* @author = Lucas Theillet*/
+/* ========================================================================*/
+/* ÉLÉMENT : TOGGLE*/
+/* ========================================================================*/
+/* ========================================================================*/
+
+
 
 #section_options {
 
@@ -9,7 +18,8 @@ $gray: #9A9999;
         height: 20px;
         cursor: pointer;
         -webkit-tap-highlight-color: transparent;
-        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
 
 
         &:before {
@@ -49,7 +59,8 @@ $gray: #9A9999;
             height: 56px;
             background: rgba($color_bleu2, .5);
             border-radius: 50%;
-            transform: scale(0);
+            -webkit-transform: scale(0);
+                    transform: scale(0);
             opacity: 1;
             pointer-events: none;
         }
@@ -62,23 +73,19 @@ $gray: #9A9999;
 
         span {
             background: $color_bleu2;
-            transform: translateX(20px);
+            -webkit-transform: translateX(20px);
+                    transform: translateX(20px);
             transition: all .2s cubic-bezier(.8, .4, .3, 1.25), background .15s ease;
             box-shadow: 0 3px 8px rgba($color_bleu2, .2);
 
 
             &:before {
-                transform: scale(1);
+                -webkit-transform: scale(1);
+                        transform: scale(1);
                 opacity: 0;
                 transition: all .4s ease;
             }
         }
 
-        //centering toggle
-        // .center {
-        //     position: absolute;
-        //     top: calc(50% - 10px);
-        //     left: calc(50% - 20px);
-        // }
     }
 }

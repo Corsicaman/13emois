@@ -1,8 +1,15 @@
+/* ========================================================================*/
+/* ========================================================================*/
+/* CSS DE L'APPLICATION WEB - LE 13E MOIS*/
+/* @author = Lucas Theillet*/
+/* ========================================================================*/
+/* PAGE : LISTE DES DESTINATIONS*/
+/* ========================================================================*/
+/* ========================================================================*/
+
 #bodyDestinations {
     position: relative;
     min-height: 100vh;
-    // height: 100vh;
-
     &::before {
         content: "";
         position: absolute;
@@ -12,7 +19,8 @@
         height: 100%;
         background-image: url("../images/backgrounds/destinations_background.jpg");
         background-attachment: fixed;
-        filter: brightness(110%);
+        -webkit-filter: brightness(110%);
+                filter: brightness(110%);
         background-size: cover;
         background-position: center center;
         z-index: -10;

@@ -1,3 +1,12 @@
+/* ========================================================================*/
+/* ========================================================================*/
+/* CSS DE L'APPLICATION WEB - LE 13E MOIS*/
+/* @author = Lucas Theillet*/
+/* ========================================================================*/
+/* PAGE : OPTIONS ET PAIEMENT*/
+/* ========================================================================*/
+/* ========================================================================*/
+
 #bodyPaiement {
     max-width: 100vw;
     min-height: 100vh;
@@ -17,9 +26,12 @@
     color: #eee;
     text-transform: uppercase;
     width: 300vw;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: opacity 0.5s, transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
     opacity: 0;
-    transform: translateY(-5vw);
+    -webkit-transform: translateY(-5vw);
+            transform: translateY(-5vw);
 }
 
 #bodyPaiementRetour {
@@ -31,34 +43,41 @@
     text-shadow: none;
     font-weight: 600;
     font-size: 14px;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: opacity 0.5s, transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
     opacity: 0;
-    transform: translateX(30px);
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
 }
 
 #bodyPaiement #logo {
     position: relative;
     z-index: 1;
     width: 150px;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: opacity 0.5s, transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
     opacity: 0;
-    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
 }
 
 
-// ================================
-// CONTENU DE LA PAGE
-// ================================
+/* ================================*/
+/* CONTENU DE LA PAGE*/
+/* ================================*/
 #main_paiement {
     position: relative;
     z-index: 10;
     width: 85%;
     padding: 120px 0 40px 0;
     margin: 0 auto;
+    display: -ms-grid;
     display: grid;
     grid-gap: 50px;
 
-    grid-template-areas: "infos"
+        grid-template-areas: "infos"
         "hebergement"
         "services"
         "finalisation";
@@ -71,24 +90,35 @@
 
     section {
         width: 100%;
+        transition: opacity 0.5s, -webkit-transform 0.5s;
         transition: opacity 0.5s, transform 0.5s;
+        transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
         opacity: 0;
-        transform: translateY(-60px);
+        -webkit-transform: translateY(-60px);
+                transform: translateY(-60px);
     }
 
     section:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
         grid-area: infos;
     }
 
     section:nth-child(2) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
         grid-area: hebergement;
     }
 
     section:nth-child(3) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
         grid-area: services;
     }
 
     section:nth-child(4) {
+        -ms-grid-row: 4;
+        -ms-grid-column: 1;
         grid-area: finalisation;
     }
 
@@ -117,6 +147,27 @@
             border-bottom: 2px solid $color_bleu2;
         }
 
+        &::-webkit-input-placeholder {
+            font-style: italic;
+            color: #C4C4C4;
+            font-size: 12px;
+            font-family: Montserrat;
+        }
+
+        &:-ms-input-placeholder {
+            font-style: italic;
+            color: #C4C4C4;
+            font-size: 12px;
+            font-family: Montserrat;
+        }
+
+        &::-ms-input-placeholder {
+            font-style: italic;
+            color: #C4C4C4;
+            font-size: 12px;
+            font-family: Montserrat;
+        }
+
         &::placeholder {
             font-style: italic;
             color: #C4C4C4;
@@ -140,17 +191,19 @@
 
 }
 
-// ===============================================================
-// ===============================================================
-// SECTION HÉBERGEMENT
-// ===============================================================
-// ===============================================================
+/* ===============================================================*/
+/* ===============================================================*/
+/* SECTION HÉBERGEMENT*/
+/* ===============================================================*/
+/* ===============================================================*/
 
 
 
 #section_hebergement>div {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     grid-gap: 20px;
 }
 
@@ -159,7 +212,7 @@
 }
 
 .hebergement_img {
-    // background-color: red;
+    /* background-color: red;*/
     height: 230px;
     width: 100%;
     background-position: center;
@@ -212,14 +265,15 @@
 }
 
 
-// ===============================================================
-// ===============================================================
-// SECTION OPTIONS
-// ===============================================================
-// ===============================================================
+/* ===============================================================*/
+/* ===============================================================*/
+/* SECTION OPTIONS*/
+/* ===============================================================*/
+/* ===============================================================*/
 
 
 #section_options {
+    display: -ms-grid;
     display: grid;
 
     p {
@@ -272,7 +326,7 @@
     justify-content: space-around;
     margin-left: 20px;
     width: 60%;
-    // height: 100%;
+    /* height: 100%;*/
 }
 
 .options_texte h3 {
@@ -301,11 +355,11 @@
 }
 
 
-// ===============================================================
-// ===============================================================
-// SECTION FINALISATION
-// ===============================================================
-// ===============================================================
+/* ===============================================================*/
+/* ===============================================================*/
+/* SECTION FINALISATION*/
+/* ===============================================================*/
+/* ===============================================================*/
 #section_finalisation {
     input[type=text] {
         &:focus {
@@ -377,19 +431,21 @@
 
 
 
-// ===============================================================
-// ===============================================================
-// MEDIA QUERIES MOBILE FIRST
-// ===============================================================
-// ===============================================================
+/* ===============================================================*/
+/* ===============================================================*/
+/* MEDIA QUERIES MOBILE FIRST*/
+/* ===============================================================*/
+/* ===============================================================*/
 
 
 @media screen and (min-width: $breakpoint_mobile) {
 
 
     #section_hebergement>div {
+        display: -ms-grid;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        -ms-grid-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px;
     }
 
@@ -397,7 +453,7 @@
         #total {
             >div:first-child {
                 display: flex;
-                // flex-direction: column;
+                /* flex-direction: column;*/
 
                 p:first-child {
                     margin-right: 10px;
@@ -431,13 +487,14 @@
 
     #main_paiement {
         width: 85%;
-        // padding: 120px 0 40px 0;
+        /* padding: 120px 0 40px 0;*/
         margin: 0 auto;
+        display: -ms-grid;
         display: grid;
         grid-gap: 50px;
     padding: 12vw 0 40px 0;
 
-        grid-template-areas: "infos hebergement"
+            grid-template-areas: "infos hebergement"
             "services  finalisation";
     }
 

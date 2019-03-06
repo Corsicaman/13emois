@@ -1,3 +1,13 @@
+/* ========================================================================*/
+/* ========================================================================*/
+/* CSS DE L'APPLICATION WEB - LE 13E MOIS*/
+/* @author = Lucas Theillet*/
+/* ========================================================================*/
+/* PAGE : ACCUEIL*/
+/* ========================================================================*/
+/* ========================================================================*/
+
+
 #accueil {
     position: fixed;
     width: 100vw;
@@ -38,8 +48,10 @@
     top: 40vh;
     display: inline-block;
     color: $color_bleu2;
-    // margin-top: 35vh;
+    /* margin-top: 35vh;*/
+    transition: opacity 0.5s, margin 0.5s, color 0.5s, -webkit-transform 0.5s;
     transition: opacity 0.5s, margin 0.5s, color 0.5s, transform 0.5s;
+    transition: opacity 0.5s, margin 0.5s, color 0.5s, transform 0.5s, -webkit-transform 0.5s;
     margin: 0;
     padding: 0;
     width: 30vw;
@@ -48,10 +60,12 @@
 
 #accueil h1 div,
 #accueil h1 p {
+    transition: opacity 0.5s, margin 0.5s, color 0.5s, -webkit-transform 0.5s;
     transition: opacity 0.5s, margin 0.5s, color 0.5s, transform 0.5s;
-    // display: inline-block;
-    // text-align: left;
-    // text-align: left;
+    transition: opacity 0.5s, margin 0.5s, color 0.5s, transform 0.5s, -webkit-transform 0.5s;
+    /* display: inline-block;*/
+    /* text-align: left;*/
+    /* text-align: left;*/
 }
 
 #accueil h1:first-child {
@@ -64,7 +78,7 @@
     text-align: center;
     left: 36%;
     display: flex;
-    // position: relative; 
+    /* position: relative; */
 }
 
 #accueil h1:last-child {
@@ -94,16 +108,16 @@ main {
 }
 
 #infos {
-    // height: auto;
+    /* height: auto;*/
     margin: 0 auto;
-    // background-color: #aaa;
+    /* background-color: #aaa;*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: space-around;
-    // height: 30vh;
+    /* height: 30vh;*/
     padding: 5vh 9vw 0vh 9vw;
-    // padding-top: 0vw;
+    /* padding-top: 0vw;*/
     font-weight: 700;
     margin-top: 0;
 }
@@ -127,7 +141,7 @@ main {
 }
 
 #infos>div>div:nth-child(3) {
-    // height: 60px;
+    /* height: 60px;*/
     border-top: 2px solid $color_bleu2;
     margin: 25px 0 100px 0;
     padding-top: 25px;
@@ -155,7 +169,7 @@ main {
 }
 
 #bodyAccueil {
-    // overflow: hidden;
+    /* overflow: hidden;*/
     position: relative;
     min-height: 100vh;
     padding-bottom: 40px;
@@ -169,7 +183,8 @@ main {
         width: 100%;
         height: 100%;
         background-image: url("../images/backgrounds/accueil_background.jpg");
-        filter: brightness(75%);
+        -webkit-filter: brightness(75%);
+                filter: brightness(75%);
         background-size: cover;
         background-position: center center;
         z-index: -10;

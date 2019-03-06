@@ -1,3 +1,12 @@
+/* ========================================================================*/
+/* ========================================================================*/
+/* CSS DE L'APPLICATION WEB - LE 13E MOIS*/
+/* @author = Lucas Theillet*/
+/* ========================================================================*/
+/* STYLES GÉNÉRAUX PRÉSENTS SUR TOUTES LES PAGES*/
+/* ========================================================================*/
+/* ========================================================================*/
+
 html {
     scroll-behavior: smooth;
     overflow: hidden;
@@ -21,10 +30,10 @@ a {
 
 #logo13 {
     font-family: Axis;
-	text-align: center;
-	padding: 50px 0 30px 0;
-	font-size: 30vw;
-	font-weight: 700;
+    text-align: center;
+    padding: 50px 0 30px 0;
+    font-size: 30vw;
+    font-weight: 700;
     color: white;
 }
 
@@ -37,9 +46,12 @@ a {
 #logo img {
     margin: 0 auto;
     width: 100%;
+    transition: -webkit-filter 0.2s;
     transition: filter 0.2s;
+    transition: filter 0.2s, -webkit-filter 0.2s;
     &:hover {
-        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
     }
 }
 
