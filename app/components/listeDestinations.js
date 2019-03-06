@@ -14,11 +14,6 @@ const urlJsonDestinations = "/app/BDD.json";
 
 export const listeDestinations = {
     template: `<div id="bodyDestinations">
-            <div id="logo">
-                <router-link :to="{ name: 'accueil'}">
-                    <img src="../images/logos/13EM_Logo_White_Blue.png" alt="13e LOGO">
-                </router-link>
-            </div>
             <main id="main_lesDestinations" v-if="destinations">
                 <div id="header_liste">
                     <h1 id="titre_liste">LISTE DES DESTINATIONS</h1>
