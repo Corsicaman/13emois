@@ -187,17 +187,13 @@ a {
     animation: entreeTitre 4s;
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
-    /* animation-delay: 1s;*/
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards; }
   @-webkit-keyframes entreeTitre {
     0% {
-      /* width: 1vw;*/
       opacity: 0;
-      /* margin-left: 30vw;*/
       font-size: 90px;
-      width: 100%;
-      text-align: center; }
+      margin: 0 auto; }
     20% {
       opacity: 0; }
     40% {
@@ -207,27 +203,19 @@ a {
     80% {
       font-size: 90px;
       opacity: 0;
-      text-align: center;
-      width: 100%; }
+      margin: 0 auto; }
     81% {
       font-size: 50px;
-      opacity: 0;
-      text-align: left;
-      width: 20%; }
+      opacity: 0; }
     95% {
       opacity: 0; }
     to {
-      width: 50%;
-      font-size: 50px;
       opacity: 1; } }
   @keyframes entreeTitre {
     0% {
-      /* width: 1vw;*/
       opacity: 0;
-      /* margin-left: 30vw;*/
       font-size: 90px;
-      width: 100%;
-      text-align: center; }
+      margin: 0 auto; }
     20% {
       opacity: 0; }
     40% {
@@ -237,18 +225,13 @@ a {
     80% {
       font-size: 90px;
       opacity: 0;
-      text-align: center;
-      width: 100%; }
+      margin: 0 auto; }
     81% {
       font-size: 50px;
-      opacity: 0;
-      text-align: left;
-      width: 20%; }
+      opacity: 0; }
     95% {
       opacity: 0; }
     to {
-      width: 50%;
-      font-size: 50px;
       opacity: 1; } }
   .entreeSousTitre-enter-active,
   .entreeSousTitre-leave-active {
@@ -256,86 +239,53 @@ a {
     animation: entreeSousTitre 3.5s;
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
-    /* animation-delay: 1s;*/
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
     opacity: 0.01; }
   @-webkit-keyframes entreeSousTitre {
     0% {
-      /* width: 1vw;*/
-      opacity: 0;
-      /* margin-left: 30vw;*/ }
-    20% {
       opacity: 0; }
     50% {
       opacity: 0; }
     55% {
       opacity: 1; }
-    91% {
-      /* margin-left: 30vw;*/ }
     100% {
-      opacity: 1;
-      /* margin-left: 0;*/ } }
+      opacity: 1; } }
   @keyframes entreeSousTitre {
     0% {
-      /* width: 1vw;*/
-      opacity: 0;
-      /* margin-left: 30vw;*/ }
-    20% {
       opacity: 0; }
     50% {
       opacity: 0; }
     55% {
       opacity: 1; }
-    91% {
-      /* margin-left: 30vw;*/ }
     100% {
-      opacity: 1;
-      /* margin-left: 0;*/ } }
+      opacity: 1; } }
   .entreeResume-enter-active,
   .entreeResume-leave-active {
     -webkit-animation: entreeResume 3.5s;
     animation: entreeResume 3.5s;
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
-    /* animation-delay: 1s;*/
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-    opacity: 0.01; }
+    opacity: 0.01;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s; }
   @-webkit-keyframes entreeResume {
     0% {
-      /* width: 1vw;*/
-      opacity: 0;
-      /* margin-left: 30vw;*/ }
-    20% {
-      opacity: 0; }
-    50% {
-      opacity: 0; }
-    70% {
       opacity: 0; }
     91% {
-      /* margin-left: 30vw;*/
       opacity: 0; }
     100% {
       opacity: 1;
       /* margin-left: 0;*/ } }
   @keyframes entreeResume {
     0% {
-      /* width: 1vw;*/
-      opacity: 0;
-      /* margin-left: 30vw;*/ }
-    20% {
-      opacity: 0; }
-    50% {
-      opacity: 0; }
-    70% {
       opacity: 0; }
     91% {
-      /* margin-left: 30vw;*/
       opacity: 0; }
     100% {
-      opacity: 1;
-      /* margin-left: 0;*/ } }
+      opacity: 1; } }
   .entreeInfos-enter-active,
   .entreeInfos-leave-active {
     -webkit-animation: entreeInfos 3.5s;
@@ -347,9 +297,6 @@ a {
       width: 0;
       padding: 0;
       opacity: 0; }
-    /* 60% {*/
-    /*     opacity: 1;*/
-    /* }*/
     91% {
       width: 0;
       padding: 0;
@@ -362,9 +309,6 @@ a {
       width: 0;
       padding: 0;
       opacity: 0; }
-    /* 60% {*/
-    /*     opacity: 1;*/
-    /* }*/
     91% {
       width: 0;
       padding: 0;
@@ -376,7 +320,6 @@ a {
   .entreeSubInfo-leave-active {
     -webkit-animation: entreeSubInfo 0.5s;
     animation: entreeSubInfo 0.5s;
-    /* animation-timing-function: ease-in;*/
     -webkit-transform: translateY(-30px);
     transform: translateY(-30px);
     opacity: 0; }
@@ -1041,7 +984,7 @@ a {
   font-weight: 800;
   text-shadow: 0 0 120px #444;
   text-transform: uppercase;
-  width: 50%;
+  display: table;
   opacity: 1; }
 
 #resumeInfos {

@@ -65,7 +65,8 @@
     font-weight: 800;
     text-shadow: 0 0 120px #444;
     text-transform: uppercase;
-    width: 50%;
+    // width: auto;
+    display: table;
     opacity: 1;
 }
 

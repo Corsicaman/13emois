@@ -15,11 +15,6 @@ const urlJsonDestinations = "/13e-mois_Web/app/BDD.json";
 export const uneDestination = {
     template: `
         <div id="bodyDestinations" v-if="destination">
-            <router-link :to="{ name: 'accueil'}">
-                <div id="logo">
-                    <img src="../images/logos/13EM_Logo_White_Blue.png" alt="13e LOGO">
-                </div>
-            </router-link>
             <main id="main_uneDestination">
                 <div id="uneDestination">
                     <transition name="entreePhoto" mode="out-in" appear>
