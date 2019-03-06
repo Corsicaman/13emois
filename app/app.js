@@ -1,3 +1,15 @@
+/* ========================================================================*/
+/* ========================================================================*/
+/* JAVSCRIPT DE L'APPLICATION WEB - LE 13E MOIS*/
+/* @author = Lucas Theillet*/
+/* ========================================================================*/
+/* APPLICATION VUE */
+// Gestion des différents components et de leur gestion via le router
+/* ========================================================================*/
+/* ========================================================================*/
+
+
+// Importation des components
 import {accueil} from '/13e-mois_Web/app/components/accueil.js';
 import {listeDestinations} from '/13e-mois_Web/app/components/listeDestinations.js'
 import {uneDestination} from '/13e-mois_Web/app/components/destination.js'
@@ -5,7 +17,7 @@ import {paiement} from '/13e-mois_Web/app/components/paiement.js'
 import {confirmation} from '/13e-mois_Web/app/components/confirmation.js'
 
 
-
+// Exportation des compenents
 export default {
   components: {
     accueil,
@@ -20,7 +32,7 @@ export default {
 
 // =======================
 // =======================
-// VUE ROUTER : GESTIONS DES PAGES
+// VUE ROUTER : GESTIONS DES PAGES ET LIEN AVEC LES TEMPLATES
 // =======================
 // =======================
 var router = new VueRouter({

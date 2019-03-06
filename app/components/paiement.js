@@ -1,14 +1,17 @@
-// base Url of the API
+/* ========================================================================*/
+/* ========================================================================*/
+/* JAVSCRIPT DE L'APPLICATION WEB - LE 13E MOIS*/
+/* @author = Lucas Theillet*/
+/* ========================================================================*/
+/* COMPONENT : OPTIONS ET PAIEMENT */
+/* ========================================================================*/
+/* ========================================================================*/
+
+
+// Lien vers la base de donnée JSON
 const urlJsonDestinations = "/13e-mois_Web/app/BDD.json";
-var s = 0;
-var i = 1;
 
 
-// =======================
-// =======================
-// PAGE DE PAIEMENT
-// =======================
-// =======================
 export const paiement = {
     template: `
         <div id="bodyPaiement" v-if="destination">
@@ -146,11 +149,9 @@ export const paiement = {
                 for (var desti in this.destinations) {
                     if (this.destinations[desti].region == region) {
                         this.destination = desti;
-                        // console.log(image);
                         break;
                     }
                 }
-                // console.log(this.post);
             }).catch(error => {
                 console.log(error);
             })

@@ -1,18 +1,18 @@
-// base Url of the API
+/* ========================================================================*/
+/* ========================================================================*/
+/* JAVSCRIPT DE L'APPLICATION WEB - LE 13E MOIS*/
+/* @author = Lucas Theillet*/
+/* ========================================================================*/
+/* COMPONENT : LISTE DES DESTINATIONS */
+/* ========================================================================*/
+/* ========================================================================*/
+
+
+// Lien vers la base de donnée JSON
 const urlJsonDestinations = "/13e-mois_Web/app/BDD.json";
-var s = 0;
-var i = 1;
 
 
-
-
-// =======================
-// =======================
-// PAGE LISTE DES DESTINATIONS
-// =======================
-// =======================
 export const listeDestinations = {
-    // name: 'listeDestinations',
     template: `<div id="bodyDestinations">
             <div id="logo">
                 <router-link :to="{ name: 'accueil'}">
@@ -88,7 +88,6 @@ export const listeDestinations = {
         },
 
         ordre: function(classement) {
-            console.log("Fonction ordre par " + classement);
             var nD = JSON.parse(JSON.stringify(this.destinations));
             let index = 0;
             let max = 50000;
@@ -96,7 +95,6 @@ export const listeDestinations = {
             let dejaPasse = [];
             let length = this.destinations.length;
             let add = true;
-            // if (classement == "note") {} else if (classement == "popularite") {} else 
 
 
             // CLASSER PAR PRIX

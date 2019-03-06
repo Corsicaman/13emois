@@ -1,15 +1,17 @@
-// base Url of the API
+/* ========================================================================*/
+/* ========================================================================*/
+/* JAVSCRIPT DE L'APPLICATION WEB - LE 13E MOIS*/
+/* @author = Lucas Theillet*/
+/* ========================================================================*/
+/* COMPONENT : PRÉSENTATION D'UNE DESTINATION */
+/* ========================================================================*/
+/* ========================================================================*/
+
+
+// Lien vers la base de donnée JSON
 const urlJsonDestinations = "/13e-mois_Web/app/BDD.json";
-var s = 0;
-var i = 1;
 
 
-
-// =======================
-// =======================
-// PAGE DE LA DESTINATION SELECTIONEE
-// =======================
-// =======================
 export const uneDestination = {
     template: `
         <div id="bodyDestinations" v-if="destination">

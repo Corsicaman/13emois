@@ -1,4 +1,12 @@
-// Classe gérant les animations d'apparation sur la page
+/* ========================================================================*/
+/* ========================================================================*/
+/* JAVSCRIPT DE L'APPLICATION WEB - LE 13E MOIS*/
+/* @author = Lucas Theillet*/
+/* ========================================================================*/
+/* Classe gérant les animations d'apparation sur la page et les interactions*/
+/* ========================================================================*/
+/* ========================================================================*/
+
 
 export class AnimPaiement {
 
@@ -46,7 +54,7 @@ export class AnimPaiement {
 
     }
 
-
+    // On affiche les informations spécifiques à la réservation
     remplirOptions() {
         $("#confTotal").html(this.total);
         $("#confPrenom").html("<span class='confSpan'>Au nom de : </span><span class='turquoise'>"+this.prenom+"</span>");
