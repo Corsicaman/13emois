@@ -13,8 +13,7 @@
     transition-property: opacity;
     transition-timing-function: ease;
 }
-
-.fade-enter-active {
+.fade-enter-active{
     transition-delay: 0.2s;
 }
 
@@ -31,15 +30,12 @@
 
 
 
-
-
     .entreePhoto-enter-active,
     .entreePhoto-leave-active {
         -webkit-animation: entreePhoto 3.5s;
-        animation: entreePhoto 3.5s;
-        // animation-delay: 2s;
+                animation: entreePhoto 3.5s;
         -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
     }
 
     @-webkit-keyframes entreePhoto {
@@ -89,22 +85,22 @@
     .entreeTitre-enter-active,
     .entreeTitre-leave-active {
         -webkit-animation: entreeTitre 4s;
-        animation: entreeTitre 4s;
+                animation: entreeTitre 4s;
         -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-        /* animation-delay: 1s;*/
+                animation-timing-function: ease-out;
         -webkit-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
     }
+
+  
+
+  
 
     @-webkit-keyframes entreeTitre {
         0% {
-            /* width: 1vw;*/
             opacity: 0;
-            /* margin-left: 30vw;*/
             font-size: 90px;
-            width: 100%;
-            text-align: center;
+            margin: 0 auto;
         }
 
         20% {
@@ -122,15 +118,12 @@
         80% {
             font-size: 90px;
             opacity: 0;
-            text-align: center;
-            width: 100%;
+            margin: 0 auto;
         }
 
         81% {
             font-size: 50px;
             opacity: 0;
-            text-align: left;
-            width: 20%;
         }
 
         95% {
@@ -138,20 +131,19 @@
         }
 
         to {
-            width: 50%;
-            font-size: 50px;
             opacity: 1;
         }
     }
 
+  
+
+  
+
     @keyframes entreeTitre {
         0% {
-            /* width: 1vw;*/
             opacity: 0;
-            /* margin-left: 30vw;*/
             font-size: 90px;
-            width: 100%;
-            text-align: center;
+            margin: 0 auto;
         }
 
         20% {
@@ -169,15 +161,12 @@
         80% {
             font-size: 90px;
             opacity: 0;
-            text-align: center;
-            width: 100%;
+            margin: 0 auto;
         }
 
         81% {
             font-size: 50px;
             opacity: 0;
-            text-align: left;
-            width: 20%;
         }
 
         95% {
@@ -185,8 +174,6 @@
         }
 
         to {
-            width: 50%;
-            font-size: 50px;
             opacity: 1;
         }
     }
@@ -195,23 +182,17 @@
     .entreeSousTitre-enter-active,
     .entreeSousTitre-leave-active {
         -webkit-animation: entreeSousTitre 3.5s;
-        animation: entreeSousTitre 3.5s;
+                animation: entreeSousTitre 3.5s;
         -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-        /* animation-delay: 1s;*/
+                animation-timing-function: ease-out;
         -webkit-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
         opacity: 0.01;
     }
 
+
     @-webkit-keyframes entreeSousTitre {
         0% {
-            /* width: 1vw;*/
-            opacity: 0;
-            /* margin-left: 30vw;*/
-        }
-
-        20% {
             opacity: 0;
         }
 
@@ -223,24 +204,14 @@
             opacity: 1;
         }
 
-        91% {
-            /* margin-left: 30vw;*/
-        }
-
         100% {
             opacity: 1;
-            /* margin-left: 0;*/
         }
     }
 
+
     @keyframes entreeSousTitre {
         0% {
-            /* width: 1vw;*/
-            opacity: 0;
-            /* margin-left: 30vw;*/
-        }
-
-        20% {
             opacity: 0;
         }
 
@@ -252,13 +223,8 @@
             opacity: 1;
         }
 
-        91% {
-            /* margin-left: 30vw;*/
-        }
-
         100% {
             opacity: 1;
-            /* margin-left: 0;*/
         }
     }
 
@@ -266,36 +232,22 @@
     .entreeResume-enter-active,
     .entreeResume-leave-active {
         -webkit-animation: entreeResume 3.5s;
-        animation: entreeResume 3.5s;
+                animation: entreeResume 3.5s;
         -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-        /* animation-delay: 1s;*/
+                animation-timing-function: ease-out;
         -webkit-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
         opacity: 0.01;
+        -webkit-animation-delay: 0.5s;
+                animation-delay: 0.5s;
     }
 
     @-webkit-keyframes entreeResume {
         0% {
-            /* width: 1vw;*/
-            opacity: 0;
-            /* margin-left: 30vw;*/
-        }
-
-        20% {
-            opacity: 0;
-        }
-
-        50% {
-            opacity: 0;
-        }
-
-        70% {
             opacity: 0;
         }
 
         91% {
-            /* margin-left: 30vw;*/
             opacity: 0;
         }
 
@@ -307,31 +259,15 @@
 
     @keyframes entreeResume {
         0% {
-            /* width: 1vw;*/
-            opacity: 0;
-            /* margin-left: 30vw;*/
-        }
-
-        20% {
-            opacity: 0;
-        }
-
-        50% {
-            opacity: 0;
-        }
-
-        70% {
             opacity: 0;
         }
 
         91% {
-            /* margin-left: 30vw;*/
             opacity: 0;
         }
 
         100% {
             opacity: 1;
-            /* margin-left: 0;*/
         }
     }
 
@@ -340,9 +276,9 @@
     .entreeInfos-enter-active,
     .entreeInfos-leave-active {
         -webkit-animation: entreeInfos 3.5s;
-        animation: entreeInfos 3.5s;
+                animation: entreeInfos 3.5s;
         -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
 
     }
 
@@ -352,10 +288,6 @@
             padding: 0;
             opacity: 0;
         }
-
-        /* 60% {*/
-        /*     opacity: 1;*/
-        /* }*/
 
         91% {
             width: 0;
@@ -377,10 +309,6 @@
             opacity: 0;
         }
 
-        /* 60% {*/
-        /*     opacity: 1;*/
-        /* }*/
-
         91% {
             width: 0;
             padding: 0;
@@ -400,17 +328,16 @@
     .entreeSubInfo-enter-active,
     .entreeSubInfo-leave-active {
         -webkit-animation: entreeSubInfo 0.5s;
-        animation: entreeSubInfo 0.5s;
-        /* animation-timing-function: ease-in;*/
+                animation: entreeSubInfo 0.5s;
         -webkit-transform: translateY(-30px);
-        transform: translateY(-30px);
+                transform: translateY(-30px);
         opacity: 0;
     }
 
     @-webkit-keyframes entreeSubInfo {
         100% {
             -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+                    transform: translateY(0px);
             opacity: 1;
         }
     }
@@ -418,48 +345,39 @@
     @keyframes entreeSubInfo {
         100% {
             -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+                    transform: translateY(0px);
             opacity: 1;
         }
     }
 
     #uneDestinationInfos>*:nth-child(1) {
         -webkit-animation-delay: 3.6s;
-        animation-delay: 3.6s;
+                animation-delay: 3.6s;
     }
 
     #uneDestinationInfos>*:nth-child(2) {
         -webkit-animation-delay: 3.7s;
-        animation-delay: 3.7s;
+                animation-delay: 3.7s;
     }
 
     #uneDestinationInfos>*:nth-child(3) {
         -webkit-animation-delay: 3.8s;
-        animation-delay: 3.8s;
+                animation-delay: 3.8s;
     }
 
     #uneDestinationInfos>*:nth-child(4) {
         -webkit-animation-delay: 3.9s;
-        animation-delay: 3.9s;
+                animation-delay: 3.9s;
     }
 
     #uneDestinationInfos>*:nth-child(5) {
         -webkit-animation-delay: 4s;
-        animation-delay: 4s;
+                animation-delay: 4s;
     }
 
     #uneDestinationInfos>*:nth-child(6) {
         -webkit-animation-delay: 4.1s;
-        animation-delay: 4.1s;
+                animation-delay: 4.1s;
     }
 
-
-
-    // .entreePhoto-enter-active,
-    // .entreeTitre-enter-active,
-    // .entreeSousTitre-enter-active,
-    // .entreeInfos-enter-active,
-    // .entreeSubInfo-enter-active {
-    //     animation-delay: 3s;
-    // }
 }

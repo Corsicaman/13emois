@@ -15,7 +15,6 @@ const urlJsonDestinations = "/app/BDD.json";
 export const uneDestination = {
     template: `
         <div id="bodyDestinations" v-if="destination">
-
             <main id="main_uneDestination">
                 <div id="uneDestination">
                     <transition name="entreePhoto" mode="out-in" appear>
