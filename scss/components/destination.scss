@@ -22,6 +22,7 @@
     flex-direction: column;
     justify-content: space-between;
     top: 0px;
+    // will-change: transform;
     transition: opacity 0.25s, box-shadow 0.25s, top 0.25s, -webkit-transform 0.7s;
     transition: transform 0.7s, opacity 0.25s, box-shadow 0.25s, top 0.25s;
     transition: transform 0.7s, opacity 0.25s, box-shadow 0.25s, top 0.25s, -webkit-transform 0.7s;
