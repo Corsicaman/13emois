@@ -18,7 +18,8 @@
         width: 100%;
         height: 100%;
         // background-color: #f7fcff;
-        // background-image: url("../images/backgrounds/destinations_background.jpg");
+        will-change: transform;
+        background-image: url("../images/backgrounds/destinations_background.jpg");
         background-attachment: fixed;
         -webkit-filter: brightness(110%);
                 filter: brightness(110%);
